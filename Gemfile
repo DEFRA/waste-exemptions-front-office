@@ -44,3 +44,8 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem "web-console", "~> 2.0"
 end
+
+group :test do
+  # Database Cleaner is a set of strategies for cleaning your database in Ruby.
+  gem "database_cleaner"
+end
