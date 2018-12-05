@@ -3,6 +3,16 @@
 source "https://rubygems.org"
 ruby "2.4.2"
 
+# Allows us to automatically generate the change log from the tags, issues,
+# labels and pull requests on GitHub. Added as a dependency so all dev's have
+# access to it to generate a log, and so they are using the same version.
+# New dev's should first create GitHub personal app token and add it to their
+# ~/.bash_profile (or equivalent)
+# https://github.com/skywinder/github-changelog-generator#github-token
+# Then simply run `bundle exec rake changelog` to update CHANGELOG.md
+# Should be in the :development group however when it is it breaks deployment
+# to Heroku. Hence moved outside group till we can understand why.
+gem "github_changelog_generator", require: false
 # Use jquery as the JavaScript library
 gem "jquery-rails"
 # Use postgresql as the database for Active Record
