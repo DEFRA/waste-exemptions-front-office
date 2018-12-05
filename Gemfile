@@ -16,7 +16,7 @@ gem "github_changelog_generator", require: false
 # Use jquery as the JavaScript library
 gem "jquery-rails"
 # Use postgresql as the database for Active Record
-gem "pg", "~> 0.15"
+gem "pg", "~> 0.18.4"
 # Bundle edge Rails instead: gem "rails', github: 'rails/rails'
 gem "rails", "4.2.11"
 # Use SCSS for stylesheets
