@@ -32,7 +32,8 @@ gem "sdoc", "~> 0.4.0", group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug"
-
+  # Project uses RSpec as its test framework
+  gem "rspec-rails", "~> 3.8"
   # Rubocop to ensure consistency in how the code is written
   gem "rubocop"
 end
