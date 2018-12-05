@@ -58,6 +58,10 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
+  # include factory_bot methods. Without it all factory_bot methods will need to
+  # be prefaced with FactoryBot
+  config.include FactoryBot::Syntax::Methods
+
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)

@@ -48,4 +48,6 @@ end
 group :test do
   # Database Cleaner is a set of strategies for cleaning your database in Ruby.
   gem "database_cleaner"
+  # Fixtures replacement
+  gem "factory_bot_rails"
 end
