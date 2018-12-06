@@ -34,6 +34,12 @@ gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
 
+# Use the waste exemptions engine for the user journey
+gem "waste_exemptions_engine",
+    path: "/vagrant/waste-exemptions-engine"
+    # git: "https://github.com/DEFRA/waste-exemptions-engine",
+    # branch: "master"
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 0.4.0", group: :doc
 
