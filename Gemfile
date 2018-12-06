@@ -16,6 +16,9 @@ gem "airbrake", "5.8.1"
 # Should be in the :development group however when it is it breaks deployment
 # to Heroku. Hence moved outside group till we can understand why.
 gem "github_changelog_generator", require: false
+# GOV.UK styling
+gem "govuk_elements_rails", "~> 3.1"
+gem "govuk_template", "~> 0.23"
 # Use jquery as the JavaScript library
 gem "jquery-rails"
 # Use postgresql as the database for Active Record
