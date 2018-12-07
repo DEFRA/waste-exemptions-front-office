@@ -30,5 +30,9 @@ module WasteExemptionsFrontOffice
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Version info
+    config.application_name = "waste-exemptions-front-office"
+    config.git_repository_url = "https://github.com/DEFRA/#{config.application_name}"
   end
 end
