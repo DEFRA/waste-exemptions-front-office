@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20181211003053) do
     t.string   "workflow_state"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+    t.string   "start_option"
     t.string   "location"
     t.string   "applicant_first_name"
     t.string   "applicant_last_name"
