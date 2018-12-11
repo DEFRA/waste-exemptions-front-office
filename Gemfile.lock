@@ -7,6 +7,7 @@ PATH
       pg (~> 0.18.4)
       phonelib
       rails (= 4.2.11)
+      validates_email_format_of
 
 GEM
   remote: https://rubygems.org/
@@ -234,6 +235,8 @@ GEM
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.0)
     useragent (0.16.10)
+    validates_email_format_of (1.6.3)
+      i18n
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
