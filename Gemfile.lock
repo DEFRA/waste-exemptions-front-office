@@ -3,6 +3,7 @@ PATH
   specs:
     waste_exemptions_engine (0.0.1)
       aasm (~> 4.12)
+      has_secure_token
       high_voltage (~> 3.1)
       pg (~> 0.18.4)
       phonelib
@@ -100,6 +101,8 @@ GEM
       sass (>= 3.2.0)
     govuk_template (0.25.0)
       rails (>= 3.1)
+    has_secure_token (1.0.0)
+      activerecord (>= 3.0)
     high_voltage (3.1.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
