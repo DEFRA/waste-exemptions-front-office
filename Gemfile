@@ -42,6 +42,15 @@ gem "waste_exemptions_engine",
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 0.4.0", group: :doc
 
+group :development, :production do
+  # Web application server that replaces webrick. It handles HTTP requests,
+  # manages processes and resources, and enables administration, monitoring
+  # and problem diagnosis. It is used in production because it gives us an ability
+  # to scale by creating additional processes, and will automatically restart any
+  # that fail. We don't use it when running tests for speed's sake.
+  gem "passenger", "~> 5.0", ">= 5.0.30", require: "phusion_passenger/rack_handler"
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug"
