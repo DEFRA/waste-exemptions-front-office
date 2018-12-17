@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181214164534) do
+ActiveRecord::Schema.define(version: 20181217183917) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20181214164534) do
     t.string   "business_type"
     t.string   "token"
     t.string   "operator_name"
+    t.string   "company_no"
   end
 
   add_index "enrollments", ["token"], name: "index_enrollments_on_token", unique: true, using: :btree
