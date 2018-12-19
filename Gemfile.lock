@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: c805f456bf2ae487d189f90a02351a9b3fcd0d58
+  revision: 9b352ed9d06b7f20da3b76ef5f87022cf7c0228f
   branch: master
   specs:
     waste_exemptions_engine (0.0.1)
@@ -11,6 +11,7 @@ GIT
       phonelib
       rails (= 4.2.11)
       rest-client (~> 2.0)
+      uk_postcode
       validates_email_format_of
 
 GEM
@@ -254,6 +255,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
+    uk_postcode (2.1.3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)

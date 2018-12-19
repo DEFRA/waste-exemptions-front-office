@@ -31,6 +31,9 @@ module WasteExemptionsFrontOffice
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
+    # Addressbase facade config
+    config.addressbase_url = ENV["ADDRESSBASE_URL"] || "http://localhost:9002"
+
     # Companies House config
     config.companies_house_host = ENV["COMPANIES_HOUSE_URL"] || "https://api.companieshouse.gov.uk/company/"
     config.companies_house_api_key = ENV["COMPANIES_HOUSE_API_KEY"]

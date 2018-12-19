@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181218001332) do
+ActiveRecord::Schema.define(version: 20181218182531) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,4 +41,15 @@ ActiveRecord::Schema.define(version: 20181218001332) do
 
   add_index "enrollments", ["token"], name: "index_enrollments_on_token", unique: true, using: :btree
 
+  create_table "interims", force: :cascade do |t|
+    t.string   "operator_postcode"
+    t.boolean  "address_finder_error", default: false
+    t.integer  "enrollment_id"
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+  end
+
+  add_index "interims", ["enrollment_id"], name: "index_interims_on_enrollment_id", using: :btree
+
+  add_foreign_key "interims", "enrollments"
 end
