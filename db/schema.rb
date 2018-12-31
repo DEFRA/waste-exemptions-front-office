@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181227104112) do
+ActiveRecord::Schema.define(version: 20181231102738) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,9 +37,21 @@ ActiveRecord::Schema.define(version: 20181227104112) do
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
     t.integer  "mode",                default: 0
+    t.string   "grid_reference"
+    t.text     "description"
   end
 
   add_index "addresses", ["enrollment_id"], name: "index_addresses_on_enrollment_id", using: :btree
+
+  create_table "enrollment_exemptions", force: :cascade do |t|
+    t.integer  "enrollment_id"
+    t.integer  "exemption_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "enrollment_exemptions", ["enrollment_id"], name: "index_enrollment_exemptions_on_enrollment_id", using: :btree
+  add_index "enrollment_exemptions", ["exemption_id"], name: "index_enrollment_exemptions_on_exemption_id", using: :btree
 
   create_table "enrollments", force: :cascade do |t|
     t.string   "workflow_state"
@@ -66,6 +78,15 @@ ActiveRecord::Schema.define(version: 20181227104112) do
 
   add_index "enrollments", ["token"], name: "index_enrollments_on_token", unique: true, using: :btree
 
+  create_table "exemptions", force: :cascade do |t|
+    t.integer "category"
+    t.string  "code"
+    t.string  "url"
+    t.string  "summary"
+    t.text    "description"
+    t.text    "guidance"
+  end
+
   create_table "interims", force: :cascade do |t|
     t.string   "operator_postcode"
     t.boolean  "address_finder_error", default: false
@@ -73,6 +94,8 @@ ActiveRecord::Schema.define(version: 20181227104112) do
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
     t.string   "contact_postcode"
+    t.string   "grid_reference"
+    t.text     "site_description"
   end
 
   add_index "interims", ["enrollment_id"], name: "index_interims_on_enrollment_id", using: :btree
