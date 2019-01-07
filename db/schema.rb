@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190104154234) do
+ActiveRecord::Schema.define(version: 20181231102738) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "addresses", force: :cascade do |t|
     t.integer  "address_type",        default: 0
+    t.integer  "mode",                default: 0
     t.string   "uprn"
     t.string   "organisation"
     t.string   "premises"
@@ -33,55 +34,14 @@ ActiveRecord::Schema.define(version: 20190104154234) do
     t.string   "logical_status_code"
     t.string   "source_data_type"
     t.string   "country_iso"
-    t.integer  "enrollment_id"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
-    t.integer  "mode",                default: 0
     t.string   "grid_reference"
     t.text     "description"
+    t.integer  "registration_id"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
   end
 
-  add_index "addresses", ["enrollment_id"], name: "index_addresses_on_enrollment_id", using: :btree
-
-  create_table "enrollment_exemptions", force: :cascade do |t|
-    t.integer  "enrollment_id"
-    t.integer  "exemption_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.date     "registered_on"
-    t.date     "expires_on"
-    t.string   "state"
-  end
-
-  add_index "enrollment_exemptions", ["enrollment_id"], name: "index_enrollment_exemptions_on_enrollment_id", using: :btree
-  add_index "enrollment_exemptions", ["exemption_id"], name: "index_enrollment_exemptions_on_exemption_id", using: :btree
-
-  create_table "enrollments", force: :cascade do |t|
-    t.string   "workflow_state"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
-    t.string   "start_option"
-    t.string   "location"
-    t.string   "applicant_first_name"
-    t.string   "applicant_last_name"
-    t.string   "applicant_phone"
-    t.string   "applicant_email"
-    t.string   "business_type"
-    t.string   "token"
-    t.string   "operator_name"
-    t.string   "company_no"
-    t.string   "contact_first_name"
-    t.string   "contact_last_name"
-    t.string   "contact_position"
-    t.string   "contact_phone"
-    t.string   "contact_email"
-    t.boolean  "is_a_farm"
-    t.boolean  "on_a_farm"
-    t.boolean  "declaration"
-    t.string   "reference"
-  end
-
-  add_index "enrollments", ["token"], name: "index_enrollments_on_token", unique: true, using: :btree
+  add_index "addresses", ["registration_id"], name: "index_addresses_on_registration_id", using: :btree
 
   create_table "exemptions", force: :cascade do |t|
     t.integer "category"
@@ -94,18 +54,59 @@ ActiveRecord::Schema.define(version: 20190104154234) do
 
   create_table "interims", force: :cascade do |t|
     t.string   "operator_postcode"
-    t.boolean  "address_finder_error", default: false
-    t.integer  "enrollment_id"
-    t.datetime "created_at",                           null: false
-    t.datetime "updated_at",                           null: false
     t.string   "contact_postcode"
+    t.string   "site_postcode"
     t.string   "grid_reference"
     t.text     "site_description"
-    t.string   "site_postcode"
+    t.boolean  "address_finder_error", default: false
+    t.integer  "registration_id"
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
   end
 
-  add_index "interims", ["enrollment_id"], name: "index_interims_on_enrollment_id", using: :btree
+  add_index "interims", ["registration_id"], name: "index_interims_on_registration_id", using: :btree
 
-  add_foreign_key "addresses", "enrollments"
-  add_foreign_key "interims", "enrollments"
+  create_table "registration_exemptions", force: :cascade do |t|
+    t.string   "state"
+    t.date     "registered_on"
+    t.date     "expires_on"
+    t.integer  "registration_id"
+    t.integer  "exemption_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "registration_exemptions", ["exemption_id"], name: "index_registration_exemptions_on_exemption_id", using: :btree
+  add_index "registration_exemptions", ["registration_id"], name: "index_registration_exemptions_on_registration_id", using: :btree
+
+  create_table "registrations", force: :cascade do |t|
+    t.string   "token"
+    t.string   "reference"
+    t.string   "workflow_state"
+    t.string   "start_option"
+    t.string   "location"
+    t.string   "applicant_first_name"
+    t.string   "applicant_last_name"
+    t.string   "applicant_phone"
+    t.string   "applicant_email"
+    t.string   "business_type"
+    t.string   "operator_name"
+    t.string   "company_no"
+    t.string   "contact_first_name"
+    t.string   "contact_last_name"
+    t.string   "contact_position"
+    t.string   "contact_phone"
+    t.string   "contact_email"
+    t.boolean  "is_a_farm"
+    t.boolean  "on_a_farm"
+    t.boolean  "declaration"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  add_index "registrations", ["reference"], name: "index_registrations_on_reference", unique: true, using: :btree
+  add_index "registrations", ["token"], name: "index_registrations_on_token", unique: true, using: :btree
+
+  add_foreign_key "addresses", "registrations"
+  add_foreign_key "interims", "registrations"
 end
