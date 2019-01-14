@@ -41,7 +41,7 @@ gem "waste_exemptions_engine",
     branch: "master"
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", "~> 0.4.0", group: :doc
+gem "sdoc", "~> 1.0.0", group: :doc
 
 group :development, :production do
   # Web application server that replaces webrick. It handles HTTP requests,
