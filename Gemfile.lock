@@ -56,9 +56,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    airbrake (5.8.1)
-      airbrake-ruby (~> 1.8)
-    airbrake-ruby (1.8.0)
+    airbrake (7.4.0)
+      airbrake-ruby (~> 2.12)
+    airbrake-ruby (2.12.0)
     arel (6.0.4)
     ast (2.4.0)
     builder (3.2.3)
@@ -271,7 +271,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake (= 5.8.1)
+  airbrake (= 7.4.0)
   byebug
   database_cleaner
   defra_ruby_style
