@@ -145,7 +145,7 @@ GEM
     parallel (1.12.1)
     parser (2.5.3.0)
       ast (~> 2.4.0)
-    passenger (5.3.7)
+    passenger (6.0.1)
       rack
       rake (>= 0.8.1)
     pg (0.18.4)
@@ -284,7 +284,7 @@ DEPENDENCIES
   govuk_elements_rails (~> 3.1)
   govuk_template (~> 0.23)
   jquery-rails
-  passenger (~> 5.0, >= 5.0.30)
+  passenger (~> 6.0)
   pg (~> 0.18.4)
   rails (= 4.2.11)
   rspec-rails (~> 3.8)
