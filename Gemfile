@@ -29,7 +29,7 @@ gem "rails", "4.2.11"
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 5.0"
 # Automatically apply http headers that are related to security
-gem "secure_headers", "~> 6.0"
+gem "secure_headers", "~> 5.0"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
@@ -41,7 +41,7 @@ gem "waste_exemptions_engine",
     branch: "master"
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", "~> 1.0.0", group: :doc
+gem "sdoc", "~> 0.4.0", group: :doc
 
 group :development, :production do
   # Web application server that replaces webrick. It handles HTTP requests,
@@ -49,7 +49,7 @@ group :development, :production do
   # and problem diagnosis. It is used in production because it gives us an ability
   # to scale by creating additional processes, and will automatically restart any
   # that fail. We don't use it when running tests for speed's sake.
-  gem "passenger", "~> 6.0", require: "phusion_passenger/rack_handler"
+  gem "passenger", "~> 5.0", ">= 5.0.30", require: "phusion_passenger/rack_handler"
 end
 
 group :development, :test do
@@ -68,7 +68,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem "web-console", "~> 3.3"
+  gem "web-console", "~> 2.0"
 end
 
 group :test do
