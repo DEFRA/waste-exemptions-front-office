@@ -42,7 +42,17 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  #
+  # Note that this is required for us to generate secure cookies. If the cookies are not secure
+  # then they can be transported over a non-SSL connection as clear text, making them vulnerable.
+  # However in production, a prequisite of this working is that Rails *knows* that the originating
+  # request was over HTTPS. This is not as obvious as it should be because internal traffic from
+  # the load balancer is always HTTP (the incoming SSL connection being terminated at the ELB).
+  # To tell Rails about the original protocol, the X-Forwarded-Proto header must be set by nginx
+  # or the ELB. If X-Forwarded-Proto=https then Rails is happy and will serve secure connections.
+  # Without that header, an infinte loop will result if config.force_ssl=true, as Rails will always
+  # think the protocol is http and will try and redirect every request to an https equivalent.
+  config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -76,4 +86,21 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Sending e-mails is required for user management and registration e-mails
+  config.action_mailer.default_url_options = { host: config.front_office_url, protocol: "http" }
+
+  # Don't care if the mailer can't send (if set to false)
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+    user_name: ENV["EMAIL_USERNAME"],
+    password: ENV["EMAIL_PASSWORD"],
+    domain: config.front_office_url,
+    address: ENV["EMAIL_HOST"],
+    port: ENV["EMAIL_PORT"],
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
 end
