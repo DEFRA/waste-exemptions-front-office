@@ -45,9 +45,19 @@ module WasteExemptionsFrontOffice
     config.companies_house_host = ENV["COMPANIES_HOUSE_URL"] || "https://api.companieshouse.gov.uk/company/"
     config.companies_house_api_key = ENV["COMPANIES_HOUSE_API_KEY"]
 
+    # Paths
+    config.front_office_url = ENV["FRONT_OFFICE_URL"] || "http://localhost:3001"
+    config.back_office_url = ENV["BACK_OFFICE_URL"] || "http://localhost:8001"
+
+    # Times
     config.years_before_expiry = ENV["YEARS_BEFORE_EXPIRY"] || 3
 
+    # Emails
+    config.email_service_email = ENV["EMAIL_SERVICE_EMAIL"]
+    config.email_test_address = ENV["EMAIL_TEST_ADDRESS"]
+
     # Version info
+    config.service_name = "Waste Exemptions Service"
     config.application_name = "waste-exemptions-front-office"
     config.git_repository_url = "https://github.com/DEFRA/#{config.application_name}"
   end
