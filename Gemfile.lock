@@ -1,10 +1,11 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: aba62d9300826efe77032b6f86f0c1b02561a83e
+  revision: 232fb67a7a7a0c77d0071771c7e1d650a8e8afec
   branch: master
   specs:
     waste_exemptions_engine (0.0.1)
       aasm (~> 4.12)
+      defra_ruby_validators
       has_secure_token
       high_voltage (~> 3.1)
       os_map_ref (~> 0.5)
@@ -72,6 +73,9 @@ GEM
     debug_inspector (0.0.3)
     defra_ruby_style (0.0.2)
       rubocop
+    defra_ruby_validators (0.1.1)
+      activemodel
+      rest-client (~> 2.0)
     diff-lcs (1.3)
     docile (1.3.1)
     domain_name (0.5.20180417)
