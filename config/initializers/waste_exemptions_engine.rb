@@ -12,6 +12,7 @@ WasteExemptionsEngine.configure do |configuration|
   # Addressbase facade config
   configuration.addressbase_url = ENV["ADDRESSBASE_URL"] || "http://localhost:9002"
   # Email config
+  configuration.service_name = ENV["EMAIL_SERVICE_NAME"] || "Waste Exemptions Service"
   configuration.email_service_email = ENV["EMAIL_SERVICE_EMAIL"] || "wex-local@example.com"
 
   # PDF config
