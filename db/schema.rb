@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190522085202) do
+ActiveRecord::Schema.define(version: 20190626142528) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,15 +39,10 @@ ActiveRecord::Schema.define(version: 20190522085202) do
     t.integer  "registration_id"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
+    t.string   "area"
   end
 
   add_index "addresses", ["registration_id"], name: "index_addresses_on_registration_id", using: :btree
-
-  create_table "defra_ruby_exporters_bulk_export_files", force: :cascade do |t|
-    t.string   "file_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "exemptions", force: :cascade do |t|
     t.integer "category"
@@ -109,6 +104,14 @@ ActiveRecord::Schema.define(version: 20190522085202) do
 
   add_index "registrations", ["reference"], name: "index_registrations_on_reference", unique: true, using: :btree
 
+  create_table "reports_generated_reports", force: :cascade do |t|
+    t.string   "file_name"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.date     "data_from_date"
+    t.date     "data_to_date"
+  end
+
   create_table "transient_addresses", force: :cascade do |t|
     t.integer  "address_type",              default: 0
     t.integer  "mode",                      default: 0
@@ -132,6 +135,7 @@ ActiveRecord::Schema.define(version: 20190522085202) do
     t.integer  "transient_registration_id"
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
+    t.string   "area"
   end
 
   add_index "transient_addresses", ["transient_registration_id"], name: "index_transient_addresses_on_transient_registration_id", using: :btree
@@ -189,7 +193,7 @@ ActiveRecord::Schema.define(version: 20190522085202) do
     t.boolean  "address_finder_error",   default: false
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
-    t.string   "type"
+    t.string   "type",                                   null: false
   end
 
   add_index "transient_registrations", ["reference"], name: "index_transient_registrations_on_reference", unique: true, using: :btree
@@ -222,6 +226,17 @@ ActiveRecord::Schema.define(version: 20190522085202) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
 
+  create_table "version_archives", force: :cascade do |t|
+    t.string   "item_type",  null: false
+    t.integer  "item_id",    null: false
+    t.string   "event",      null: false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "version_archives", ["item_type", "item_id"], name: "index_version_archives_on_item_type_and_item_id", using: :btree
+
   create_table "versions", force: :cascade do |t|
     t.string   "item_type",  null: false
     t.integer  "item_id",    null: false
@@ -229,6 +244,7 @@ ActiveRecord::Schema.define(version: 20190522085202) do
     t.string   "whodunnit"
     t.text     "object"
     t.datetime "created_at"
+    t.json     "json"
   end
 
   add_index "versions", ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id", using: :btree
