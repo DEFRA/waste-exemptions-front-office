@@ -304,7 +304,7 @@ DEPENDENCIES
   factory_bot_rails
   github_changelog_generator
   govuk_elements_rails (~> 3.1)
-  govuk_template (~> 0.23)
+  govuk_template (~> 0.26)
   jquery-rails
   passenger (~> 5.0, >= 5.0.30)
   pg (~> 0.18.4)
