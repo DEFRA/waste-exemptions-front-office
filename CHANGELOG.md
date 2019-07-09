@@ -1,8 +1,9 @@
 # Change Log
 
-## [v1.0.0](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.0.0) (2019-07-03)
+## [v1.0.0](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.0.0) (2019-07-09)
 **Implemented enhancements:**
 
+- Include polyfill for old browsers support [\#147](https://github.com/DEFRA/waste-exemptions-front-office/pull/147) ([cintamani](https://github.com/cintamani))
 - Update to support last email cache feature [\#77](https://github.com/DEFRA/waste-exemptions-front-office/pull/77) ([Cruikshanks](https://github.com/Cruikshanks))
 - Add assistance\_mode to registration [\#65](https://github.com/DEFRA/waste-exemptions-front-office/pull/65) ([irisfaraway](https://github.com/irisfaraway))
 - Update the privacy policy content [\#36](https://github.com/DEFRA/waste-exemptions-front-office/pull/36) ([eminnett](https://github.com/eminnett))
@@ -23,6 +24,12 @@
 
 **Merged pull requests:**
 
+- Update date on privacy policy [\#150](https://github.com/DEFRA/waste-exemptions-front-office/pull/150) ([Cruikshanks](https://github.com/Cruikshanks))
+- Bump waste\_exemptions\_engine from `7249eff` to `7ee85c2` [\#149](https://github.com/DEFRA/waste-exemptions-front-office/pull/149) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `165b121` to `7249eff` [\#148](https://github.com/DEFRA/waste-exemptions-front-office/pull/148) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `78aca60` to `165b121` [\#146](https://github.com/DEFRA/waste-exemptions-front-office/pull/146) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `78aca60` to `599b71a` [\#145](https://github.com/DEFRA/waste-exemptions-front-office/pull/145) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `472036c` to `78aca60` [\#144](https://github.com/DEFRA/waste-exemptions-front-office/pull/144) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump simplecov from 0.16.1 to 0.17.0 [\#143](https://github.com/DEFRA/waste-exemptions-front-office/pull/143) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Update schema.rb [\#142](https://github.com/DEFRA/waste-exemptions-front-office/pull/142) ([Cruikshanks](https://github.com/Cruikshanks))
 - Bump waste\_exemptions\_engine from `cb44d5e` to `472036c` [\#141](https://github.com/DEFRA/waste-exemptions-front-office/pull/141) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
