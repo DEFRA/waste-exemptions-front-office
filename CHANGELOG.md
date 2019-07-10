@@ -1,6 +1,6 @@
 # Change Log
 
-## [v1.0.0](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.0.0) (2019-07-09)
+## [v1.0.0](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.0.0) (2019-07-10)
 **Implemented enhancements:**
 
 - Include polyfill for old browsers support [\#147](https://github.com/DEFRA/waste-exemptions-front-office/pull/147) ([cintamani](https://github.com/cintamani))
@@ -24,6 +24,10 @@
 
 **Merged pull requests:**
 
+- Bump waste\_exemptions\_engine from `7a60ed5` to `7bdc763` [\#154](https://github.com/DEFRA/waste-exemptions-front-office/pull/154) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `9c8a81e` to `7a60ed5` [\#153](https://github.com/DEFRA/waste-exemptions-front-office/pull/153) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `dd899ab` to `9c8a81e` [\#152](https://github.com/DEFRA/waste-exemptions-front-office/pull/152) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `7ee85c2` to `dd899ab` [\#151](https://github.com/DEFRA/waste-exemptions-front-office/pull/151) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Update date on privacy policy [\#150](https://github.com/DEFRA/waste-exemptions-front-office/pull/150) ([Cruikshanks](https://github.com/Cruikshanks))
 - Bump waste\_exemptions\_engine from `7249eff` to `7ee85c2` [\#149](https://github.com/DEFRA/waste-exemptions-front-office/pull/149) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `165b121` to `7249eff` [\#148](https://github.com/DEFRA/waste-exemptions-front-office/pull/148) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
