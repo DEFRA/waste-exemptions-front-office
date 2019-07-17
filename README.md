@@ -12,7 +12,7 @@ The waste exemptions service is used by organisations to apply for an exemption.
 
 This service is currently beta public and has been developed in accordance with the [Digital by Default service standard](https://www.gov.uk/service-manual/digital-by-default), putting user needs first and delivered iteratively.
 
-This project is the front office application which members of the public use to register an exemption. It uses the [waste-exemptions-engine](https://github.com/DEFRA/waste-exemptions-engijne).
+This project is the front office application which members of the public use to register an exemption. It uses the [waste-exemptions-engine](https://github.com/DEFRA/waste-exemptions-engine).
 
 ## Prequisites
 

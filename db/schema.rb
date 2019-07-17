@@ -193,7 +193,7 @@ ActiveRecord::Schema.define(version: 20190626142528) do
     t.boolean  "address_finder_error",   default: false
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
-    t.string   "type",                                   null: false
+    t.string   "type"
   end
 
   add_index "transient_registrations", ["reference"], name: "index_transient_registrations_on_reference", unique: true, using: :btree
