@@ -1,3 +1,6 @@
+addons:
+  postgresql: 9.6
+
 env:
   global:
     - CC_TEST_REPORTER_ID=cc5df0d2b363a3657844597704e662adb6ee6cb578dde541af7fe742863cc543
