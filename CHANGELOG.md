@@ -1,5 +1,17 @@
 # Change Log
 
+## [v1.0.1](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.0.1) (2019-07-26)
+[Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.0.0...v1.0.1)
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `d1b939d` to `4ed93c0` [\#160](https://github.com/DEFRA/waste-exemptions-front-office/pull/160) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Specify database in Travis config [\#159](https://github.com/DEFRA/waste-exemptions-front-office/pull/159) ([irisfaraway](https://github.com/irisfaraway))
+- Bump waste\_exemptions\_engine from `b2b3d37` to `d1b939d` [\#158](https://github.com/DEFRA/waste-exemptions-front-office/pull/158) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Fix link to waste exemptions engine in readme [\#157](https://github.com/DEFRA/waste-exemptions-front-office/pull/157) ([andrewhick](https://github.com/andrewhick))
+- Bump waste\_exemptions\_engine from `bb44a8d` to `b2b3d37` [\#156](https://github.com/DEFRA/waste-exemptions-front-office/pull/156) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `7bdc763` to `bb44a8d` [\#155](https://github.com/DEFRA/waste-exemptions-front-office/pull/155) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
 ## [v1.0.0](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.0.0) (2019-07-10)
 **Implemented enhancements:**
 
