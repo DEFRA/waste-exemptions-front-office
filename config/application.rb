@@ -49,5 +49,8 @@ module WasteExemptionsFrontOffice
 
     # Change authomatic expire of renew's magic link token
     config.renew_token_expires_in_days = ENV["RENEW_TOKEN_EXPIRES_IN_DAYS"] || 60
+
+    config.registration_renewal_grace_window = ENV["REGISTRATION_RENEWAL_GRACE_WINDOW"] || 30
+    config.first_renewal_email_reminder_days = ENV["FIRST_RENEWAL_EMAIL_REMINDER_DAYS"]
   end
 end
