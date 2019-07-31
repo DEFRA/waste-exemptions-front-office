@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 7b12d30b0d42082cc0b0e2ccbd074acb35fbc2e5
-  branch: 514-magic-link-renewal
+  revision: ad29a5bbf95ae6b2203f010196a1688df5a2c672
+  branch: master
   specs:
     waste_exemptions_engine (0.0.1)
       aasm (~> 4.12)
