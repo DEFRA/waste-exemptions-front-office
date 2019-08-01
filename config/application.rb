@@ -46,5 +46,10 @@ module WasteExemptionsFrontOffice
 
     # Emails
     config.email_test_address = ENV["EMAIL_TEST_ADDRESS"]
+
+    # Grace window value in days from when a registration expires. During the
+    # grace window users will still be permitted to renew their registration.
+    config.registration_renewal_grace_window = ENV["REGISTRATION_RENEWAL_GRACE_WINDOW"] || 30
+    config.first_renewal_email_reminder_days = ENV["FIRST_RENEWAL_EMAIL_REMINDER_DAYS"]
   end
 end
