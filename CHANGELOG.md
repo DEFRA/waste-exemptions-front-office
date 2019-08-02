@@ -1,5 +1,33 @@
 # Change Log
 
+## [Unreleased](https://github.com/DEFRA/waste-exemptions-front-office/tree/HEAD)
+
+[Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.1.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `edfd070` to `c7a6eeb` [\#176](https://github.com/DEFRA/waste-exemptions-front-office/pull/176) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `2fe17a0` to `edfd070` [\#175](https://github.com/DEFRA/waste-exemptions-front-office/pull/175) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `3aaf2ca` to `2fe17a0` [\#174](https://github.com/DEFRA/waste-exemptions-front-office/pull/174) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `8b70bb3` to `3aaf2ca` [\#173](https://github.com/DEFRA/waste-exemptions-front-office/pull/173) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [v1.1.0](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.1.0) (2019-08-01)
+[Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.0.1...v1.1.0)
+
+**Implemented enhancements:**
+
+- Update schema - Drop reference index on transient registrations [\#171](https://github.com/DEFRA/waste-exemptions-front-office/pull/171) ([cintamani](https://github.com/cintamani))
+- Add schema changes [\#168](https://github.com/DEFRA/waste-exemptions-front-office/pull/168) ([cintamani](https://github.com/cintamani))
+- Add configs for generating and decoding a renew JWT token [\#162](https://github.com/DEFRA/waste-exemptions-front-office/pull/162) ([cintamani](https://github.com/cintamani))
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `fa118f0` to `8b70bb3` [\#172](https://github.com/DEFRA/waste-exemptions-front-office/pull/172) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `ad29a5b` to `fa118f0` [\#170](https://github.com/DEFRA/waste-exemptions-front-office/pull/170) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump dotenv-rails from 2.7.4 to 2.7.5 [\#166](https://github.com/DEFRA/waste-exemptions-front-office/pull/166) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `754e010` to `703f84c` [\#164](https://github.com/DEFRA/waste-exemptions-front-office/pull/164) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `4ed93c0` to `754e010` [\#161](https://github.com/DEFRA/waste-exemptions-front-office/pull/161) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
 ## [v1.0.1](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.0.1) (2019-07-26)
 [Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.0.0...v1.0.1)
 
