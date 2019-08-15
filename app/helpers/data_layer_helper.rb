@@ -20,6 +20,12 @@ module DataLayerHelper
   end
 
   def data_layer_value_for_journey(transient_registration)
+    return :reregister if reregister?(transient_registration)
+
+    data_layer_value_by_type(transient_registration)
+  end
+
+  def data_layer_value_by_type(transient_registration)
     case transient_registration.class.name
     when "WasteExemptionsEngine::EditRegistration"
       :edit
@@ -28,5 +34,9 @@ module DataLayerHelper
     when "WasteExemptionsEngine::RenewingRegistration"
       :renew
     end
+  end
+
+  def reregister?(transient_registration)
+    transient_registration.start_option == "reregister"
   end
 end
