@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/DEFRA/waste-exemptions-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.1.0...HEAD)
+[Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.1.1...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `7e177e9` to `1d88d40` [\#206](https://github.com/DEFRA/waste-exemptions-front-office/pull/206) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `241bfc6` to `7e177e9` [\#205](https://github.com/DEFRA/waste-exemptions-front-office/pull/205) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [v1.1.1](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.1.1) (2019-08-20)
+[Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.1.0...v1.1.1)
 
 **Merged pull requests:**
 
