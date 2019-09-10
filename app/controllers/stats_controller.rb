@@ -2,7 +2,9 @@
 
 class StatsController < ActionController::Base
 
-  def index
+  protect_from_forgery
+
+  def index    
     render json: {
       new_reg: 25,
       assisted_pc: 35.4,
