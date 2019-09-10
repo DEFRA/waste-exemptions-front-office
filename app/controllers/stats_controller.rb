@@ -4,7 +4,7 @@ class StatsController < ActionController::Base
 
   protect_from_forgery with: :exception
 
-  def index    
+  def index
     render json: {
       new_reg: 25,
       assisted_pc: 35.4,
