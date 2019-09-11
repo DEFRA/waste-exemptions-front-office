@@ -12,7 +12,7 @@ class Stats
   private
 
   def calculate_new_reg
-    25
+    WasteExemptionsEngine::Registration.where("submitted_at BETWEEN ? AND ? AND referring_registration_id IS NULL", (Date.today - 6).to_s, (Date.today - 1).to_s).count
   end
 
   def calculate_assisted_pc
