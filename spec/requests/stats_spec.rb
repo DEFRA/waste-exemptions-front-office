@@ -10,5 +10,10 @@ RSpec.describe "Stats API", type: :request do
       get request_path
       expect(response).to have_http_status(200)
     end
+
+    it "is JSON" do
+      get request_path
+      expect { JSON.parse(response.body) }.to_not raise_exception
+    end
   end
 end

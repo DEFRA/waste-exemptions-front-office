@@ -2,25 +2,24 @@
 
 require "rails_helper"
 
-RSpec.describe Stats do
+RSpec.describe Stats, type: :model do
+  subject { described_class.new }
+
   describe "#new_reg" do
-    it "returns the correct value for new_reg" do
-      stats = Stats.new
-      expect(stats.new_reg).to eq(25)
+    it "returns the correct value" do
+      expect(subject.new_reg).to eq(25)
     end
   end
 
   describe "#assisted_pc" do
-    it "returns the correct value for assisted_pc" do
-      stats = Stats.new
-      expect(stats.assisted_pc).to eq(35.4)
+    it "returns the correct value" do
+      expect(subject.assisted_pc).to eq(35.4)
     end
   end
 
   describe "#email_renewals" do
-    it "returns the correct value for email_renewals" do
-      stats = Stats.new
-      expect(stats.email_renewals).to eq(17)
+    it "returns the correct value" do
+      expect(subject.email_renewals).to eq(17)
     end
   end
 end

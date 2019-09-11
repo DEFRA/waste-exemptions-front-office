@@ -18,5 +18,4 @@ class StatsController < ApplicationController
       email_renewals: stats.email_renewals
     }
   end
-
 end
