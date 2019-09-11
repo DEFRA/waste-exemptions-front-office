@@ -9,8 +9,6 @@ class StatsController < ActionController::Base
 
   # email_renewals = The total number of renewals by email in the past week.
 
-  protect_from_forgery with: :exception
-
   def index
     stats = Stats.new
 

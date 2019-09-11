@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   root "waste_exemptions_engine/start_forms#new"
 
-  resources :stats
+  get "/stats", to: "stats#index", as: :stats
 end
