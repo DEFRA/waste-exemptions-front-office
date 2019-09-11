@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class StatsController < ActionController::Base
+class StatsController < ApplicationController
 
   # new_reg = The total number of new registrations (not including email renewals) in the past week.
 
