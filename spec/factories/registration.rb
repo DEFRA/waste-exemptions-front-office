@@ -14,6 +14,10 @@ FactoryBot.define do
 
     registration_exemptions { build_list(:registration_exemption, 3) }
 
+    trait :was_renewed do
+      referring_registration_id { true }
+    end
+
     sequence :applicant_email do |n|
       "applicant#{n}@example.com"
     end
