@@ -21,7 +21,7 @@ class Stats
   end
 
   def calculate_assisted_pc
-    ((count_assisted_reg.to_f / count_new_reg.to_f) * 100).round(1)
+    ((count_assisted_reg.to_f / count_reg_from_last_week.to_f) * 100).round(1)
   end
 
   def calculate_email_renewals
@@ -29,7 +29,11 @@ class Stats
   end
 
   def count_assisted_reg
-    @_count_assisted_reg ||= reg_from_last_week.where.not(assistance_mode: nil).count
+    @_count_assisted_reg ||= reg_from_last_week.where(assistance_mode: 'full').count
+  end
+
+  def count_reg_from_last_week
+    @_count_reg_from_last_week ||= reg_from_last_week.count
   end
 
   def reg_from_last_week
