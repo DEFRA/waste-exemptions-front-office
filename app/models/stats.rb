@@ -4,25 +4,28 @@ class Stats
   attr_reader :new_reg, :assisted_pc, :email_renewals
 
   def initialize
-    @new_reg = calculate_new_reg
+    @reg_from_last_week = retrieve_reg_from_last_week
+    @new_reg = count_new_reg
     @assisted_pc = calculate_assisted_pc
     @email_renewals = calculate_email_renewals
   end
 
   private
 
-  def calculate_new_reg
-    retrieve_reg_from_last_week.where(referring_registration_id: nil).count
+  def count_new_reg
+    @reg_from_last_week.where(referring_registration_id: nil).count
   end
 
   def calculate_assisted_pc
-    assisted_reg = retrieve_reg_from_last_week.where.not(assistance_mode: nil).count
-
-    ((assisted_reg.to_f / calculate_new_reg.to_f) * 100).round(1)
+    ((count_assisted_reg.to_f / count_new_reg.to_f) * 100).round(1)
   end
 
   def calculate_email_renewals
     17
+  end
+
+  def count_assisted_reg
+    @reg_from_last_week.where.not(assistance_mode: nil).count
   end
 
   def retrieve_reg_from_last_week

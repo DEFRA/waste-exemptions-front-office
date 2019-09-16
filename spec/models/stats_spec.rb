@@ -31,7 +31,7 @@ RSpec.describe Stats, type: :model do
       expect(subject.assisted_pc).to eq(33.3)
     end
 
-    it "handles no assisted registrations correctly" do
+    it "returns 0 when no registrations are assisted" do
       (1..3).each do |n|
         create(:registration, submitted_at: n.days.ago.beginning_of_day)
       end
@@ -39,7 +39,7 @@ RSpec.describe Stats, type: :model do
       expect(subject.assisted_pc).to eq(0)
     end
 
-    it "handles all assisted registrations correctly" do
+    it "returns 100 when all registrations are assisted" do
       (1..3).each do |n|
         create(:registration, :was_assisted, submitted_at: n.days.ago.beginning_of_day)
       end
