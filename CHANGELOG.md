@@ -2,11 +2,31 @@
 
 ## [Unreleased](https://github.com/DEFRA/waste-exemptions-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.1.2...HEAD)
+[Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.1.3...HEAD)
 
 **Implemented enhancements:**
 
+- Calculate and display top stat 1 [\#228](https://github.com/DEFRA/waste-exemptions-front-office/pull/228) ([StuAA78](https://github.com/StuAA78))
+- Initial API with dummy stats [\#224](https://github.com/DEFRA/waste-exemptions-front-office/pull/224) ([StuAA78](https://github.com/StuAA78))
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `95782a6` to `2927abd` [\#229](https://github.com/DEFRA/waste-exemptions-front-office/pull/229) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `4952466` to `95782a6` [\#227](https://github.com/DEFRA/waste-exemptions-front-office/pull/227) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [v1.1.3](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.1.3) (2019-09-11)
+[Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.1.2...v1.1.3)
+
+**Implemented enhancements:**
+
+- Update schema following RUBY-580 [\#226](https://github.com/DEFRA/waste-exemptions-front-office/pull/226) ([cintamani](https://github.com/cintamani))
+- Remove GMT from accessibility statement [\#225](https://github.com/DEFRA/waste-exemptions-front-office/pull/225) ([cintamani](https://github.com/cintamani))
 - Implement Accessibility Statement page [\#221](https://github.com/DEFRA/waste-exemptions-front-office/pull/221) ([cintamani](https://github.com/cintamani))
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `b337756` to `4952466` [\#223](https://github.com/DEFRA/waste-exemptions-front-office/pull/223) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `0b5d7dc` to `b337756` [\#222](https://github.com/DEFRA/waste-exemptions-front-office/pull/222) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [v1.1.2](https://github.com/DEFRA/waste-exemptions-front-office/tree/v1.1.2) (2019-09-06)
 [Full Changelog](https://github.com/DEFRA/waste-exemptions-front-office/compare/v1.1.1...v1.1.2)
