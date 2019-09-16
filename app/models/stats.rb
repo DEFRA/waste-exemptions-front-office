@@ -29,7 +29,7 @@ class Stats
   end
 
   def count_assisted_reg
-    @_count_assisted_reg ||= reg_from_last_week.where(assistance_mode: 'full').count
+    @_count_assisted_reg ||= reg_from_last_week.where(assistance_mode: "full").count
   end
 
   def count_reg_from_last_week
