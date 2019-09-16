@@ -1,19 +1,23 @@
 # frozen_string_literal: true
 
 class Stats
-  attr_reader :new_reg, :assisted_pc, :email_renewals
 
-  def initialize
-    @reg_from_last_week = retrieve_reg_from_last_week
-    @new_reg = count_new_reg
-    @assisted_pc = calculate_assisted_pc
-    @email_renewals = calculate_email_renewals
+  def new_reg
+    @_new_reg ||= count_new_reg
+  end
+
+  def assisted_pc
+    @_assisted_pc ||= calculate_assisted_pc
+  end
+
+  def email_renewals
+    @_email_renewals ||= calculate_email_renewals
   end
 
   private
 
   def count_new_reg
-    @reg_from_last_week.where(referring_registration_id: nil).count
+    reg_from_last_week.where(referring_registration_id: nil).count
   end
 
   def calculate_assisted_pc
@@ -25,7 +29,11 @@ class Stats
   end
 
   def count_assisted_reg
-    @reg_from_last_week.where.not(assistance_mode: nil).count
+    @_count_assisted_reg ||= reg_from_last_week.where.not(assistance_mode: nil).count
+  end
+
+  def reg_from_last_week
+    @_reg_from_last_week ||= retrieve_reg_from_last_week
   end
 
   def retrieve_reg_from_last_week
@@ -34,4 +42,5 @@ class Stats
 
     WasteExemptionsEngine::Registration.where(submitted_at: from..to)
   end
+
 end
