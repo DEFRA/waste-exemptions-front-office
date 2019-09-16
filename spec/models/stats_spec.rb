@@ -28,7 +28,23 @@ RSpec.describe Stats, type: :model do
       create(:registration, submitted_at: 2.day.ago.beginning_of_day)
       create(:registration, :was_assisted, submitted_at: 3.day.ago.beginning_of_day)
 
-      expect(subject.assisted_pc).to eq(0.3)
+      expect(subject.assisted_pc).to eq(33.3)
+    end
+
+    it "handles no assisted registrations correctly" do
+      (1..3).each do |n|
+        create(:registration, submitted_at: n.days.ago.beginning_of_day)
+      end
+
+      expect(subject.assisted_pc).to eq(0)
+    end
+
+    it "handles all assisted registrations correctly" do
+      (1..3).each do |n|
+        create(:registration, :was_assisted, submitted_at: n.days.ago.beginning_of_day)
+      end
+
+      expect(subject.assisted_pc).to eq(100)
     end
   end
 
