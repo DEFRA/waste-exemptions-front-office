@@ -24,7 +24,11 @@ RSpec.describe Stats, type: :model do
 
   describe "#assisted_pc" do
     it "returns the correct value" do
-      expect(subject.assisted_pc).to eq(35.4)
+      create(:registration, submitted_at: 1.day.ago.beginning_of_day)
+      create(:registration, submitted_at: 2.day.ago.beginning_of_day)
+      create(:registration, :was_assisted, submitted_at: 3.day.ago.beginning_of_day)
+
+      expect(subject.assisted_pc).to eq(0.3)
     end
   end
 
