@@ -18,6 +18,10 @@ FactoryBot.define do
       referring_registration { build(:registration) }
     end
 
+    trait :was_assisted do
+      assistance_mode { "full" }
+    end
+
     sequence :applicant_email do |n|
       "applicant#{n}@example.com"
     end
