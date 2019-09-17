@@ -11,7 +11,7 @@ class Stats
   end
 
   def email_renewals
-    @_email_renewals ||= calculate_email_renewals
+    @_email_renewals ||= count_email_renewals
   end
 
   private
@@ -24,8 +24,8 @@ class Stats
     ((count_assisted_reg.to_f / count_reg_from_last_week.to_f) * 100).round(1)
   end
 
-  def calculate_email_renewals
-    17
+  def count_email_renewals
+    reg_from_last_week.where.not(referring_registration_id: nil).count
   end
 
   def count_assisted_reg

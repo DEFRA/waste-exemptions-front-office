@@ -49,8 +49,14 @@ RSpec.describe Stats, type: :model do
   end
 
   describe "#email_renewals" do
-    it "returns the correct value" do
-      expect(subject.email_renewals).to eq(17)
+    it "returns the correct number of renewals" do
+      create(:registration, submitted_at: 1.day.ago.beginning_of_day)
+
+      3.times do
+        create(:registration, :was_renewed, submitted_at: 1.day.ago.beginning_of_day)
+      end
+
+      expect(subject.email_renewals).to eq(3)
     end
   end
 end
