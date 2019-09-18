@@ -20,6 +20,10 @@ RSpec.describe Stats, type: :model do
 
       expect(subject.new_reg).to eq(1)
     end
+
+    it "returns 0 when there are no registrations" do
+      expect(subject.new_reg).to eq(0)
+    end
   end
 
   describe "#assisted_pc" do
@@ -46,6 +50,10 @@ RSpec.describe Stats, type: :model do
 
       expect(subject.assisted_pc).to eq(100)
     end
+
+    it "returns 0 when there are no registrations" do
+      expect(subject.assisted_pc).to eq(0)
+    end
   end
 
   describe "#email_renewals" do
@@ -57,6 +65,10 @@ RSpec.describe Stats, type: :model do
       end
 
       expect(subject.email_renewals).to eq(3)
+    end
+
+    it "returns 0 when there are no registrations" do
+      expect(subject.email_renewals).to eq(0)
     end
   end
 end
