@@ -4,7 +4,7 @@ require "rails_helper"
 
 RSpec.describe "Waste Exemptions Engine", type: :request do
   describe "/start/new" do
-    let(:request_path) { "/start/new" }
+    let(:request_path) { "/start" }
 
     it "returns a 200 response" do
       get request_path
