@@ -60,6 +60,10 @@ RSpec.describe Stats, type: :model do
     it "returns the correct number of renewals" do
       create(:registration, submitted_at: 1.day.ago.beginning_of_day)
 
+      2.times do
+        create(:registration, :was_assisted, :was_renewed, submitted_at: 1.day.ago.beginning_of_day)
+      end
+
       3.times do
         create(:registration, :was_renewed, submitted_at: 1.day.ago.beginning_of_day)
       end

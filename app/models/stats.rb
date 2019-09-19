@@ -27,7 +27,7 @@ class Stats
   end
 
   def count_email_renewals
-    reg_from_last_week.where.not(referring_registration_id: nil).count
+    reg_from_last_week.where(assistance_mode: nil).where.not(referring_registration_id: nil).count
   end
 
   def count_assisted_reg
