@@ -21,6 +21,8 @@ class Stats
   end
 
   def calculate_assisted_pc
+    return 0 if count_reg_from_last_week.zero?
+
     ((count_assisted_reg.to_f / count_reg_from_last_week.to_f) * 100).round(1)
   end
 
