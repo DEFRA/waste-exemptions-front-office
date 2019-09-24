@@ -6,6 +6,9 @@ module Stats
   RSpec.describe BaseStat, type: :model do
     subject { described_class.new(current_registrations, previous_registrations) }
 
+    # TODO: This test needs to be completed to ensure that the output is
+    # correctly tested.
+
     # context "#json" do
 
     #   let(:current_registrations) do
