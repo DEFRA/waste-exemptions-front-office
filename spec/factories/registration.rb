@@ -15,7 +15,8 @@ FactoryBot.define do
     registration_exemptions { build_list(:registration_exemption, 3) }
 
     trait :was_renewed do
-      referring_registration { build(:registration) }
+      # referring_registration_id { build(:registration) }
+      referring_registration_id { "123" }
     end
 
     trait :was_assisted do
