@@ -6,7 +6,7 @@ module Stats
       @json_name = "assisted_pc"
       super
     end
-    
+
     private
 
     def calculate_stat(registrations)

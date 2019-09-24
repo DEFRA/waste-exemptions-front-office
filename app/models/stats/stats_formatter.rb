@@ -28,7 +28,7 @@ module Stats
     def retrieve_reg(from:, to:)
       from_date = from.days.ago.beginning_of_day
       to_date = to.days.ago.beginning_of_day
-  
+
       WasteExemptionsEngine::Registration.where(submitted_at: from_date..to_date)
     end
   end

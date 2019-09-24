@@ -27,13 +27,13 @@ module Stats
       # Return an empty string if previous is zero to avoid a divide by zero error.
       # The empty string is for ease of handling in Google Data Studio.
       return "" if @previous.zero?
-  
+
       change = (@current - @previous) / @previous.to_f
       decimal_to_percentage(change)
     end
 
     def decimal_to_percentage(input_decimal)
       (input_decimal * 100).round(1)
-    end  
+    end
   end
 end

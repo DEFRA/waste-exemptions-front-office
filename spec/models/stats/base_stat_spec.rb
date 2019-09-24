@@ -7,7 +7,7 @@ module Stats
     subject { described_class.new(current_registrations, previous_registrations) }
 
     # context "#json" do
- 
+
     #   let(:current_registrations) do
     #     create(:registration, submitted_at: 1.day.ago.beginning_of_day)
     #     create(:registration, submitted_at: 2.day.ago.beginning_of_day)

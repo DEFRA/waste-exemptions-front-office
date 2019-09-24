@@ -10,7 +10,6 @@ class StatsController < ApplicationController
   # email_renewals = The total number of renewals by email in the past week.
 
   def index
-
     stats = Stats::StatsFormatter.new
 
     render json: stats.json

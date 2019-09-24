@@ -26,7 +26,7 @@ module Stats
       end
 
       context "where there are new registrations not assisted" do
-          
+
         let(:current_registrations) do
           (1..3).each do |n|
             create(:registration, submitted_at: n.days.ago.beginning_of_day)

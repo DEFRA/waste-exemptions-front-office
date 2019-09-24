@@ -15,7 +15,7 @@ module Stats
           email_renewals: 0,
           new_reg_change: "",
           assisted_pc_change: "",
-          email_renewals_change: ""   
+          email_renewals_change: ""
         }
       end
 
