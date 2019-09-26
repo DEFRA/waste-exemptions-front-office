@@ -41,8 +41,8 @@ module WasteExemptionsFrontOffice
     }
 
     # Paths
-    config.front_office_url = ENV["FRONT_OFFICE_URL"] || "http://localhost:3001"
-    config.back_office_url = ENV["BACK_OFFICE_URL"] || "http://localhost:8001"
+    config.front_office_url = ENV["FRONT_OFFICE_URL"] || "http://localhost:3000"
+    config.back_office_url = ENV["BACK_OFFICE_URL"] || "http://localhost:8000"
 
     # Emails
     config.email_test_address = ENV["EMAIL_TEST_ADDRESS"]
