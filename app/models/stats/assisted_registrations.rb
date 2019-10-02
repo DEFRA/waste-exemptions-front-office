@@ -12,7 +12,7 @@ module Stats
     def calculate_stat(registrations)
       return 0 if registrations.count.zero?
 
-      decimal_to_percentage((assisted_registrations(registrations).count.to_f / registrations.count.to_f))
+      decimal_to_percentage((assisted_registrations(registrations).count.to_f / registrations.count))
     end
 
     def assisted_registrations(registrations)
