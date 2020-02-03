@@ -309,7 +309,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake (= 5.8.1)
   database_cleaner
   defra_ruby_style
   dotenv-rails
