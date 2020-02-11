@@ -1,13 +1,14 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: b6d67c0c5086f86cca33499a3d979f76b760f461
-  branch: master
+  revision: 838dfb9017760a8763b5d5784a3d31992f4a196e
+  branch: implement-defra-ruby-email
   specs:
     waste_exemptions_engine (0.0.1)
       aasm (~> 4.12)
       defra_ruby_address
       defra_ruby_alert (~> 1.0.0)
       defra_ruby_area
+      defra_ruby_email
       defra_ruby_validators (~> 2.2.0)
       has_secure_token
       high_voltage (~> 3.1)
@@ -83,6 +84,8 @@ GEM
     defra_ruby_area (2.0.0)
       nokogiri (~> 1.10.4)
       rest-client (~> 2.0)
+    defra_ruby_email (0.1.0)
+      rails (~> 4.2.11.1)
     defra_ruby_style (0.1.4)
       rubocop (~> 0.79)
     defra_ruby_validators (2.2.0)
