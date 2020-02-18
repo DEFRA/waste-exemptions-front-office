@@ -6,6 +6,4 @@ Rails.application.routes.draw do
   root "waste_exemptions_engine/start_forms#new"
 
   get "/stats", to: "stats#index", as: :stats
-
-  mount DefraRubyEmail::Engine => "/email"
 end

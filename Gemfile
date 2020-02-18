@@ -36,14 +36,10 @@ gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
 
-# Used as part of testing. When enabled adds a /last-email route from which
-# details of the last email sent by the app can be accessed
-gem "defra_ruby_email"
-
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "master"
+    branch: "implement-defra-ruby-email"
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 0.4.0", group: :doc
