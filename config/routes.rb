@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
   get "/stats", to: "stats#index", as: :stats
 
-  mount DefraRubyEmail::Engine => "/last-email"
+  mount DefraRubyEmail::Engine => "/email"
 end
