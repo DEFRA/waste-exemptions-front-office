@@ -39,7 +39,7 @@ gem "uglifier", ">= 1.3.0"
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "implement-defra-ruby-email"
+    branch: "master"
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 0.4.0", group: :doc
