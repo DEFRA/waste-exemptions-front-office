@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 5920cc90312c5f5c6e4b5e8eacaafebbb66300bc
+  revision: 63ccd822804832f42f45bde45f26ec09028b0aa4
   branch: master
   specs:
     waste_exemptions_engine (0.0.1)
@@ -307,7 +307,7 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
-    wicked_pdf (1.4.0)
+    wicked_pdf (2.0.1)
       activesupport
 
 PLATFORMS
