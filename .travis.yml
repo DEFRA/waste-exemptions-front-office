@@ -15,11 +15,11 @@ language: ruby
 rvm: 2.4.2
 cache: bundler
 
-# Travis CI clones repositories to a depth of 50 commits, which is only really
-# useful if you are performing git operations.
-# https://docs.travis-ci.com/user/customizing-the-build/#Git-Clone-Depth
+# Travis CI uses shallow clone to speed up build times, but a truncated SCM
+# history may cause issues when SonarCloud computes blame data. To avoid this,
+# you can access the full SCM history with `depth: false`
 git:
-  depth: 3
+  depth: false
 
 before_install:
   - export TZ=UTC
