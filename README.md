@@ -1,8 +1,8 @@
 # Waste Exemptions Front Office
 
 [![Build Status](https://travis-ci.com/DEFRA/waste-exemptions-front-office.svg?branch=master)](https://travis-ci.com/DEFRA/waste-exemptions-front-office)
-[![Maintainability](https://api.codeclimate.com/v1/badges/cb98994c43b219d013e6/maintainability)](https://codeclimate.com/github/DEFRA/waste-exemptions-front-office/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/cb98994c43b219d013e6/test_coverage)](https://codeclimate.com/github/DEFRA/waste-exemptions-front-office/test_coverage)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_waste-exemptions-front-office&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=DEFRA_waste-exemptions-front-office)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_waste-exemptions-front-office&metric=coverage)](https://sonarcloud.io/dashboard?id=DEFRA_waste-exemptions-front-office)
 [![security](https://hakiri.io/github/DEFRA/waste-exemptions-front-office/master.svg)](https://hakiri.io/github/DEFRA/waste-exemptions-front-office/master)
 [![Licence](https://img.shields.io/badge/Licence-OGLv3-blue.svg)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3)
 
