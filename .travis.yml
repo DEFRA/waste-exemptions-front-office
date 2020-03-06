@@ -5,10 +5,6 @@ addons:
   sonarcloud:
     organization: "defra"
 
-env:
-  global:
-    - CC_TEST_REPORTER_ID=cc5df0d2b363a3657844597704e662adb6ee6cb578dde541af7fe742863cc543
-
 language: ruby
 rvm: 2.4.2
 cache: bundler
@@ -23,14 +19,6 @@ before_install:
   - export TZ=UTC
 
 before_script:
-  # Setup to support the CodeClimate test coverage submission
-  # As per CodeClimate's documentation, they suggest only running
-  # ./cc-test-reporter commands on travis-ci push builds only. Hence we wrap all
-  # the codeclimate test coverage related commands in a check that tests if we
-  # are in a pull request or not.
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter; fi
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then chmod +x ./cc-test-reporter; fi
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter before-build; fi
   # Replace database.yml with database.travis.yml (but leave filename as
   # database.yml). database.travis.yml is the config needed for Travis, and it
   # needs to be in place before we run the migrations.
@@ -41,6 +29,3 @@ script:
   - bundle exec rubocop --format=json --out=rubocop-result.json
   - bundle exec rspec
   - sonar-scanner
-
-after_script:
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
