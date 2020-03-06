@@ -44,4 +44,5 @@ before_script:
   - RAILS_ENV=test bundle exec rake db:create --trace
 
 after_script:
+  - sonar-scanner
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
