@@ -4,8 +4,6 @@ addons:
   postgresql: 9.6
   sonarcloud:
     organization: "defra"
-    token:
-      secure: "wAc+Hv1ehKbD78k0SVQb+VLWLmUyCOgFEQNxLOH4gPTgQvDwv/e50dYN+HHBwbdSNKzxYU1GgNX9JvWIE2AvmSOb0xi9FBj9Xo2WdWfXW8daJaMT7qIImzklvWt/CjcT7bb06mt+LS9QioGfmrptseCMoY9yD8Nq06Z53UYgSaMu+8YrJNzInteNDUpn/h+8AE6rqEBGWw+OjpYccQkg0k2DkpQxyYjx3Ok8jGi6xJzXGWsZM3Xhlqw+gWvCrOfoqfCPQJEkIN3mK/GNwU5d1Akoi8natPexpqs+ollYyxTVFUumLb+IoyhSMkhv0rrUFlyxyWtan7x2tb1+L1UQVmGo6hXVi9TsbOZFGoN/plQ/p6qc23Z1TKgBQx7RyKGv9jd6GiWRJaLHZNrzmzpQAjP+UoNaEGCDOi6nBa1Ab4uU6ux5zPYUd+La41zE2JM4AcmOm7KE67WYenccsIy0JqtrfG1MEaZVM2g4NQ0DRMxxvWiDIa7nWJFH/xo7X/FG0rXy78WwJB5aEguv7gPkFHdH7Yfu5mQyo93EodjJ7UlPw9HKrqaWQy66thzgeU5vadtpjFsGbqf3u5BiV5B59aXGkMXNEOoTsCsmZFE3xdmmH8XwHafJIEm3cjwobqIPeUx8cq+gDFX0k8sBek/lLrN6q4ghVeP0CEEcP6JGOhE="
 
 env:
   global:
@@ -33,16 +31,16 @@ before_script:
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter; fi
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then chmod +x ./cc-test-reporter; fi
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter before-build; fi
-  # Run rubocop. It's installed as a dependency (hence no install step) as this
-  # allows projects to control the version they are using (rather than getting)
-  # surprise build failures.
-  - bundle exec rubocop
   # Replace database.yml with database.travis.yml (but leave filename as
   # database.yml). database.travis.yml is the config needed for Travis, and it
   # needs to be in place before we run the migrations.
   - cp config/database.travis.yml config/database.yml
   - RAILS_ENV=test bundle exec rake db:create --trace
 
-after_script:
+script:
+  - bundle exec rubocop --format=json --out=rubocop-result.json
+  - bundle exec rspec
   - sonar-scanner
+
+after_script:
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
