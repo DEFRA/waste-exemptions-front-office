@@ -17,6 +17,7 @@ git:
 
 before_install:
   - export TZ=UTC
+  - gem install -v 1.17.3 bundler --no-rdoc --no-ri
 
 before_script:
   # Replace database.yml with database.travis.yml (but leave filename as
