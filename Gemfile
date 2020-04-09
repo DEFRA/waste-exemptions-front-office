@@ -42,7 +42,7 @@ gem "waste_exemptions_engine",
     branch: "master"
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", "~> 0.4.0", group: :doc
+gem "sdoc", "~> 1.1.0", group: :doc
 
 group :production do
   # Web application server that replaces webrick. It handles HTTP requests,
@@ -78,6 +78,6 @@ group :test do
   # Fixtures replacement
   gem "factory_bot_rails"
   # Generates a test coverage report on every `bundle exec rspec` call. We use
-  # the output to feed CodeClimate's stats and analysis
-  gem "simplecov", "~> 0.17.1", require: false
+  # the output to feed SonarCloud's stats and analysis
+  gem "simplecov", require: false
 end
