@@ -36,8 +36,13 @@ gem "rails", "~> 6.0.3.1"
 # gem "sass-rails", "~> 5.0"
 
 # TODO: Remove once engine has tagged versions
-gem "defra_ruby_email", path: "/Users/cintamanipuddu/projects/defra-ruby-email"
-gem "defra_ruby_alert", path: "/Users/cintamanipuddu/projects/defra-ruby-alert"
+gem "defra_ruby_email",
+    git: "https://github.com/DEFRA/defra-ruby-email",
+    branch: "rails-upgrade"
+
+gem "defra_ruby_alert",
+    git: "https://github.com/DEFRA/defra-ruby-alert",
+    branch: "update-airbrake-version"
 
 # Automatically apply http headers that are related to security
 gem "secure_headers", "~> 5.0"
@@ -47,9 +52,9 @@ gem "turbolinks"
 gem "uglifier", ">= 1.3.0"
 
 # Use the waste exemptions engine for the user journey
-gem "waste_exemptions_engine", path: "/Users/cintamanipuddu/projects/waste-exemptions-engine"
-    # git: "https://github.com/DEFRA/waste-exemptions-engine",
-    # branch: "master"
+gem "waste_exemptions_engine",
+    git: "https://github.com/DEFRA/waste-exemptions-engine",
+    branch: "rails-upgrade"
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 1.1.0", group: :doc
