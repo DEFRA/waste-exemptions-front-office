@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-alert
-  revision: 8a1ab195a9fa4991d76e183385d9c356253b4a98
+  revision: 0094be7827f64cbf2fd2f25499bb93341141b3fd
   branch: update-airbrake-version
   specs:
     defra_ruby_alert (1.0.0)
@@ -303,7 +303,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sassc (2.3.0)
+    sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
@@ -356,7 +356,7 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
     websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     wicked_pdf (2.0.2)
       activesupport
     zeitwerk (2.3.0)
