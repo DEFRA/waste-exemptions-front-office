@@ -25,6 +25,7 @@ before_script:
   # needs to be in place before we run the migrations.
   - cp config/database.travis.yml config/database.yml
   - RAILS_ENV=test bundle exec bin/rails db:create --trace
+  - RAILS_ENV=test bundle exec bin/yarn
 
 script:
   - bundle exec rubocop --format progress --format json --out rubocop-result.json
