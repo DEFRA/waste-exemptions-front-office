@@ -41,7 +41,7 @@ SecureHeaders::Configuration.default do |config|
     img_src: %w['self' www.google-analytics.com],
     object_src: %w['self'],
     script_src: %w['self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com www.google-analytics.com],
-    style_src: %w['self'],
+    style_src: %w['self' 'unsafe-inline'],
     report_uri: %w[https://environmentagency.report-uri.io/r/default/csp/enforce]
   }
   # rubocop:enable Lint/PercentStringArray

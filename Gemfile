@@ -31,6 +31,7 @@ gem "sassc-rails"
 
 # Bundle edge Rails instead: gem "rails', github: 'rails/rails'
 gem "rails", "~> 6.0.3.1"
+gem "webpacker"
 
 # # Use SCSS for stylesheets
 # gem "sass-rails", "~> 5.0"
@@ -75,7 +76,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem "web-console", "~> 2.0"
+  gem "web-console"
 end
 
 group :test do

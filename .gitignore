@@ -49,3 +49,10 @@ coverage
 # run in any given environment. Because it is environment dependent we don't
 # add it to source code.
 Passengerfile.json
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
