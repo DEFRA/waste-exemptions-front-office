@@ -7,7 +7,11 @@ addons:
 
 language: ruby
 rvm: 2.7.1
-cache: bundler
+cache:
+  bundler: true
+  directories:
+    - node_modules
+  yarn: true
 
 # Travis CI uses shallow clone to speed up build times, but a truncated SCM
 # history may cause issues when SonarCloud computes blame data. To avoid this,
@@ -18,6 +22,11 @@ git:
 before_install:
   - export TZ=UTC
   - gem install bundler --no-document
+  - bundle install
+  - nvm install node
+  - node -v
+  - npm i -g yarn
+  - yarn
 
 before_script:
   # Replace database.yml with database.travis.yml (but leave filename as
@@ -25,9 +34,9 @@ before_script:
   # needs to be in place before we run the migrations.
   - cp config/database.travis.yml config/database.yml
   - RAILS_ENV=test bundle exec bin/rails db:create --trace
-  - RAILS_ENV=test bundle exec bin/yarn
 
 script:
   - bundle exec rubocop --format progress --format json --out rubocop-result.json
+  - bundle exec rails webpacker:compile
   - bundle exec rspec
   - sonar-scanner
