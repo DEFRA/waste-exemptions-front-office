@@ -1,9 +1,9 @@
 # Waste Exemptions Front Office
 
-[![Build Status](https://travis-ci.com/DEFRA/waste-exemptions-front-office.svg?branch=master)](https://travis-ci.com/DEFRA/waste-exemptions-front-office)
+[![Build Status](https://travis-ci.com/DEFRA/waste-exemptions-front-office.svg?branch=main)](https://travis-ci.com/DEFRA/waste-exemptions-front-office)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_waste-exemptions-front-office&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=DEFRA_waste-exemptions-front-office)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_waste-exemptions-front-office&metric=coverage)](https://sonarcloud.io/dashboard?id=DEFRA_waste-exemptions-front-office)
-[![security](https://hakiri.io/github/DEFRA/waste-exemptions-front-office/master.svg)](https://hakiri.io/github/DEFRA/waste-exemptions-front-office/master)
+[![security](https://hakiri.io/github/DEFRA/waste-exemptions-front-office/main.svg)](https://hakiri.io/github/DEFRA/waste-exemptions-front-office/main)
 [![Licence](https://img.shields.io/badge/Licence-OGLv3-blue.svg)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3)
 
 If your business produces waste or emissions that pollute you may require an environmental permit. However you may also be able to get an exemption if your business activities are considered to be easily controlled and only create low risks of pollution.
@@ -16,7 +16,7 @@ This project is the front office application which members of the public use to 
 
 ## Prequisites
 
-You'll need [Ruby 2.4.2](https://www.ruby-lang.org/en/) installed plus the [Bundler](http://bundler.io/) gem.
+You'll need [Ruby 2.7.1](https://www.ruby-lang.org/en/) installed plus the [Bundler](http://bundler.io/) gem.
 
 ## Installation
 
