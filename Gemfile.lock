@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 6f694c9d2990a9c9be759ce8b6f5dbd6e5972cf3
+  revision: 3f10b809543019b220406d5f1e20e2be7a950f60
   branch: main
   specs:
     waste_exemptions_engine (0.0.1)
@@ -101,7 +101,7 @@ GEM
     debug_inspector (0.0.3)
     defra_ruby_address (0.1.0)
       rest-client (~> 2.0)
-    defra_ruby_alert (2.1.0)
+    defra_ruby_alert (2.1.1)
       airbrake
     defra_ruby_area (2.0.0)
       nokogiri (~> 1.10.4)
@@ -344,7 +344,7 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
-    websocket-driver (0.7.2)
+    websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     wicked_pdf (2.1.0)
