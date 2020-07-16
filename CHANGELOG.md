@@ -2,7 +2,16 @@
 
 ## [Unreleased](https://github.com/defra/waste-exemptions-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.0.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.0.1...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `3f10b80` to `fe020be` [\#370](https://github.com/DEFRA/waste-exemptions-front-office/pull/370) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump dotenv-rails from 2.7.5 to 2.7.6 [\#369](https://github.com/DEFRA/waste-exemptions-front-office/pull/369) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [v2.0.1](https://github.com/defra/waste-exemptions-front-office/tree/v2.0.1) (2020-07-10)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.0.0...v2.0.1)
 
 **Fixed bugs:**
 
@@ -10,6 +19,11 @@
 
 **Merged pull requests:**
 
+- Bump waste\_exemptions\_engine from `6f694c9` to `3f10b80` [\#368](https://github.com/DEFRA/waste-exemptions-front-office/pull/368) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `d850341` to `6f694c9` [\#367](https://github.com/DEFRA/waste-exemptions-front-office/pull/367) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump factory\_bot\_rails from 6.0.0 to 6.1.0 [\#366](https://github.com/DEFRA/waste-exemptions-front-office/pull/366) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `083079e` to `d850341` [\#364](https://github.com/DEFRA/waste-exemptions-front-office/pull/364) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Changes need to support switch to 'main' branch [\#363](https://github.com/DEFRA/waste-exemptions-front-office/pull/363) ([Cruikshanks](https://github.com/Cruikshanks))
 - Bump waste\_exemptions\_engine from `b1f1a3d` to `ee5841d` [\#362](https://github.com/DEFRA/waste-exemptions-front-office/pull/362) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [v2.0.0](https://github.com/defra/waste-exemptions-front-office/tree/v2.0.0) (2020-06-19)
