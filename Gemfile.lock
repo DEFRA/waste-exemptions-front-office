@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 2e753b78eb865a71180740e7a0a5bbfaec664a5d
+  revision: e7e58403475a1b8c033091538d5ff5213b4f9772
   branch: main
   specs:
     waste_exemptions_engine (0.0.1)
@@ -104,8 +104,8 @@ GEM
       rest-client (~> 2.0)
     defra_ruby_alert (2.1.1)
       airbrake
-    defra_ruby_area (0.2.0)
-      nokogiri (~> 1.10)
+    defra_ruby_area (2.0.1)
+      nokogiri (~> 1.11.1)
       rest-client (~> 2.0)
     defra_ruby_email (1.1.0)
       notifications-ruby-client
@@ -211,7 +211,7 @@ GEM
       rake (>= 0.8.1)
     pg (0.18.4)
     pgreset (0.3)
-    phonelib (0.6.46)
+    phonelib (0.6.48)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
