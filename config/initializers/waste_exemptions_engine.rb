@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 WasteExemptionsEngine.configure do |configuration|
+  # Assisted digital config
+  configuration.assisted_digital_email = ENV["WEX_ASSISTED_DIGITAL_EMAIL"] ||
+                                         "waste-exemptions@environment-agency.gov.uk"
   # General config
   configuration.application_name = "waste-exemptions-front-office"
   configuration.git_repository_url = "https://github.com/DEFRA/waste-exemptions-front-office"
