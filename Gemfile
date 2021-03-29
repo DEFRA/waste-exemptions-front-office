@@ -45,7 +45,7 @@ gem "uglifier", ">= 1.3.0"
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "housekeeping/letter-export-tables"
+    branch: "main"
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 1.1.0", group: :doc
