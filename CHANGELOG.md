@@ -1,5 +1,23 @@
 # Changelog
 
+## [v2.3.0](https://github.com/defra/waste-exemptions-front-office/tree/v2.3.0) (2021-04-15)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.2.0...v2.3.0)
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `9664fb3` to `c85e669` [\#436](https://github.com/DEFRA/waste-exemptions-front-office/pull/436) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails from 6.0.3.5 to 6.0.3.6 [\#435](https://github.com/DEFRA/waste-exemptions-front-office/pull/435) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `bceb28d` to `ee10f25` [\#434](https://github.com/DEFRA/waste-exemptions-front-office/pull/434) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Drop letter export tables [\#433](https://github.com/DEFRA/waste-exemptions-front-office/pull/433) ([irisfaraway](https://github.com/irisfaraway))
+- Bump waste\_exemptions\_engine from `f10cd26` to `bceb28d` [\#432](https://github.com/DEFRA/waste-exemptions-front-office/pull/432) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update to mimemagic 0.3.7 [\#431](https://github.com/DEFRA/waste-exemptions-front-office/pull/431) ([irisfaraway](https://github.com/irisfaraway))
+- Bump waste\_exemptions\_engine from `f50675f` to `f10cd26` [\#430](https://github.com/DEFRA/waste-exemptions-front-office/pull/430) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump github\_changelog\_generator from 1.15.2 to 1.16.1 [\#429](https://github.com/DEFRA/waste-exemptions-front-office/pull/429) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Accessibility statement service name update [\#428](https://github.com/DEFRA/waste-exemptions-front-office/pull/428) ([timstone](https://github.com/timstone))
+- Bump rspec-rails from 5.0.0 to 5.0.1 [\#426](https://github.com/DEFRA/waste-exemptions-front-office/pull/426) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Updated accessibility statement [\#425](https://github.com/DEFRA/waste-exemptions-front-office/pull/425) ([timstone](https://github.com/timstone))
+
 ## [v2.2.0](https://github.com/defra/waste-exemptions-front-office/tree/v2.2.0) (2021-03-15)
 
 [Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.1.0...v2.2.0)
@@ -345,7 +363,6 @@
 - Bump dotenv-rails from 2.7.4 to 2.7.5 [\#166](https://github.com/DEFRA/waste-exemptions-front-office/pull/166) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `754e010` to `703f84c` [\#164](https://github.com/DEFRA/waste-exemptions-front-office/pull/164) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `4ed93c0` to `754e010` [\#161](https://github.com/DEFRA/waste-exemptions-front-office/pull/161) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Fix link to waste exemptions engine in readme [\#157](https://github.com/DEFRA/waste-exemptions-front-office/pull/157) ([andrewhick](https://github.com/andrewhick))
 
 ## [v1.0.1](https://github.com/defra/waste-exemptions-front-office/tree/v1.0.1) (2019-07-26)
 
@@ -356,6 +373,7 @@
 - Bump waste\_exemptions\_engine from `d1b939d` to `4ed93c0` [\#160](https://github.com/DEFRA/waste-exemptions-front-office/pull/160) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Specify database in Travis config [\#159](https://github.com/DEFRA/waste-exemptions-front-office/pull/159) ([irisfaraway](https://github.com/irisfaraway))
 - Bump waste\_exemptions\_engine from `b2b3d37` to `d1b939d` [\#158](https://github.com/DEFRA/waste-exemptions-front-office/pull/158) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Fix link to waste exemptions engine in readme [\#157](https://github.com/DEFRA/waste-exemptions-front-office/pull/157) ([andrewhick](https://github.com/andrewhick))
 - Bump waste\_exemptions\_engine from `bb44a8d` to `b2b3d37` [\#156](https://github.com/DEFRA/waste-exemptions-front-office/pull/156) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `7bdc763` to `bb44a8d` [\#155](https://github.com/DEFRA/waste-exemptions-front-office/pull/155) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
