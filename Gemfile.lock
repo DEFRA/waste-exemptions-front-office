@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: c68a9b60f72fca71424758114daad8b89af64b20
+  revision: c5a73dd7f6775fc9e14992e3cab8ef2707b80772
   branch: main
   specs:
     waste_exemptions_engine (0.0.1)
@@ -247,7 +247,7 @@ GEM
       rake (>= 0.8.1)
     pg (0.18.4)
     pgreset (0.3)
-    phonelib (0.6.50)
+    phonelib (0.6.51)
     protocol-hpack (1.4.2)
     protocol-http (0.22.0)
     protocol-http1 (0.14.1)
@@ -395,7 +395,7 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
-    websocket-driver (0.7.4)
+    websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     wicked_pdf (2.1.0)
