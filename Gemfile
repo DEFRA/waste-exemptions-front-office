@@ -14,9 +14,10 @@ ruby "2.7.1"
 # to Heroku. Hence moved outside group till we can understand why.
 gem "github_changelog_generator", require: false
 
-# GOV.UK styling
-gem "govuk_elements_rails", "~> 3.1"
-gem "govuk_template", "~> 0.26"
+# GOV.UK design system styling
+gem "defra_ruby_template"
+# GOV.UK design system forms
+gem "govuk_design_system_formbuilder"
 # Use jquery as the JavaScript library
 gem "jquery-rails"
 # Use postgresql as the database for Active Record
