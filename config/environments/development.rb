@@ -62,9 +62,6 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = false
 
-  # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
-
   # The rails web console allows you to execute arbitrary code on the server. By
   # default, only requests coming from IPv4 and IPv6 localhosts are allowed.
   # When running in a vagrant box it'll use a different IP e.g. 10.0.2.2 so

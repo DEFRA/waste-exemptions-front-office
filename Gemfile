@@ -21,7 +21,7 @@ gem "govuk_design_system_formbuilder"
 # Use jquery as the JavaScript library
 gem "jquery-rails"
 # Use postgresql as the database for Active Record
-gem "pg", "~> 0.18.4"
+gem "pg"
 # Automatically kills connections to Postgres when running rake tasks that
 # involve a database drop. Stops the error
 # PG::ObjectInUse: ERROR:  database "wex_db" is being accessed by other users
@@ -30,8 +30,7 @@ gem "pgreset"
 # See: https://github.com/sass/sassc-rails/issues/114
 gem "sassc-rails"
 
-# Bundle edge Rails instead: gem "rails', github: 'rails/rails'
-gem "rails", "~> 6.0.3.7"
+gem "rails", "~> 6.1"
 
 # # Use SCSS for stylesheets
 # gem "sass-rails", "~> 5.0"
@@ -46,7 +45,7 @@ gem "uglifier", ">= 1.3.0"
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "main"
+    branch: "feature/design-system"
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 1.1.0", group: :doc
