@@ -56,5 +56,10 @@ module WasteExemptionsFrontOffice
 
     # Emails
     config.email_test_address = ENV["EMAIL_TEST_ADDRESS"]
+
+    # Fix sass compilation error in govuk_frontend:
+    # SassC::SyntaxError: Error: "calc(0px)" is not a number for `max'
+    # https://github.com/alphagov/govuk-frontend/issues/1350
+    config.assets.css_compressor = nil
   end
 end
