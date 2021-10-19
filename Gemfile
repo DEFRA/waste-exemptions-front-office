@@ -79,6 +79,7 @@ group :development do
 end
 
 group :test do
+  gem "capybara"
   # Database Cleaner is a set of strategies for cleaning your database in Ruby.
   gem "database_cleaner"
   # Fixtures replacement
