@@ -16,6 +16,23 @@ class CookiesController < ApplicationController
     redirect_back fallback_location: "/"
   end
 
+  def update
+    # Google writes the cookies as ".hostname"
+    # so we need to state the domain when removing
+    cookies.to_hash.each_pair do |k, _v|
+      cookies.delete k, domain: ".#{request.hostname}"
+    end
+
+    if params[:analytics] == "accept"
+      write_cookie(:cookies_policy, :analytics_accepted)
+    else
+      write_cookie(:cookies_policy, :analytics_rejected)
+    end
+    write_cookie(:cookies_preferences_set, true)
+
+    redirect_to "/pages/cookies?cookies_updated=true"
+  end
+
   protected
 
   def write_cookie(name, value)
