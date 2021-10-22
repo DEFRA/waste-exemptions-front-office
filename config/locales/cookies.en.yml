@@ -52,5 +52,5 @@ en:
         url: https://www.gov.uk/help/cookie-details
       submit_button: Save and continue
       updated:
-        success: success
+        success: Success
         you_set_your_cookie_preferences: You’ve set your cookie preferences.
