@@ -1,5 +1,48 @@
 # Changelog
 
+## [v2.5.0](https://github.com/defra/waste-exemptions-front-office/tree/v2.5.0) (2021-12-06)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.4.0...v2.5.0)
+
+**Implemented enhancements:**
+
+- Update Cookies page [\#491](https://github.com/DEFRA/waste-exemptions-front-office/pull/491) ([tobyprivett](https://github.com/tobyprivett))
+- Update accessibility statement [\#490](https://github.com/DEFRA/waste-exemptions-front-office/pull/490) ([tobyprivett](https://github.com/tobyprivett))
+- Open footer links in same window [\#485](https://github.com/DEFRA/waste-exemptions-front-office/pull/485) ([tobyprivett](https://github.com/tobyprivett))
+- Update privacy policy [\#484](https://github.com/DEFRA/waste-exemptions-front-office/pull/484) ([tobyprivett](https://github.com/tobyprivett))
+- Styling: Static pages [\#481](https://github.com/DEFRA/waste-exemptions-front-office/pull/481) ([tobyprivett](https://github.com/tobyprivett))
+- Styling: Privacy policy [\#480](https://github.com/DEFRA/waste-exemptions-front-office/pull/480) ([tobyprivett](https://github.com/tobyprivett))
+- Design system [\#465](https://github.com/DEFRA/waste-exemptions-front-office/pull/465) ([tobyprivett](https://github.com/tobyprivett))
+
+**Merged pull requests:**
+
+- Bump govuk\_design\_system\_formbuilder from 2.7.6 to 2.8.0 [\#494](https://github.com/DEFRA/waste-exemptions-front-office/pull/494) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump spring from 2.1.1 to 3.1.1 [\#493](https://github.com/DEFRA/waste-exemptions-front-office/pull/493) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 2.7.5 to 2.7.6 [\#489](https://github.com/DEFRA/waste-exemptions-front-office/pull/489) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `83d52c2` to `b079e54` [\#488](https://github.com/DEFRA/waste-exemptions-front-office/pull/488) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `25849e9` to `83d52c2` [\#486](https://github.com/DEFRA/waste-exemptions-front-office/pull/486) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Styling: Privacy policy page header [\#483](https://github.com/DEFRA/waste-exemptions-front-office/pull/483) ([tobyprivett](https://github.com/tobyprivett))
+- Bump waste\_exemptions\_engine from `c0620c5` to `25849e9` [\#482](https://github.com/DEFRA/waste-exemptions-front-office/pull/482) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `4155fa8` to `c0620c5` [\#479](https://github.com/DEFRA/waste-exemptions-front-office/pull/479) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump capybara from 3.35.3 to 3.36.0 [\#478](https://github.com/DEFRA/waste-exemptions-front-office/pull/478) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `b7cb01c` to `4155fa8` [\#477](https://github.com/DEFRA/waste-exemptions-front-office/pull/477) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Prefer 'Success' over 'success' in cookies confirmation [\#476](https://github.com/DEFRA/waste-exemptions-front-office/pull/476) ([tobyprivett](https://github.com/tobyprivett))
+- Cookies [\#475](https://github.com/DEFRA/waste-exemptions-front-office/pull/475) ([tobyprivett](https://github.com/tobyprivett))
+- Make cookie consent banner functional [\#474](https://github.com/DEFRA/waste-exemptions-front-office/pull/474) ([tobyprivett](https://github.com/tobyprivett))
+- Bump waste\_exemptions\_engine from `2717616` to `b7cb01c` [\#473](https://github.com/DEFRA/waste-exemptions-front-office/pull/473) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Add the updated cookie consent banner [\#472](https://github.com/DEFRA/waste-exemptions-front-office/pull/472) ([tobyprivett](https://github.com/tobyprivett))
+- Bump waste\_exemptions\_engine from `5eb2f05` to `2717616` [\#471](https://github.com/DEFRA/waste-exemptions-front-office/pull/471) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `84bf561` to `5eb2f05` [\#470](https://github.com/DEFRA/waste-exemptions-front-office/pull/470) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `9e67518` to `84bf561` [\#469](https://github.com/DEFRA/waste-exemptions-front-office/pull/469) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 2.7.4 to 2.7.5 [\#467](https://github.com/DEFRA/waste-exemptions-front-office/pull/467) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `4b5112c` to `69fde8b` [\#462](https://github.com/DEFRA/waste-exemptions-front-office/pull/462) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 5.0.1 to 5.0.2 [\#459](https://github.com/DEFRA/waste-exemptions-front-office/pull/459) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `c5a73dd` to `4b5112c` [\#455](https://github.com/DEFRA/waste-exemptions-front-office/pull/455) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump addressable from 2.7.0 to 2.8.0 [\#454](https://github.com/DEFRA/waste-exemptions-front-office/pull/454) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `c68a9b6` to `c5a73dd` [\#453](https://github.com/DEFRA/waste-exemptions-front-office/pull/453) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `2b02b9e` to `c68a9b6` [\#452](https://github.com/DEFRA/waste-exemptions-front-office/pull/452) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump github\_changelog\_generator from 1.16.3 to 1.16.4 [\#451](https://github.com/DEFRA/waste-exemptions-front-office/pull/451) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v2.4.0](https://github.com/defra/waste-exemptions-front-office/tree/v2.4.0) (2021-05-20)
 
 [Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.3.0...v2.4.0)
