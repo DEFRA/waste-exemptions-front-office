@@ -46,7 +46,6 @@ gem "uglifier", ">= 1.3.0"
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
     branch: "main"
-
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 1.1.0", group: :doc
 
