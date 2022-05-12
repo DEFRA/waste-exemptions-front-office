@@ -54,6 +54,10 @@ module WasteExemptionsFrontOffice
     config.front_office_url = ENV["FRONT_OFFICE_URL"] || "http://localhost:3000"
     config.back_office_url = ENV["BACK_OFFICE_URL"] || "http://localhost:8000"
 
+    # Companies house API config
+    config.companies_house_host = ENV["COMPANIES_HOUSE_URL"] || "https://api.companieshouse.gov.uk/company/"
+    config.companies_house_api_key = ENV["COMPANIES_HOUSE_API_KEY"]
+
     # Emails
     config.email_test_address = ENV["EMAIL_TEST_ADDRESS"]
 
