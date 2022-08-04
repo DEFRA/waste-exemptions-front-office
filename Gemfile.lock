@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: a598e329e2f9214d567ae027f27739213d89787a
+  revision: 589a2cb48da74c828a671854bb39478985684f5f
   branch: main
   specs:
     waste_exemptions_engine (0.0.1)
@@ -391,7 +391,7 @@ GEM
     unf_ext (0.0.8.2)
     unicode-display_width (1.7.0)
     useragent (0.16.10)
-    validates_email_format_of (1.7.0)
+    validates_email_format_of (1.7.1)
       i18n
     web-console (2.3.0)
       activemodel (>= 4.0)
