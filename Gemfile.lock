@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 9c9b4952035c4e83598d1277a71c9a7e95e0c108
+  revision: 8ab60476dc9104bb300b10573751b897e19ff92b
   branch: main
   specs:
     waste_exemptions_engine (0.0.1)
@@ -246,7 +246,7 @@ GEM
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     os_map_ref (0.5.0)
-    paper_trail (12.3.0)
+    paper_trail (13.0.0)
       activerecord (>= 5.2)
       request_store (~> 1.1)
     parallel (1.19.1)
