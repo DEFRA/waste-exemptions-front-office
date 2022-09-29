@@ -1,5 +1,21 @@
 # Changelog
 
+## [v2.6.1](https://github.com/defra/waste-exemptions-front-office/tree/v2.6.1) (2022-09-29)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.6.0...v2.6.1)
+
+**Merged pull requests:**
+
+- Update schema.rb [\#598](https://github.com/DEFRA/waste-exemptions-front-office/pull/598) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump rails from 6.1.6.1 to 6.1.7 [\#595](https://github.com/DEFRA/waste-exemptions-front-office/pull/595) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `941d98b` to `4e96995` [\#594](https://github.com/DEFRA/waste-exemptions-front-office/pull/594) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `9c9b495` to `941d98b` [\#593](https://github.com/DEFRA/waste-exemptions-front-office/pull/593) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pry-byebug from 3.9.0 to 3.10.1 [\#592](https://github.com/DEFRA/waste-exemptions-front-office/pull/592) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 3.1.1 to 3.1.2 [\#589](https://github.com/DEFRA/waste-exemptions-front-office/pull/589) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `6120260` to `9c9b495` [\#588](https://github.com/DEFRA/waste-exemptions-front-office/pull/588) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update CHANGELOG [\#587](https://github.com/DEFRA/waste-exemptions-front-office/pull/587) ([Beckyrose200](https://github.com/Beckyrose200))
+- Bump pg from 1.4.2 to 1.4.3 [\#585](https://github.com/DEFRA/waste-exemptions-front-office/pull/585) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v2.6.0](https://github.com/defra/waste-exemptions-front-office/tree/v2.6.0) (2022-08-10)
 
 [Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.5.1...v2.6.0)
