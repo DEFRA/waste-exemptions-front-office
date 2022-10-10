@@ -71,6 +71,8 @@ group :development, :test do
   gem "dotenv-rails"
   # Project uses RSpec as its test framework
   gem "rspec-rails"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
 end
 
 group :development do
