@@ -2,6 +2,7 @@
 
 require "rails_helper"
 
+# rubocop:disable RSpec/EmptyExampleGroup
 module Stats
   RSpec.describe BaseStat, type: :model do
     subject { described_class.new(current_registrations, previous_registrations) }
@@ -36,3 +37,4 @@ module Stats
 
   end
 end
+# rubocop:enable RSpec/EmptyExampleGroup

@@ -4,7 +4,7 @@ require "rails_helper"
 
 module Stats
   RSpec.describe StatsFormatter, type: :model do
-    subject { described_class.new }
+    subject(:formatter) { described_class.new }
 
     describe "#json" do
 
@@ -20,7 +20,7 @@ module Stats
       end
 
       it "returns correct JSON format" do
-        expect(subject.json).to eq(expected_json)
+        expect(formatter.json).to eq(expected_json)
       end
     end
   end

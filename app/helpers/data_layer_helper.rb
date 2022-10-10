@@ -8,7 +8,7 @@ module DataLayerHelper
       output << "'#{key}': '#{value}'"
     end
 
-    output.join(",").html_safe
+    sanitize(output.join(","))
   end
 
   private

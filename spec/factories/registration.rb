@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 FactoryBot.define do
-  factory :registration, class: WasteExemptionsEngine::Registration do
+  factory :registration, class: "WasteExemptionsEngine::Registration" do
     location { "england" }
     applicant_phone { "01234567890" }
     contact_phone { "01234567890" }

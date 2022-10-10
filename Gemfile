@@ -48,9 +48,8 @@ gem "uglifier", "~> 4.2"
 
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
-path: "/vagrant/waste-exemptions-engine"
-    # git: "https://github.com/DEFRA/waste-exemptions-engine",
-    # branch: "main"
+    git: "https://github.com/DEFRA/waste-exemptions-engine",
+    branch: "main"
 
 group :production do
   # Web application server that replaces webrick. It handles HTTP requests,

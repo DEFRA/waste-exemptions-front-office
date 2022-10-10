@@ -8,7 +8,7 @@ RSpec.describe "Waste Exemptions Engine", type: :request do
 
     it "returns a 200 response" do
       get request_path
-      expect(response).to have_http_status(200)
+      expect(response).to have_http_status(:ok)
     end
   end
 end
