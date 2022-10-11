@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-ruby "2.7.1"
+ruby "3.1.2"
 
 # Allows us to automatically generate the change log from the tags, issues,
 # labels and pull requests on GitHub. Added as a dependency so all dev's have
@@ -20,6 +20,13 @@ gem "defra_ruby_template"
 gem "govuk_design_system_formbuilder"
 # Use jquery as the JavaScript library
 gem "jquery-rails"
+
+gem "matrix"
+
+gem "net-imap"
+gem "net-pop"
+gem "net-smtp"
+
 # Use postgresql as the database for Active Record
 gem "pg"
 # Automatically kills connections to Postgres when running rake tasks that
@@ -32,22 +39,17 @@ gem "sassc-rails"
 
 gem "rails", "~> 6.1"
 
-# # Use SCSS for stylesheets
-# gem "sass-rails", "~> 5.0"
-
 # Automatically apply http headers that are related to security
-gem "secure_headers", "~> 5.0"
+gem "secure_headers", "~> 6.3"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
-gem "uglifier", ">= 1.3.0"
+gem "uglifier", "~> 4.2"
 
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
     branch: "main"
-# bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", "~> 1.1.0", group: :doc
 
 group :production do
   # Web application server that replaces webrick. It handles HTTP requests,
@@ -68,6 +70,8 @@ group :development, :test do
   gem "dotenv-rails"
   # Project uses RSpec as its test framework
   gem "rspec-rails"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
 end
 
 group :development do
@@ -75,7 +79,7 @@ group :development do
   gem "spring"
   gem "spring-commands-rspec"
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem "web-console", "~> 2.0"
+  gem "web-console"
 end
 
 group :test do
