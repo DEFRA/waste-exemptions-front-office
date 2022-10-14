@@ -41,7 +41,7 @@ module WasteExemptionsFrontOffice
     # rails does this it messes with the GOV.UK styling and causes checkboxes
     # and radio buttons to become invisible
     config.action_view.field_error_proc = proc { |html_tag, _instance|
-      sanitize(html_tag.to_s)
+      ActionController::Base.helpers.sanitize(html_tag.to_s)
     }
 
     # https://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html#active-record-belongs-to-required-by-default-option
