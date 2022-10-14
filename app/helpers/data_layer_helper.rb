@@ -8,7 +8,7 @@ module DataLayerHelper
       output << "'#{key}': '#{value}'"
     end
 
-    ActionController::Base.helpers.sanitize(output.join(","))
+    output.join(",")
   end
 
   private
