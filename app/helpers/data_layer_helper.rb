@@ -8,7 +8,9 @@ module DataLayerHelper
       output << "'#{key}': '#{value}'"
     end
 
-    ActionController::Base.helpers.sanitize(output.join(","))
+    # rubocop:disable Rails/OutputSafety
+    output.join(",").html_safe
+    # rubocop:enable Rails/OutputSafety
   end
 
   private

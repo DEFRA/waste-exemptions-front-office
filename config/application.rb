@@ -40,9 +40,11 @@ module WasteExemptionsFrontOffice
     # Don't add field_with_errors div wrapper around fields with errors. When
     # rails does this it messes with the GOV.UK styling and causes checkboxes
     # and radio buttons to become invisible
+    # rubocop:disable Rails/OutputSafety
     config.action_view.field_error_proc = proc { |html_tag, _instance|
-      ActionController::Base.helpers.sanitize(html_tag.to_s)
+      html_tag.to_s.html_safe
     }
+    # rubocop:enable Rails/OutputSafety
 
     # https://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html#active-record-belongs-to-required-by-default-option
     config.active_record.belongs_to_required_by_default = false
