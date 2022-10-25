@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe DataLayerHelper, type: :helper do
+RSpec.describe DataLayerHelper do
   describe "data_layer" do
     context "when the transient_registration has a `start_option` of 'reregister'" do
       let(:transient_registration) { build(:new_registration, start_option: "reregister") }

@@ -3,7 +3,7 @@
 require "rails_helper"
 
 module Stats
-  RSpec.describe StatsFormatter, type: :model do
+  RSpec.describe StatsFormatter do
     subject(:formatter) { described_class.new }
 
     describe "#json" do

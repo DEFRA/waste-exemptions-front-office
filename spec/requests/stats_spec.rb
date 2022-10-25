@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe "Stats API", type: :request do
+RSpec.describe "Stats API" do
   describe "/stats" do
     let(:request_path) { "/stats" }
 

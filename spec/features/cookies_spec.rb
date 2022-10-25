@@ -4,7 +4,7 @@ require "rails_helper"
 
 # rubocop:disable RSpec/ExampleLength
 # rubocop:disable RSpec/MultipleExpectations
-RSpec.describe "Cookies", type: :feature do
+RSpec.describe "Cookies" do
   before { ENV["GOOGLE_TAGMANAGER_ID"] = "GA_ID" }
 
   let(:cookie_banner_div) { ".govuk-cookie-banner" }
