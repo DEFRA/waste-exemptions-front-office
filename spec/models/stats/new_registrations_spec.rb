@@ -3,7 +3,7 @@
 require "rails_helper"
 
 module Stats
-  RSpec.describe NewRegistrations, type: :model do
+  RSpec.describe NewRegistrations do
     subject(:new_registrations) { described_class.new(current_registrations, previous_registrations) }
 
     describe "#calculate_stat" do
