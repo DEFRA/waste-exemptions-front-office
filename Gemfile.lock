@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 36ee46dda8ec0a117d051298504b911af3913b81
+  revision: 279f10f79063f31c04e5a8af6c67475e68326db4
   branch: main
   specs:
     waste_exemptions_engine (0.0.1)
@@ -197,7 +197,7 @@ GEM
       octokit (~> 4.6)
       rainbow (>= 2.2.1)
       rake (>= 10.0)
-    globalid (1.0.1)
+    globalid (1.1.0)
       activesupport (>= 5.0)
     govuk_design_system_formbuilder (3.3.0)
       actionview (>= 6.1)
