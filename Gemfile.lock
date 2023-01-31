@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 36ee46dda8ec0a117d051298504b911af3913b81
-  branch: main
+  revision: edd3a45cb702bac1807efad8232887e0a48c70da
+  branch: feature/renew-exemptions-form
   specs:
     waste_exemptions_engine (0.0.1)
       aasm (~> 5.3)
