@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 279f10f79063f31c04e5a8af6c67475e68326db4
-  branch: main
+  revision: 7c3903ee235ad7ef3c8d639ec202f8f4535e6112
+  branch: feature/edit-exemptions-form
   specs:
     waste_exemptions_engine (0.0.1)
       aasm (~> 5.3)
@@ -248,7 +248,7 @@ GEM
       net-protocol
     netrc (0.11.0)
     nio4r (2.5.8)
-    nokogiri (1.14.0)
+    nokogiri (1.14.1)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     notifications-ruby-client (5.4.0)
@@ -396,7 +396,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
