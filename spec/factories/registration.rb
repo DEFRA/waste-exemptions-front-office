@@ -6,7 +6,7 @@ FactoryBot.define do
     applicant_phone { "01234567890" }
     contact_phone { "01234567890" }
     business_type { "limitedCompany" }
-    company_no { "09360070" }
+    company_no { "10336040" }
     on_a_farm { true }
     is_a_farmer { true }
 
