@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   root "waste_exemptions_engine/start_forms#new"
 
   get "/stats", to: "stats#index", as: :stats
+
+  get "/Getting_ready_for_change", to: "pages#getting_ready_for_change"
 end
