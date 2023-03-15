@@ -2,10 +2,29 @@
 
 ## [Unreleased](https://github.com/defra/waste-exemptions-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.6.2...HEAD)
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.7.0...HEAD)
+
+**Implemented enhancements:**
+
+- Add latest changes to getting ready for change page [\#682](https://github.com/DEFRA/waste-exemptions-front-office/pull/682) ([endofunky](https://github.com/endofunky))
+- Add 'getting ready for change' page [\#679](https://github.com/DEFRA/waste-exemptions-front-office/pull/679) ([endofunky](https://github.com/endofunky))
+
+**Fixed bugs:**
+
+- Remove sentence, add space [\#680](https://github.com/DEFRA/waste-exemptions-front-office/pull/680) ([endofunky](https://github.com/endofunky))
 
 **Merged pull requests:**
 
+- Bump waste\_exemptions\_engine from `d624ded` to `9c9e717` [\#683](https://github.com/DEFRA/waste-exemptions-front-office/pull/683) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Updating companies house number in factory [\#677](https://github.com/DEFRA/waste-exemptions-front-office/pull/677) ([timstone](https://github.com/timstone))
+
+## [v2.7.0](https://github.com/defra/waste-exemptions-front-office/tree/v2.7.0) (2023-03-07)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.6.2...v2.7.0)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#675](https://github.com/DEFRA/waste-exemptions-front-office/pull/675) ([endofunky](https://github.com/endofunky))
 - Bump waste\_exemptions\_engine from `4be1560` to `d624ded` [\#671](https://github.com/DEFRA/waste-exemptions-front-office/pull/671) ([dependabot[bot]](https://github.com/apps/dependabot))
 - CI ubuntu version [\#670](https://github.com/DEFRA/waste-exemptions-front-office/pull/670) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump waste\_exemptions\_engine from `8a3cfdd` to `dd9e038` [\#668](https://github.com/DEFRA/waste-exemptions-front-office/pull/668) ([dependabot[bot]](https://github.com/apps/dependabot))
