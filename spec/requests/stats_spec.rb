@@ -13,7 +13,7 @@ RSpec.describe "Stats API" do
 
     it "is JSON" do
       get request_path
-      expect { JSON.parse(response.body) }.not_to raise_exception
+      expect { response.parsed_body }.not_to raise_exception
     end
   end
 end
