@@ -1,11 +1,34 @@
 # Changelog
 
-## [v2.7.2](https://github.com/defra/waste-exemptions-front-office/tree/v2.7.2) (2023-05-19)
+## [Unreleased](https://github.com/defra/waste-exemptions-front-office/tree/HEAD)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.7.2...HEAD)
+
+**Implemented enhancements:**
+
+- Fix FAQ 5 text [\#722](https://github.com/DEFRA/waste-exemptions-front-office/pull/722) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Update FAQ Q7 and Q9 text [\#721](https://github.com/DEFRA/waste-exemptions-front-office/pull/721) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Update privacy statement [\#719](https://github.com/DEFRA/waste-exemptions-front-office/pull/719) ([jjromeo](https://github.com/jjromeo))
+
+**Merged pull requests:**
+
+- Update FAQ content [\#720](https://github.com/DEFRA/waste-exemptions-front-office/pull/720) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump waste\_exemptions\_engine from `05a3aaa` to `e55e06c` [\#718](https://github.com/DEFRA/waste-exemptions-front-office/pull/718) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `d1139eb` to `05a3aaa` [\#717](https://github.com/DEFRA/waste-exemptions-front-office/pull/717) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `8a1e9f8` to `d1139eb` [\#716](https://github.com/DEFRA/waste-exemptions-front-office/pull/716) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_exemptions\_engine from `0f1a937` to `8a1e9f8` [\#715](https://github.com/DEFRA/waste-exemptions-front-office/pull/715) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Change production log level to :info [\#714](https://github.com/DEFRA/waste-exemptions-front-office/pull/714) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump waste\_exemptions\_engine from `56bb3cf` to `0f1a937` [\#713](https://github.com/DEFRA/waste-exemptions-front-office/pull/713) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update CHANGELOG.md [\#712](https://github.com/DEFRA/waste-exemptions-front-office/pull/712) ([brujeo](https://github.com/brujeo))
+- Bump capybara from 3.39.0 to 3.39.1 [\#709](https://github.com/DEFRA/waste-exemptions-front-office/pull/709) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v2.7.2](https://github.com/defra/waste-exemptions-front-office/tree/v2.7.2) (2023-05-16)
 
 [Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.7.1...v2.7.2)
 
 **Merged pull requests:**
 
+- Update CHANGELOG [\#710](https://github.com/DEFRA/waste-exemptions-front-office/pull/710) ([brujeo](https://github.com/brujeo))
 - Update accessibility statement [\#708](https://github.com/DEFRA/waste-exemptions-front-office/pull/708) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump waste\_exemptions\_engine from `f736355` to `56bb3cf` [\#707](https://github.com/DEFRA/waste-exemptions-front-office/pull/707) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_exemptions\_engine from `00475d0` to `f736355` [\#703](https://github.com/DEFRA/waste-exemptions-front-office/pull/703) ([dependabot[bot]](https://github.com/apps/dependabot))
