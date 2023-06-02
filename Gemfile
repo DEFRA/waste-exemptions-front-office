@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-ruby "3.1.2"
+ruby "3.2.2"
 
 # Allows us to automatically generate the change log from the tags, issues,
 # labels and pull requests on GitHub. Added as a dependency so all dev's have
@@ -37,10 +37,10 @@ gem "pgreset"
 # See: https://github.com/sass/sassc-rails/issues/114
 gem "sassc-rails"
 
-gem "rails", "~> 6.1"
+gem "rails", "~> 7.0"
 
 # Automatically apply http headers that are related to security
-gem "secure_headers", "~> 6.3"
+gem "secure_headers", "~> 6.5"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
@@ -57,7 +57,7 @@ group :production do
   # and problem diagnosis. It is used in production because it gives us an ability
   # to scale by creating additional processes, and will automatically restart any
   # that fail. We don't use it when running tests for speed's sake.
-  gem "passenger", "~> 5.0", ">= 5.0.30", require: "phusion_passenger/rack_handler"
+  gem "passenger", "~> 6.0", require: "phusion_passenger/rack_handler"
 end
 
 group :development, :test do
