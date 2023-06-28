@@ -2,7 +2,17 @@
 
 ## [Unreleased](https://github.com/defra/waste-exemptions-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.7.2...HEAD)
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.7.3...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `87de26e` to `eb704bf` [\#728](https://github.com/DEFRA/waste-exemptions-front-office/pull/728) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Modify uglifier instantiation to support ES6 [\#727](https://github.com/DEFRA/waste-exemptions-front-office/pull/727) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Upgrade to Rails 7 [\#726](https://github.com/DEFRA/waste-exemptions-front-office/pull/726) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+
+## [v2.7.3](https://github.com/defra/waste-exemptions-front-office/tree/v2.7.3) (2023-05-26)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.7.2...v2.7.3)
 
 **Implemented enhancements:**
 
@@ -12,6 +22,7 @@
 
 **Merged pull requests:**
 
+- Update CHANGELOG [\#723](https://github.com/DEFRA/waste-exemptions-front-office/pull/723) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Update FAQ content [\#720](https://github.com/DEFRA/waste-exemptions-front-office/pull/720) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump waste\_exemptions\_engine from `05a3aaa` to `e55e06c` [\#718](https://github.com/DEFRA/waste-exemptions-front-office/pull/718) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_exemptions\_engine from `d1139eb` to `05a3aaa` [\#717](https://github.com/DEFRA/waste-exemptions-front-office/pull/717) ([dependabot[bot]](https://github.com/apps/dependabot))
