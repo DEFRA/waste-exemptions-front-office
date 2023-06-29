@@ -10,21 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_18_155859) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_23_084300) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "tsm_system_rows"
-
-  create_table "ad_renewal_letters_exports", id: :serial, force: :cascade do |t|
-    t.date "expires_on"
-    t.string "file_name"
-    t.integer "number_of_letters"
-    t.string "printed_by"
-    t.date "printed_on"
-    t.datetime "created_at", precision: nil, null: false
-    t.datetime "updated_at", precision: nil, null: false
-    t.integer "status", default: 0
-  end
 
   create_table "addresses", id: :serial, force: :cascade do |t|
     t.integer "address_type", default: 0
@@ -53,6 +42,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_18_155859) do
     t.index ["registration_id"], name: "index_addresses_on_registration_id"
   end
 
+  create_table "communication_logs", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "message_type"
+    t.string "template_id"
+    t.string "template_label"
+    t.string "sent_to"
+  end
+
   create_table "exemptions", id: :serial, force: :cascade do |t|
     t.integer "category"
     t.string "code"
@@ -77,6 +75,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_18_155859) do
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
     t.index ["registration_id"], name: "index_people_on_registration_id"
+  end
+
+  create_table "registration_communication_logs", force: :cascade do |t|
+    t.bigint "registration_id"
+    t.bigint "communication_log_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["communication_log_id"], name: "index_registration_communication_logs_on_communication_log_id"
+    t.index ["registration_id"], name: "index_registration_communication_logs_on_registration_id"
   end
 
   create_table "registration_exemptions", id: :serial, force: :cascade do |t|
@@ -122,14 +129,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_18_155859) do
     t.index ["deregistration_email_sent_at"], name: "index_registrations_on_deregistration_email_sent_at"
     t.index ["reference"], name: "index_registrations_on_reference", unique: true
     t.index ["renew_token"], name: "index_registrations_on_renew_token", unique: true
-  end
-
-  create_table "reports_generated_reports", id: :serial, force: :cascade do |t|
-    t.string "file_name"
-    t.datetime "created_at", precision: nil, null: false
-    t.datetime "updated_at", precision: nil, null: false
-    t.date "data_from_date"
-    t.date "data_to_date"
   end
 
   create_table "transient_addresses", id: :serial, force: :cascade do |t|
@@ -223,32 +222,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_18_155859) do
     t.string "assistance_mode"
     t.text "excluded_exemptions", default: [], array: true
     t.index ["token"], name: "index_transient_registrations_on_token", unique: true
-  end
-
-  create_table "users", id: :serial, force: :cascade do |t|
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "invitation_token"
-    t.datetime "invitation_created_at", precision: nil
-    t.datetime "invitation_sent_at", precision: nil
-    t.datetime "invitation_accepted_at", precision: nil
-    t.integer "invitation_limit"
-    t.integer "invited_by_id"
-    t.string "invited_by_type"
-    t.integer "failed_attempts", default: 0, null: false
-    t.string "unlock_token"
-    t.datetime "locked_at", precision: nil
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at", precision: nil
-    t.string "session_token"
-    t.datetime "created_at", precision: nil, null: false
-    t.datetime "updated_at", precision: nil, null: false
-    t.string "role"
-    t.boolean "active", default: true
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["invitation_token"], name: "index_users_on_invitation_token", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-    t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
 
   create_table "version_archives", id: :serial, force: :cascade do |t|
