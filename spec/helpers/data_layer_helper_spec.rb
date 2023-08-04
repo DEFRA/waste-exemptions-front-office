@@ -14,11 +14,21 @@ RSpec.describe DataLayerHelper do
       end
     end
 
-    context "when the transient_registration is an EditRegistration" do
-      let(:transient_registration) { build(:edit_registration) }
+    context "when the transient_registration is a BackOfficeEditRegistration" do
+      let(:transient_registration) { build(:back_office_edit_registration) }
 
       it "returns the correct value" do
-        expected_string = "'journey': 'edit'"
+        expected_string = "'journey': 'back_office_edit'"
+
+        expect(helper.data_layer(transient_registration)).to eq(expected_string)
+      end
+    end
+
+    context "when the transient_registration is a FrontOfficeEditRegistration" do
+      let(:transient_registration) { build(:front_office_edit_registration) }
+
+      it "returns the correct value" do
+        expected_string = "'journey': 'front_office_edit'"
 
         expect(helper.data_layer(transient_registration)).to eq(expected_string)
       end

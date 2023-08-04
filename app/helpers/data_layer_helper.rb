@@ -29,8 +29,10 @@ module DataLayerHelper
 
   def data_layer_value_by_type(transient_registration)
     case transient_registration
-    when WasteExemptionsEngine::EditRegistration
-      :edit
+    when WasteExemptionsEngine::BackOfficeEditRegistration
+      :back_office_edit
+    when WasteExemptionsEngine::FrontOfficeEditRegistration
+      :frontoffice_edit
     when WasteExemptionsEngine::NewRegistration
       :new
     when WasteExemptionsEngine::RenewingRegistration
