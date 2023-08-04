@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 4bfd8beb356f553c3f0cd3ad00250b02eca9a7db
+  revision: 3d598e2cf613d0a7a99913ff44925638ad656097
   branch: feature/RUBY-2566-wex-front-office-changes-user-journey
   specs:
     waste_exemptions_engine (0.1.0)
