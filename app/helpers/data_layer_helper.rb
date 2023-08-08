@@ -32,7 +32,7 @@ module DataLayerHelper
     when WasteExemptionsEngine::BackOfficeEditRegistration
       :back_office_edit
     when WasteExemptionsEngine::FrontOfficeEditRegistration
-      :frontoffice_edit
+      :front_office_edit
     when WasteExemptionsEngine::NewRegistration
       :new
     when WasteExemptionsEngine::RenewingRegistration
