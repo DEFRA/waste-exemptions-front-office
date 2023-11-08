@@ -25,7 +25,6 @@ gem "matrix"
 
 gem "net-imap"
 gem "net-pop"
-gem "net-smtp"
 
 # Use postgresql as the database for Active Record
 gem "pg"

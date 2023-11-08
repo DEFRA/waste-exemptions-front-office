@@ -29,25 +29,6 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  # Sending e-mails is required for confirmation emails
-  config.action_mailer.default_url_options = { host: config.front_office_url, protocol: "http" }
-
-  # Don't care if the mailer can't send (if set to false)
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.perform_caching = false
-  config.action_mailer.delivery_method = :smtp
-
-  # Default settings are for mailcatcher
-  config.action_mailer.smtp_settings = {
-    user_name: ENV.fetch("EMAIL_USERNAME", nil),
-    password: ENV.fetch("EMAIL_PASSWORD", nil),
-    domain: config.front_office_url,
-    address: ENV["EMAIL_HOST"] || "localhost",
-    port: ENV["EMAIL_PORT"] || 1025,
-    authentication: :plain,
-    enable_starttls_auto: true
-  }
-
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
