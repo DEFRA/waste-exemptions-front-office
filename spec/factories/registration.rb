@@ -14,14 +14,6 @@ FactoryBot.define do
 
     registration_exemptions { build_list(:registration_exemption, 3) }
 
-    # TODO: The referring registration would ideally be an actual registration,
-    # however this causes the relevant tests to break. The below is an interim
-    # solution until this can be investigated.
-    trait :was_renewed do
-      # referring_registration_id { build(:registration) }
-      referring_registration_id { "123" }
-    end
-
     trait :was_assisted do
       assistance_mode { "full" }
     end

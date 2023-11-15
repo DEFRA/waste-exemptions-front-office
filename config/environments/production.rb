@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/BlockLength
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -91,21 +90,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  # Sending e-mails is required for user management and registration e-mails
-  config.action_mailer.default_url_options = { host: config.front_office_url, protocol: "http" }
-
-  # Don't care if the mailer can't send (if set to false)
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.delivery_method = :smtp
-
-  config.action_mailer.smtp_settings = {
-    user_name: ENV.fetch("EMAIL_USERNAME", nil),
-    password: ENV.fetch("EMAIL_PASSWORD", nil),
-    domain: config.front_office_url,
-    address: ENV.fetch("EMAIL_HOST", nil),
-    port: ENV.fetch("EMAIL_PORT", nil),
-    authentication: :plain,
-    enable_starttls_auto: true
-  }
 end
-# rubocop:enable Metrics/BlockLength
