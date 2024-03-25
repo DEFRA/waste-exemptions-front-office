@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: b59b6f02127f32c60af545e6abd2284cb6f3899b
+  revision: 223bdccc5e4b631007505fc414b1530ff3dac517
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -245,7 +245,7 @@ GEM
     mime-types-data (3.2024.0305)
     mini_mime (1.1.5)
     mini_portile2 (2.8.5)
-    minitest (5.22.2)
+    minitest (5.22.3)
     multi_json (1.15.0)
     net-http (0.4.1)
       uri
@@ -259,8 +259,8 @@ GEM
     net-smtp (0.4.0.1)
       net-protocol
     netrc (0.11.0)
-    nio4r (2.7.0)
-    nokogiri (1.16.2)
+    nio4r (2.7.1)
+    nokogiri (1.16.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     notifications-ruby-client (6.0.0)
@@ -281,7 +281,7 @@ GEM
       rake (>= 0.8.1)
     pg (1.5.4)
     pgreset (0.4)
-    phonelib (0.8.7)
+    phonelib (0.8.8)
     protocol-hpack (1.4.2)
     protocol-http (0.25.0)
     protocol-http1 (0.16.1)
@@ -297,7 +297,7 @@ GEM
       pry (>= 0.13, < 0.15)
     public_suffix (5.0.4)
     racc (1.7.3)
-    rack (2.2.8.1)
+    rack (2.2.9)
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.8)
