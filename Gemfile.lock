@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 944365023db65c51a54f1b1b5d9c5a5f3f195ab6
+  revision: 992a8a048ab84299de9e09403da361b1ff196c39
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -239,12 +239,12 @@ GEM
       net-smtp
     marcel (1.0.4)
     matrix (0.4.2)
-    method_source (1.0.0)
+    method_source (1.1.0)
     mime-types (3.5.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2024.0305)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.5)
+    mini_portile2 (2.8.6)
     minitest (5.22.3)
     multi_json (1.15.0)
     net-http (0.4.1)
@@ -260,7 +260,7 @@ GEM
       net-protocol
     netrc (0.11.0)
     nio4r (2.7.1)
-    nokogiri (1.16.3)
+    nokogiri (1.16.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     notifications-ruby-client (6.0.0)
@@ -433,7 +433,7 @@ GEM
     unf_ext (0.0.9.1)
     unicode-display_width (2.5.0)
     uri (0.13.0)
-    validates_email_format_of (1.8.0)
+    validates_email_format_of (1.8.2)
       i18n (>= 0.8.0)
       simpleidn
     web-console (4.2.1)
