@@ -2,10 +2,8 @@
 
 module DataLayerHelper
   def data_layer(transient_registration)
-    output = []
-
-    data_layer_hash(transient_registration).each do |key, value|
-      output << "'#{key}': '#{value}'"
+    output = data_layer_hash(transient_registration).map do |key, value|
+      "'#{key}': '#{value}'"
     end
 
     # rubocop:disable Rails/OutputSafety
