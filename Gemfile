@@ -45,8 +45,6 @@ gem "sassc-rails"
 gem "secure_headers", "~> 6.5"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
-# Use Uglifier as compressor for JavaScript assets
-gem "uglifier", "~> 4.2"
 
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
