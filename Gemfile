@@ -49,7 +49,7 @@ gem "uglifier", "~> 4.2"
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "main"
+    branch: "chore/rails_7_1"
 
 group :production do
   # Web application server that replaces webrick. It handles HTTP requests,
