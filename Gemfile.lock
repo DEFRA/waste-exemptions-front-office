@@ -293,7 +293,7 @@ GEM
     parser (3.3.0.5)
       ast (~> 2.4.1)
       racc
-    passenger (6.0.20)
+    passenger (5.3.7)
       rack
       rake (>= 0.8.1)
     pg (1.5.6)
@@ -500,7 +500,7 @@ DEPENDENCIES
   matrix
   net-imap
   net-pop
-  passenger (~> 6.0)
+  passenger (~> 5)
   pg
   pgreset
   pry-byebug
