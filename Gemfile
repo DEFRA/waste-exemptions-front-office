@@ -33,6 +33,9 @@ gem "pg"
 # PG::ObjectInUse: ERROR:  database "wex_db" is being accessed by other users
 gem "pgreset"
 
+# Pin rack version to avoid this issue: https://github.com/phusion/passenger/issues/2508
+gem "rack", "~> 2"
+
 # See: https://github.com/sass/sassc-rails/issues/114
 gem "sassc-rails"
 
