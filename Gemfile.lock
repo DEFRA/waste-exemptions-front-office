@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: e830a3b17531909f696948adaa135a2e955b459d
+  revision: dcd3f81e7929faf8846932ecddbd66daed486535
   branch: chore/rails_7_1
   specs:
     waste_exemptions_engine (0.1.0)
