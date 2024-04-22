@@ -20,7 +20,7 @@ Bundler.require(*Rails.groups)
 
 module WasteExemptionsFrontOffice
   class Application < Rails::Application
-    config.load_defaults 6.1
+    config.load_defaults 7.0
     config.autoloader = :classic
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -66,8 +66,5 @@ module WasteExemptionsFrontOffice
     # SassC::SyntaxError: Error: "calc(0px)" is not a number for `max'
     # https://github.com/alphagov/govuk-frontend/issues/1350
     config.assets.css_compressor = nil
-
-    # For Rails 7: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
-    config.active_record.legacy_connection_handling = false
   end
 end
