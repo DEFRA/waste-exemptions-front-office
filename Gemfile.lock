@@ -205,6 +205,8 @@ GEM
       faraday (>= 0.8)
     faraday-net_http (3.1.0)
       net-http
+    faraday-retry (2.2.1)
+      faraday (~> 2.0)
     ffi (1.16.3)
     fiber-annotation (0.2.0)
     fiber-local (1.0.0)
@@ -494,6 +496,7 @@ DEPENDENCIES
   defra_ruby_template
   dotenv-rails
   factory_bot_rails
+  faraday-retry
   github_changelog_generator
   govuk_design_system_formbuilder
   jquery-rails
