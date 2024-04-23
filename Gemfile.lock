@@ -193,7 +193,6 @@ GEM
       railties (>= 6.1)
     drb (2.2.1)
     erubi (1.12.0)
-    execjs (2.9.1)
     factory_bot (6.4.6)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.4.3)
@@ -205,6 +204,8 @@ GEM
       faraday (>= 0.8)
     faraday-net_http (3.1.0)
       net-http
+    faraday-retry (2.2.1)
+      faraday (~> 2.0)
     ffi (1.16.3)
     fiber-annotation (0.2.0)
     fiber-local (1.0.0)
@@ -316,14 +317,14 @@ GEM
       stringio
     public_suffix (5.0.5)
     racc (1.7.3)
-    rack (3.0.10)
-    rack-session (2.0.0)
-      rack (>= 3.0.0)
+    rack (2.2.9)
+    rack-session (1.0.2)
+      rack (< 3)
     rack-test (2.1.0)
       rack (>= 1.3)
-    rackup (2.1.0)
-      rack (>= 3)
-      webrick (~> 1.8)
+    rackup (1.0.0)
+      rack (< 3)
+      webrick
     rails (7.1.3.2)
       actioncable (= 7.1.3.2)
       actionmailbox (= 7.1.3.2)
@@ -458,8 +459,6 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    uglifier (4.2.0)
-      execjs (>= 0.3.0, < 3)
     uk_postcode (2.1.8)
     unf (0.1.4)
       unf_ext
@@ -494,6 +493,7 @@ DEPENDENCIES
   defra_ruby_template
   dotenv-rails
   factory_bot_rails
+  faraday-retry
   github_changelog_generator
   govuk_design_system_formbuilder
   jquery-rails
@@ -504,6 +504,7 @@ DEPENDENCIES
   pg
   pgreset
   pry-byebug
+  rack (~> 2)
   rspec-rails
   rubocop-rails
   rubocop-rspec
@@ -513,7 +514,6 @@ DEPENDENCIES
   spring
   spring-commands-rspec
   turbolinks
-  uglifier (~> 4.2)
   waste_exemptions_engine!
   web-console
   webrick
