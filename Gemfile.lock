@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 506c179743f59a43fecc5891d43ac81d42070b17
+  revision: 93710faa8378bd5172839ce4adf1af65ae3e4163
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -360,7 +360,7 @@ GEM
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
     regexp_parser (2.9.0)
-    reline (0.5.5)
+    reline (0.5.6)
       io-console (~> 0.5)
     request_store (1.7.0)
       rack (>= 1.4)
