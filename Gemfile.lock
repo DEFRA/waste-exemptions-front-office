@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 62775e31c764df480578b917066a462c81122d7a
+  revision: 1543be35a1b93ac3cf0b204e00d6976cd6ee1083
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -265,7 +265,7 @@ GEM
     mime-types-data (3.2024.0507)
     mini_mime (1.1.5)
     mini_portile2 (2.8.6)
-    minitest (5.23.0)
+    minitest (5.23.1)
     multi_json (1.15.0)
     mutex_m (0.2.0)
     net-http (0.4.1)
@@ -360,7 +360,7 @@ GEM
     rainbow (3.1.1)
     rake (13.2.1)
     rbtree3 (0.7.1)
-    rdoc (6.6.3.1)
+    rdoc (6.7.0)
       psych (>= 4.0.0)
     regexp_parser (2.9.0)
     reline (0.5.7)
@@ -440,8 +440,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    simpleidn (0.2.2)
-      unf (~> 0.1.4)
+    simpleidn (0.2.3)
     spring (4.2.1)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -464,9 +463,6 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uk_postcode (2.1.8)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.9.1)
     unicode-display_width (2.5.0)
     uri (0.13.0)
     validates_email_format_of (1.8.2)
@@ -485,7 +481,7 @@ GEM
       activesupport
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.14)
+    zeitwerk (2.6.15)
 
 PLATFORMS
   ruby
