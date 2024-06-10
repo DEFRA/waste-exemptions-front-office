@@ -2,7 +2,17 @@
 
 ## [Unreleased](https://github.com/defra/waste-exemptions-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.12.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.13.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `1543be3` to `0d5a77e` [\#935](https://github.com/DEFRA/waste-exemptions-front-office/pull/935) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actionpack from 7.1.3.3 to 7.1.3.4 [\#934](https://github.com/DEFRA/waste-exemptions-front-office/pull/934) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actiontext from 7.1.3.3 to 7.1.3.4 [\#933](https://github.com/DEFRA/waste-exemptions-front-office/pull/933) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v2.13.0](https://github.com/defra/waste-exemptions-front-office/tree/v2.13.0) (2024-05-29)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.12.0...v2.13.0)
 
 **Implemented enhancements:**
 
@@ -10,6 +20,7 @@
 
 **Merged pull requests:**
 
+- Update CHANGELOG [\#929](https://github.com/DEFRA/waste-exemptions-front-office/pull/929) ([jjromeo](https://github.com/jjromeo))
 - Bump waste\_exemptions\_engine from `82be2f5` to `1543be3` [\#928](https://github.com/DEFRA/waste-exemptions-front-office/pull/928) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_exemptions\_engine from `95551b4` to `82be2f5` [\#927](https://github.com/DEFRA/waste-exemptions-front-office/pull/927) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_exemptions\_engine from `f300742` to `95551b4` [\#926](https://github.com/DEFRA/waste-exemptions-front-office/pull/926) ([dependabot[bot]](https://github.com/apps/dependabot))
