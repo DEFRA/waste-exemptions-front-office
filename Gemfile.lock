@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 9c9083df0e2bed7f7763df3c0ce7562722ca9038
-  branch: main
+  revision: 0e61c913745ef7b0718e57584e8371d859bf0e4f
+  branch: feature/RUBY-3049_charge_calculation
   specs:
     waste_exemptions_engine (0.1.0)
       aasm (~> 5.5)
@@ -270,7 +270,7 @@ GEM
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
-    net-imap (0.4.12)
+    net-imap (0.4.13)
       date
       net-protocol
     net-pop (0.1.2)
