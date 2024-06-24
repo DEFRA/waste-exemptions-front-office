@@ -48,7 +48,7 @@ gem "turbolinks"
 
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
-    git: "https://github.com/DEFRA/waste-exemptions-engine",
+    git: "https://#{ENV["WEX_GITHUB_USER_NAME"]}:#{ENV["WEX_GITHUB_ACCESS_TOKEN"]}@github.com/DEFRA/waste-exemptions-engine.git",
     branch: "feature/RUBY-3049_charge_calculation"
 
 # Web application server that replaces webrick. It handles HTTP requests,
