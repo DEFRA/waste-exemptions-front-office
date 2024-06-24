@@ -1,5 +1,5 @@
 GIT
-  remote: https://defradigitalci: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@github.com/DEFRA/waste-exemptions-engine.git
+  remote: https://github.com/DEFRA/waste-exemptions-engine
   revision: 0e61c913745ef7b0718e57584e8371d859bf0e4f
   branch: feature/RUBY-3049_charge_calculation
   specs:
