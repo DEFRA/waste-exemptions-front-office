@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 1ff11af7559beddf9b9b65b1e480f7fd125c50a3
+  revision: 3225c3e5a717fb3435b645c1fa1e55d46c1a3339
   branch: feature/RUBY-3086-wex-charging-private-beta
   specs:
     waste_exemptions_engine (0.1.0)
@@ -270,7 +270,7 @@ GEM
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
-    net-imap (0.4.12)
+    net-imap (0.4.14)
       date
       net-protocol
     net-pop (0.1.2)
