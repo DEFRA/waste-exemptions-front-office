@@ -68,8 +68,10 @@ group :development, :test do
   gem "dotenv-rails"
   # Project uses RSpec as its test framework
   gem "rspec-rails"
+  gem "rubocop-capybara"
   gem "rubocop-rails"
   gem "rubocop-rspec"
+  gem "rubocop-rspec_rails"
 end
 
 group :development do
