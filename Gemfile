@@ -15,7 +15,7 @@ ruby "3.2.2"
 gem "github_changelog_generator", require: false
 
 # GOV.UK design system styling
-gem "defra_ruby_template"
+gem "defra_ruby_template", "~> 3"
 # GOV.UK design system forms
 gem "govuk_design_system_formbuilder"
 # Use jquery as the JavaScript library
@@ -68,8 +68,10 @@ group :development, :test do
   gem "dotenv-rails"
   # Project uses RSpec as its test framework
   gem "rspec-rails"
+  gem "rubocop-capybara"
   gem "rubocop-rails"
   gem "rubocop-rspec"
+  gem "rubocop-rspec_rails"
 end
 
 group :development do
