@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_20_151621) do
+ActiveRecord::Schema[7.1].define(version: 2024_07_11_144820) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "tsm_system_rows"
@@ -64,6 +64,55 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_20_151621) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "band_charge_details", force: :cascade do |t|
+    t.bigint "band_id"
+    t.integer "initial_compliance_charge_amount", default: 0
+    t.integer "additional_compliance_charge_amount", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "bands", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "sequence"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "bucket_exemptions", force: :cascade do |t|
+    t.bigint "bucket_id"
+    t.bigint "exemption_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bucket_id"], name: "index_bucket_exemptions_on_bucket_id"
+    t.index ["exemption_id"], name: "index_bucket_exemptions_on_exemption_id"
+  end
+
+  create_table "buckets", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "charge_details", force: :cascade do |t|
+    t.integer "registration_charge_amount"
+    t.integer "bucket_charge_amount", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "charges", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "charge_type", null: false
+    t.integer "charge_amount", null: false
+    t.string "chargeable_type"
+    t.bigint "chargeable_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["charge_type"], name: "index_charges_on_charge_type"
+    t.index ["chargeable_type", "chargeable_id"], name: "index_charges_on_chargeable"
+  end
+
   create_table "communication_logs", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -81,11 +130,36 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_20_151621) do
     t.text "description"
     t.text "guidance"
     t.boolean "hidden", default: false
+    t.bigint "band_id"
+    t.index ["band_id"], name: "index_exemptions_on_band_id"
   end
 
   create_table "feature_toggles", force: :cascade do |t|
     t.string "key"
     t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "order_buckets", force: :cascade do |t|
+    t.bigint "order_id"
+    t.bigint "bucket_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bucket_id"], name: "index_order_buckets_on_bucket_id"
+    t.index ["order_id"], name: "index_order_buckets_on_order_id"
+  end
+
+  create_table "order_exemptions", force: :cascade do |t|
+    t.bigint "order_id"
+    t.bigint "exemption_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["exemption_id"], name: "index_order_exemptions_on_exemption_id"
+    t.index ["order_id"], name: "index_order_exemptions_on_order_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -154,6 +228,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_20_151621) do
     t.boolean "reminder_opt_in", default: true
     t.string "unsubscribe_token"
     t.index ["deregistration_email_sent_at"], name: "index_registrations_on_deregistration_email_sent_at"
+    t.index ["edit_token"], name: "index_registrations_on_edit_token", unique: true
     t.index ["reference"], name: "index_registrations_on_reference", unique: true
     t.index ["renew_token"], name: "index_registrations_on_renew_token", unique: true
     t.index ["unsubscribe_token"], name: "index_registrations_on_unsubscribe_token", unique: true
@@ -259,6 +334,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_20_151621) do
     t.text "excluded_exemptions", default: [], array: true
     t.boolean "temp_confirm_exemption_edits"
     t.boolean "temp_confirm_no_exemption_changes"
+    t.boolean "temp_check_your_answers_flow"
+    t.string "temp_company_no"
     t.index ["created_at"], name: "index_transient_registrations_on_created_at"
     t.index ["token"], name: "index_transient_registrations_on_token", unique: true
   end
@@ -283,6 +360,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_20_151621) do
     t.datetime "updated_at", precision: nil, null: false
     t.string "role"
     t.boolean "active", default: true
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["invitation_token"], name: "index_users_on_invitation_token", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
@@ -312,6 +394,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_20_151621) do
 
   add_foreign_key "addresses", "registrations"
   add_foreign_key "analytics_page_views", "analytics_user_journeys", column: "user_journey_id"
+  add_foreign_key "bucket_exemptions", "buckets"
+  add_foreign_key "bucket_exemptions", "exemptions"
+  add_foreign_key "exemptions", "bands"
+  add_foreign_key "order_buckets", "buckets"
+  add_foreign_key "order_buckets", "orders"
+  add_foreign_key "order_exemptions", "exemptions"
+  add_foreign_key "order_exemptions", "orders"
   add_foreign_key "people", "registrations"
   add_foreign_key "transient_addresses", "transient_registrations"
   add_foreign_key "transient_people", "transient_registrations"
