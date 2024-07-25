@@ -1,0 +1,3 @@
+---
+private_beta:
+  active: <%= ENV["FEATURE_TOGGLE_PRIVATE_BETA"] || "false" %>
