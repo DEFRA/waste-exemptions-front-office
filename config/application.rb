@@ -66,5 +66,10 @@ module WasteExemptionsFrontOffice
     # SassC::SyntaxError: Error: "calc(0px)" is not a number for `max'
     # https://github.com/alphagov/govuk-frontend/issues/1350
     config.assets.css_compressor = nil
+
+    # Govpay
+    config.govpay_url = ENV["WEX_GOVPAY_URL"] || "https://publicapi.payments.service.gov.uk/v1"
+    config.govpay_front_office_api_token = ENV.fetch("WEX_GOVPAY_FRONT_OFFICE_API_TOKEN", nil)
+    config.govpay_back_office_api_token = ENV.fetch("WEX_GOVPAY_BACK_OFFICE_API_TOKEN", nil)
   end
 end
