@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: ac0743eb0bc22d0482580e95024e4655a67b6b5c
+  revision: da2a9fc1fe6083b187054af193c2877343eaab74
   branch: feature/RUBY-3343-wex-accessibility-replace-pdf-certificate-with-html-version
   specs:
     waste_exemptions_engine (0.1.0)
@@ -242,7 +242,7 @@ GEM
     io-endpoint (0.10.3)
     io-event (1.5.1)
     io-stream (0.4.0)
-    irb (1.14.0)
+    irb (1.14.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jquery-rails (4.6.0)
@@ -253,6 +253,7 @@ GEM
     jwt (2.9.1)
       base64
     language_server-protocol (3.17.0.3)
+    logger (1.6.1)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -264,9 +265,10 @@ GEM
     marcel (1.0.4)
     matrix (0.4.2)
     method_source (1.1.0)
-    mime-types (3.5.2)
+    mime-types (3.6.0)
+      logger
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2024.0903)
+    mime-types-data (3.2024.1001)
     mini_mime (1.1.5)
     mini_portile2 (2.8.7)
     minitest (5.25.1)
@@ -473,7 +475,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webrick (1.8.1)
+    webrick (1.8.2)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
