@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 532543c01fd89d592b2928e3372c7404c9a12101
+  revision: be25d2de223838000b7f4bb07d5b8c564cbe4721
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -238,7 +238,7 @@ GEM
     html-attributes-utils (1.0.2)
       activesupport (>= 6.1.4.4)
     http-accept (1.7.0)
-    http-cookie (1.0.7)
+    http-cookie (1.0.8)
       domain_name (~> 0.5)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
@@ -291,7 +291,7 @@ GEM
       net-protocol
     netrc (0.11.0)
     nio4r (2.7.4)
-    nokogiri (1.16.8)
+    nokogiri (1.17.0)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     notifications-ruby-client (6.2.0)
