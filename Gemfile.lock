@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 21550a4c086492b35ddaf5d9321181e6832a773f
+  revision: 5de9fe66e270b4eb6df878b3c266636879948ddf
   branch: feature/RUBY-3270-wex-charging-update-page-sequence-for-core-journey
   specs:
     waste_exemptions_engine (0.1.0)
