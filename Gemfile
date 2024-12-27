@@ -49,7 +49,7 @@ gem "turbolinks"
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "main"
+    branch: "feature/RUBY-3270-wex-charging-update-page-sequence-for-core-journey"
 
 # Web application server that replaces webrick. It handles HTTP requests,
 # manages processes and resources, and enables administration, monitoring
@@ -57,6 +57,8 @@ gem "waste_exemptions_engine",
 # to scale by creating additional processes, and will automatically restart any
 # that fail. We don't use it when running tests for speed's sake.
 gem "passenger", "~> 6.0", require: "phusion_passenger/rack_handler"
+
+gem "defra_ruby_validators", "~> 2.7.2"
 
 group :development, :test do
   # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console
