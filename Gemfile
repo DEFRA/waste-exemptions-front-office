@@ -35,9 +35,6 @@ gem "pg"
 # PG::ObjectInUse: ERROR:  database "wex_db" is being accessed by other users
 gem "pgreset"
 
-# Pin rack version to avoid this issue: https://github.com/phusion/passenger/issues/2508
-gem "rack", "~> 2"
-
 # See: https://github.com/sass/sassc-rails/issues/114
 gem "sassc-rails"
 
@@ -56,7 +53,8 @@ gem "waste_exemptions_engine",
 # and problem diagnosis. It is used in production because it gives us an ability
 # to scale by creating additional processes, and will automatically restart any
 # that fail. We don't use it when running tests for speed's sake.
-gem "passenger", "~> 6.0", require: "phusion_passenger/rack_handler"
+# Pinning to avoid a rackup error with version 6.0.23:
+gem "passenger", "< 6.0.23", require: "phusion_passenger/rack_handler"
 
 group :development, :test do
   # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console
