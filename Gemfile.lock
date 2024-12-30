@@ -222,6 +222,7 @@ GEM
     faraday-retry (2.2.1)
       faraday (~> 2.0)
     ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
       fiber-storage
@@ -301,6 +302,8 @@ GEM
     nio4r (2.7.4)
     nokogiri (1.18.1-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.18.1-x86_64-linux-gnu)
+      racc (~> 1.4)
     notifications-ruby-client (6.2.0)
       jwt (>= 1.5, < 3)
     octokit (4.25.1)
@@ -315,10 +318,9 @@ GEM
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
-    passenger (6.0.23)
-      rack (>= 1.6.13)
-      rackup
-      rake (>= 12.3.3)
+    passenger (6.0.22)
+      rack
+      rake (>= 0.8.1)
     pg (1.5.9)
     pgreset (0.4)
     phonelib (0.10.3)
@@ -504,6 +506,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   capybara
@@ -519,11 +522,10 @@ DEPENDENCIES
   matrix
   net-imap
   net-pop
-  passenger (~> 6.0)
+  passenger (< 6.0.23)
   pg
   pgreset
   pry-byebug
-  rack (~> 2)
   rspec-rails
   rubocop-capybara
   rubocop-rails
