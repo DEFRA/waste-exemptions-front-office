@@ -54,7 +54,7 @@ gem "waste_exemptions_engine",
 # to scale by creating additional processes, and will automatically restart any
 # that fail. We don't use it when running tests for speed's sake.
 # Pinning to avoid a rackup error with version 6.0.23:
-gem "passenger", "< 6.0.23", require: "phusion_passenger/rack_handler"
+gem "passenger", "~> 6.0", "!= 6.0.23", require: "phusion_passenger/rack_handler"
 
 group :development, :test do
   # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console

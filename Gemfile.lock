@@ -522,7 +522,7 @@ DEPENDENCIES
   matrix
   net-imap
   net-pop
-  passenger (< 6.0.23)
+  passenger (~> 6.0, != 6.0.23)
   pg
   pgreset
   pry-byebug
