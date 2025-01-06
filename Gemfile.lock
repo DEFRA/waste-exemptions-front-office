@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: fae0916b06eca35cdc7cb0fdf6547e5f30027811
+  revision: 6e7583816bd2fe5e6cf7c3aa5003992cf8497093
   branch: RUBY-3406-wex-company-name-rechecks-via-companies-house-re-checking-data-cleanse
   specs:
     waste_exemptions_engine (0.1.0)
