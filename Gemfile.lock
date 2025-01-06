@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 012b94e526a390ce7db998541522ca7aa9af7c66
-  branch: main
+  revision: fae0916b06eca35cdc7cb0fdf6547e5f30027811
+  branch: RUBY-3406-wex-company-name-rechecks-via-companies-house-re-checking-data-cleanse
   specs:
     waste_exemptions_engine (0.1.0)
       aasm (~> 5.5)
@@ -506,6 +506,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
