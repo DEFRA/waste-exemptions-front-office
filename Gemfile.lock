@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 012b94e526a390ce7db998541522ca7aa9af7c66
-  branch: main
+  revision: 7d6cb92de4d7482612daa67abf4189790c427468
+  branch: fix/RUBY-3580_schema_issues
   specs:
     waste_exemptions_engine (0.1.0)
       aasm (~> 5.5)
@@ -282,7 +282,7 @@ GEM
     mime-types (3.6.0)
       logger
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2024.1203)
+    mime-types-data (3.2025.0107)
     mini_mime (1.1.5)
     minitest (5.25.4)
     multi_json (1.15.0)
@@ -494,7 +494,8 @@ GEM
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
     webrick (1.9.1)
-    websocket-driver (0.7.6)
+    websocket-driver (0.7.7)
+      base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     wicked_pdf (2.8.2)
