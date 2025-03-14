@@ -2,10 +2,17 @@
 
 ## [Unreleased](https://github.com/defra/waste-exemptions-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.20.1...HEAD)
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.20.2...HEAD)
 
 **Merged pull requests:**
 
+- Switch waste_exemptions_engine to release/v2.20.3 branch [\#1166](https://github.com/DEFRA/waste-exemptions-front-office/pull/1166) ([brujeo](https://github.com/brujeo))
+
+## [v2.20.2](https://github.com/defra/waste-exemptions-front-office/tree/v2.20.2) (2025-02-27)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.20.1...v2.20.2)
+
+- Update CHANGELOG [\#1144](https://github.com/DEFRA/waste-exemptions-front-office/pull/1144) ([brujeo](https://github.com/brujeo))
 - Bump waste\_exemptions\_engine from `c6cc0ec` to `06b7d88` [\#1143](https://github.com/DEFRA/waste-exemptions-front-office/pull/1143) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_exemptions\_engine from `658bc16` to `c6cc0ec` [\#1142](https://github.com/DEFRA/waste-exemptions-front-office/pull/1142) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rubocop-rails from 2.29.1 to 2.30.2 [\#1139](https://github.com/DEFRA/waste-exemptions-front-office/pull/1139) ([dependabot[bot]](https://github.com/apps/dependabot))
