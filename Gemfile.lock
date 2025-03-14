@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 61781599061cec7c4a54d45875590c45f51fd538
+  revision: 35b18a72f0ade745dde66118af8bfc7e1659a497
   branch: release/v2.20.3
   specs:
     waste_exemptions_engine (0.1.0)
@@ -286,7 +286,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2025.0304)
     mini_mime (1.1.5)
-    minitest (5.25.4)
+    minitest (5.25.5)
     multi_json (1.15.0)
     mutex_m (0.3.0)
     net-http (0.6.0)
@@ -348,7 +348,7 @@ GEM
       stringio
     public_suffix (6.0.1)
     racc (1.8.1)
-    rack (3.1.10)
+    rack (3.1.12)
     rack-session (2.1.0)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
