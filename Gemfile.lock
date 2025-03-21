@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: b355b8edf942a63e763dcffde404e59a6cf5cb30
-  branch: main
+  revision: 468cb19f362003f33ca0fd1310efd641f203c417
+  branch: RUBY-3705-wex-govpay-id-is-updated-when-using-back-browser-button
   specs:
     waste_exemptions_engine (0.1.0)
       aasm (~> 5.5)
@@ -516,6 +516,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-darwin-22
   x86_64-linux
 
 DEPENDENCIES

@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
+ActiveRecord::Schema[7.1].define(version: 2025_02_06_113600) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "tsm_system_rows"
 
   create_table "accounts", force: :cascade do |t|
-    t.bigint "registration_id", null: false
+    t.bigint "registration_id"
     t.integer "balance", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -89,6 +89,20 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "beta_participants", force: :cascade do |t|
+    t.string "reg_number"
+    t.string "email"
+    t.string "token"
+    t.datetime "invited_at"
+    t.boolean "opted_in"
+    t.string "registration_type"
+    t.bigint "registration_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "selected_payment_method"
+    t.index ["registration_type", "registration_id"], name: "index_beta_participants_on_registration"
+  end
+
   create_table "bucket_exemptions", force: :cascade do |t|
     t.bigint "bucket_id"
     t.bigint "exemption_id"
@@ -105,6 +119,16 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.string "bucket_type"
     t.index ["bucket_type"], name: "index_buckets_on_bucket_type", unique: true
     t.index ["name"], name: "index_buckets_on_name", unique: true
+  end
+
+  create_table "charge_adjustments", force: :cascade do |t|
+    t.bigint "account_id", null: false
+    t.integer "amount", null: false
+    t.string "adjustment_type", null: false
+    t.string "reason", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_charge_adjustments_on_account_id"
   end
 
   create_table "charge_details", force: :cascade do |t|
@@ -138,6 +162,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.string "sent_to"
   end
 
+  create_table "companies", force: :cascade do |t|
+    t.string "name"
+    t.string "company_no", null: false
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["company_no"], name: "index_companies_on_company_no", unique: true
+  end
+
   create_table "exemptions", id: :serial, force: :cascade do |t|
     t.integer "category"
     t.string "code"
@@ -147,7 +180,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.text "guidance"
     t.boolean "hidden", default: false
     t.bigint "band_id"
+    t.bigint "waste_activity_id"
     t.index ["band_id"], name: "index_exemptions_on_band_id"
+    t.index ["waste_activity_id"], name: "index_exemptions_on_waste_activity_id"
   end
 
   create_table "feature_toggles", force: :cascade do |t|
@@ -196,6 +231,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "payment_uuid"
+    t.bigint "account_id"
+    t.string "reference"
+    t.string "comments", limit: 500
+    t.string "created_by"
+    t.integer "associated_payment_id"
+    t.index ["account_id"], name: "index_payments_on_account_id"
+    t.index ["associated_payment_id"], name: "index_payments_on_associated_payment_id"
     t.index ["order_id"], name: "index_payments_on_order_id"
   end
 
@@ -263,11 +305,23 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.boolean "reminder_opt_in", default: true
     t.string "unsubscribe_token"
     t.boolean "charged", default: false
+    t.string "view_certificate_token"
+    t.datetime "view_certificate_token_created_at"
+    t.boolean "placeholder", default: false
+    t.index ["created_at"], name: "index_registrations_on_created_at"
     t.index ["deregistration_email_sent_at"], name: "index_registrations_on_deregistration_email_sent_at"
     t.index ["edit_token"], name: "index_registrations_on_edit_token", unique: true
+    t.index ["placeholder"], name: "index_registrations_on_placeholder"
     t.index ["reference"], name: "index_registrations_on_reference", unique: true
     t.index ["renew_token"], name: "index_registrations_on_renew_token", unique: true
     t.index ["unsubscribe_token"], name: "index_registrations_on_unsubscribe_token", unique: true
+  end
+
+  create_table "reports_downloads", force: :cascade do |t|
+    t.string "report_type"
+    t.string "report_file_name"
+    t.string "user_id"
+    t.datetime "downloaded_at"
   end
 
   create_table "reports_generated_reports", id: :serial, force: :cascade do |t|
@@ -276,6 +330,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.datetime "updated_at", precision: nil, null: false
     t.date "data_from_date"
     t.date "data_to_date"
+    t.string "report_type", default: "bulk", null: false
   end
 
   create_table "transient_addresses", id: :serial, force: :cascade do |t|
@@ -373,6 +428,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.boolean "temp_check_your_answers_flow"
     t.string "temp_company_no"
     t.string "temp_payment_method"
+    t.text "temp_waste_activities", default: [], array: true
+    t.text "temp_exemptions", default: [], array: true
+    t.boolean "temp_confirm_exemptions"
+    t.boolean "temp_add_additional_non_bucket_exemptions"
     t.index ["created_at"], name: "index_transient_registrations_on_created_at"
     t.index ["token"], name: "index_transient_registrations_on_token", unique: true
   end
@@ -429,19 +488,28 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.index ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id"
   end
 
+  create_table "waste_activities", force: :cascade do |t|
+    t.string "name"
+    t.string "name_gerund"
+    t.integer "category"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   add_foreign_key "accounts", "registrations"
   add_foreign_key "addresses", "registrations"
   add_foreign_key "analytics_page_views", "analytics_user_journeys", column: "user_journey_id"
   add_foreign_key "band_charge_details", "charge_details"
   add_foreign_key "bucket_exemptions", "buckets"
   add_foreign_key "bucket_exemptions", "exemptions"
+  add_foreign_key "charge_adjustments", "accounts"
   add_foreign_key "charge_details", "orders"
   add_foreign_key "exemptions", "bands"
   add_foreign_key "order_buckets", "buckets"
   add_foreign_key "order_buckets", "orders"
   add_foreign_key "order_exemptions", "exemptions"
   add_foreign_key "order_exemptions", "orders"
-  add_foreign_key "payments", "orders"
+  add_foreign_key "payments", "accounts"
   add_foreign_key "people", "registrations"
   add_foreign_key "transient_addresses", "transient_registrations"
   add_foreign_key "transient_people", "transient_registrations"
