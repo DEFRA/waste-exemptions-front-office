@@ -45,7 +45,7 @@ gem "turbolinks"
 
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
-    github: "DEFRA/waste-exemptions-engine",
+    git: "https://github.com/DEFRA/waste-exemptions-engine",
     branch: "main"
 
 # Web application server that replaces webrick. It handles HTTP requests,
