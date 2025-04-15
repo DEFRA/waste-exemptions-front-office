@@ -13,6 +13,21 @@ updates:
   - wex-github
   schedule:
     interval: daily
-  target-branch: dependabot-test
   open-pull-requests-limit: 10
   versioning-strategy: lockfile-only
+  ignore:
+  - dependency-name: airbrake
+    versions:
+    - "< 8"
+    - ">= 7.a"
+
+- package-ecosystem: bundler
+  directory: "/"
+  insecure-external-code-execution: allow
+  registries:
+  - wex-github
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: lockfile-only
+  target-branch: dependabot-test
