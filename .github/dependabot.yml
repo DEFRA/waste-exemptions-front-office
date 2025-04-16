@@ -15,6 +15,9 @@ updates:
     interval: daily
   open-pull-requests-limit: 10
   versioning-strategy: lockfile-only
-  target-branch: dependabot-test
   ignore:
+  - dependency-name: airbrake
+    versions:
+    - "< 8"
+    - ">= 7.a"
   - dependency-name: "waste_exemptions_engine"
