@@ -13,6 +13,10 @@ jobs:
       PG_PORT: 5432
       PG_USERNAME: postgres
       TZ: UTC
+      AWS_DEFRA_RUBY_MOCKS_ACCESS_KEY_ID: a_key
+      AWS_DEFRA_RUBY_MOCKS_SECRET_ACCESS_KEY: a_key
+      AWS_DEFRA_RUBY_MOCKS_BUCKET: a_bucket
+
 
     # Service containers to run with `runner-job`
     services:
