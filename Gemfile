@@ -48,6 +48,9 @@ gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
     branch: "main"
 
+# Enable Defra ruby mocks for govpay
+gem "defra_ruby_mocks"
+
 # Web application server that replaces webrick. It handles HTTP requests,
 # manages processes and resources, and enables administration, monitoring
 # and problem diagnosis. It is used in production because it gives us an ability
