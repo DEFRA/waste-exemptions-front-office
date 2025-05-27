@@ -1,10 +1,11 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 484519fabd52baab2f955fce3d8703875c2bb2ec
-  branch: main
+  revision: 150d5dbb34762efd3eba63f24975198318728130
+  branch: RUBY-3764-wex-charging-implement-geospatial-ea-area-lookup
   specs:
     waste_exemptions_engine (0.1.0)
       aasm (~> 5.5)
+      activerecord-postgis-adapter (~> 10.0.0)
       defra_ruby_address
       defra_ruby_alert
       defra_ruby_area (~> 2.2)
@@ -20,6 +21,7 @@ GIT
       phonelib
       rails (~> 7.2.2.1)
       rest-client (~> 2.1)
+      rgeo
       sprockets
       uk_postcode
       validates_email_format_of
@@ -83,6 +85,9 @@ GEM
       activemodel (= 7.2.2.1)
       activesupport (= 7.2.2.1)
       timeout (>= 0.4.0)
+    activerecord-postgis-adapter (10.0.1)
+      activerecord (~> 7.2.0)
+      rgeo-activerecord (~> 8.0.0)
     activestorage (7.2.2.1)
       actionpack (= 7.2.2.1)
       activejob (= 7.2.2.1)
@@ -421,6 +426,10 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rgeo (3.0.1)
+    rgeo-activerecord (8.0.0)
+      activerecord (>= 7.0)
+      rgeo (>= 3.0)
     rspec-core (3.13.3)
       rspec-support (~> 3.13.0)
     rspec-expectations (3.13.4)
