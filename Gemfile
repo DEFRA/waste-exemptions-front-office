@@ -15,7 +15,10 @@ ruby "3.2.2"
 gem "github_changelog_generator", require: false
 
 # GOV.UK design system styling
-gem "defra_ruby_template", "~> 5.0"
+gem "defra_ruby_template",
+    git: "https://github.com/DEFRA/defra-ruby-template",
+    branch: "feature/RUBY_3809_govuk-frontend_upgrade"
+
 # GOV.UK design system forms
 gem "govuk_design_system_formbuilder"
 # Use jquery as the JavaScript library
