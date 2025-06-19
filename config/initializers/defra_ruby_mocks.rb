@@ -16,4 +16,4 @@ DefraRubyMocks.configure do |configuration|
   # On our hosted environments, the FO/BO mocks are accessible to each other via different URLs:
   configuration.govpay_mocks_internal_root_url = ENV.fetch("WEX_MOCK_FO_GOVPAY_URL_INTERNAL", "http://localhost:8000/bo/mocks/govpay/v1")
   configuration.govpay_mocks_internal_root_url_other = ENV.fetch("WEX_MOCK_BO_GOVPAY_URL_INTERNAL", "http://localhost:3000/fo/mocks/govpay/v1")
-ends
+end
