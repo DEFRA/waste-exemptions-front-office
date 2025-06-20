@@ -16,7 +16,7 @@ DefraRuby::Aws.configure do |c|
       },
       encrypt_with_kms: ENV.fetch("AWS_DEFRA_RUBY_MOCKS_ENCRYPT_WITH_KMS", false)
     }
-  
+
     c.buckets << govpay_mocks_bucket
   end
 end
