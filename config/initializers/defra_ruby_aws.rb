@@ -3,6 +3,11 @@
 require "defra_ruby/aws"
 
 DefraRuby::Aws.configure do |c|
+  c.buckets = []
+
+  mocks_bucket_name = ENV.fetch("AWS_DEFRA_RUBY_MOCKS_BUCKET", nil)
+  return unless mocks_bucket_name.present?
+
   govpay_mocks_bucket = {
     name: ENV.fetch("AWS_DEFRA_RUBY_MOCKS_BUCKET", nil),
     region: ENV.fetch("AWS_REGION", "eu-west-1"),
@@ -13,5 +18,5 @@ DefraRuby::Aws.configure do |c|
     encrypt_with_kms: ENV.fetch("AWS_DEFRA_RUBY_MOCKS_ENCRYPT_WITH_KMS", false)
   }
 
-  c.buckets = [govpay_mocks_bucket]
+  c.buckets << govpay_mocks_bucket
 end
