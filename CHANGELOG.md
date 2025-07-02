@@ -2,7 +2,16 @@
 
 ## [Unreleased](https://github.com/defra/waste-exemptions-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.20.4...HEAD)
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v3.0.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump engine version [\#1244](https://github.com/DEFRA/waste-exemptions-front-office/pull/1244) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Update waste\_exemptions\_engine revision in Gemfile.lock to a9ad3ca9819180778a55a90e2bed2b30c647877a [\#1243](https://github.com/DEFRA/waste-exemptions-front-office/pull/1243) ([jjromeo](https://github.com/jjromeo))
+
+## [v3.0.0](https://github.com/defra/waste-exemptions-front-office/tree/v3.0.0) (2025-06-25)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v2.20.4...v3.0.0)
 
 **Implemented enhancements:**
 
@@ -20,6 +29,8 @@
 
 **Merged pull requests:**
 
+- Release/v3.0.0 [\#1242](https://github.com/DEFRA/waste-exemptions-front-office/pull/1242) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Version 3.0.0 [\#1241](https://github.com/DEFRA/waste-exemptions-front-office/pull/1241) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - \[RUBY-3858\] Update waste\_exemptions\_engine gem revision to a1c07c00a6b362be95bdbca1c712869a3f01eb44 in Gemfile.lock [\#1238](https://github.com/DEFRA/waste-exemptions-front-office/pull/1238) ([jjromeo](https://github.com/jjromeo))
 - Update govpay mocks config [\#1232](https://github.com/DEFRA/waste-exemptions-front-office/pull/1232) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Update defra\_ruby\_mocks gem and config [\#1230](https://github.com/DEFRA/waste-exemptions-front-office/pull/1230) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
