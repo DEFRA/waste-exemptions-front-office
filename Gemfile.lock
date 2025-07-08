@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 9a87d63c9d185fa5132b7a919e58d2144031db76
-  branch: main
+  revision: d83a1cbb2edb97168739b6d9cadc855dc6d4a704
+  branch: fix/RUBY-3918_webhook_param_logging
   specs:
     waste_exemptions_engine (0.1.0)
       aasm (~> 5.5)
