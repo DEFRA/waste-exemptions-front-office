@@ -46,7 +46,7 @@ gem "turbolinks"
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "RUBY-3764-wex-charging-implement-geospatial-ea-area-lookup"
+    branch: "main"
 
 # Enable Defra ruby mocks for govpay
 gem "defra_ruby_mocks"
