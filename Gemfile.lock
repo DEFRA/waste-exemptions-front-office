@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: b62189d732c1223315ebeb868e0bb1d1e3efdb72
+  revision: 19363526b1d0e31acd87990303b9672e7c658f9e
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -248,8 +248,8 @@ GEM
       net-http (>= 0.5.0)
     faraday-retry (2.3.1)
       faraday (~> 2.0)
-    ffi (1.17.1-x86_64-darwin)
-    ffi (1.17.1-x86_64-linux-gnu)
+    ffi (1.17.2-x86_64-darwin)
+    ffi (1.17.2-x86_64-linux-gnu)
     ffi-geos (1.2.2)
       ffi (>= 1.0.0)
     fiber-annotation (0.2.0)
