@@ -15,7 +15,7 @@ ruby "3.2.2"
 gem "github_changelog_generator", require: false
 
 # GOV.UK design system styling
-gem "defra_ruby_template", "~> 5.0"
+gem "defra_ruby_template", "~> 5.11"
 # GOV.UK design system forms
 gem "govuk_design_system_formbuilder"
 # Use jquery as the JavaScript library
@@ -28,8 +28,6 @@ gem "matrix"
 gem "net-imap"
 gem "net-pop"
 
-# Use postgresql as the database for Active Record
-gem "pg"
 # Automatically kills connections to Postgres when running rake tasks that
 # involve a database drop. Stops the error
 # PG::ObjectInUse: ERROR:  database "wex_db" is being accessed by other users

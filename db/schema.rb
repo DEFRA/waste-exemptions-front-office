@@ -10,9 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
+ActiveRecord::Schema[7.2].define(version: 2025_05_20_123419) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "postgis"
   enable_extension "tsm_system_rows"
 
   create_table "accounts", force: :cascade do |t|
@@ -136,6 +137,18 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_131328) do
     t.string "template_id"
     t.string "template_label"
     t.string "sent_to"
+  end
+
+  create_table "ea_public_face_areas", force: :cascade do |t|
+    t.string "area_id", null: false
+    t.string "name", null: false
+    t.string "code", null: false
+    t.geometry "area", limit: {:srid=>0, :type=>"geometry"}
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["area"], name: "index_ea_public_face_areas_on_area", using: :gist
+    t.index ["area_id"], name: "index_ea_public_face_areas_on_area_id", unique: true
+    t.index ["code"], name: "index_ea_public_face_areas_on_code"
   end
 
   create_table "exemptions", id: :serial, force: :cascade do |t|
