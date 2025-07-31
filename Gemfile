@@ -28,8 +28,6 @@ gem "matrix"
 gem "net-imap"
 gem "net-pop"
 
-# Use postgresql as the database for Active Record
-gem "pg"
 # Automatically kills connections to Postgres when running rake tasks that
 # involve a database drop. Stops the error
 # PG::ObjectInUse: ERROR:  database "wex_db" is being accessed by other users
