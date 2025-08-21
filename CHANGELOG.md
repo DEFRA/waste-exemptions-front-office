@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Version 3.0.2 [\#1262](https://github.com/DEFRA/waste-exemptions-front-office/pull/1262) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Chore/gemfile platforms [\#1260](https://github.com/DEFRA/waste-exemptions-front-office/pull/1260) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump waste\_exemptions\_engine from `41b92d8` to `b62189d` [\#1257](https://github.com/DEFRA/waste-exemptions-front-office/pull/1257) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_exemptions\_engine from `9d15140` to `41b92d8` [\#1253](https://github.com/DEFRA/waste-exemptions-front-office/pull/1253) ([dependabot[bot]](https://github.com/apps/dependabot))
