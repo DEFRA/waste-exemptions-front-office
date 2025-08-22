@@ -44,7 +44,7 @@ gem "turbolinks"
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "main"
+    branch: "fix/RUBY-3931_refund_not_recorded"
 
 # Enable Defra ruby mocks for govpay
 gem "defra_ruby_mocks"
