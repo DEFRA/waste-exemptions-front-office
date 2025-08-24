@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 0fe575b2dcb03159ff58190912e286437c505cec
+  revision: dad3115469df040e7b019f6aba4a6b681a9d075f
   branch: fix/RUBY-3931_refund_not_recorded
   specs:
     waste_exemptions_engine (0.1.0)
