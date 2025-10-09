@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-ruby "3.2.2"
+ruby "3.4.6"
 
 # Allows us to automatically generate the change log from the tags, issues,
 # labels and pull requests on GitHub. Added as a dependency so all dev's have
@@ -68,7 +68,9 @@ group :development, :test do
   # Project uses RSpec as its test framework
   gem "rspec-rails"
   gem "rubocop-capybara"
+  gem "rubocop-factory_bot"
   gem "rubocop-rails"
+  gem "rubocop-rake"
   gem "rubocop-rspec"
   gem "rubocop-rspec_rails"
 end
