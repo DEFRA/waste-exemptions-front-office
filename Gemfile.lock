@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: f56b3a4852006914eaaec81b9f606ee60c18adf1
+  revision: c426be35466a84a6b20c7274ddc98ac2c575fc6c
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -311,7 +311,8 @@ GEM
     loofah (2.24.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    mail (2.8.1)
+    mail (2.9.0)
+      logger
       mini_mime (>= 0.1.1)
       net-imap
       net-pop
