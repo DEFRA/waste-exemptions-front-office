@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: f56b3a4852006914eaaec81b9f606ee60c18adf1
+  revision: d6532d459ffe8ab9d8a4640c3eda22a7d1d97636
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -311,7 +311,8 @@ GEM
     loofah (2.24.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    mail (2.8.1)
+    mail (2.9.0)
+      logger
       mini_mime (>= 0.1.1)
       net-imap
       net-pop
@@ -351,8 +352,8 @@ GEM
       sawyer (~> 0.9)
     os_map_ref (0.5.0)
     ostruct (0.6.3)
-    paper_trail (16.0.0)
-      activerecord (>= 6.1)
+    paper_trail (17.0.0)
+      activerecord (>= 7.1)
       request_store (~> 1.4)
     parallel (1.27.0)
     parser (3.3.9.0)
