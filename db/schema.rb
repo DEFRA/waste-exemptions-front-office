@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_05_20_123419) do
+ActiveRecord::Schema[7.2].define(version: 2025_11_21_135154) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
@@ -241,6 +241,9 @@ ActiveRecord::Schema[7.2].define(version: 2025_05_20_123419) do
     t.datetime "updated_at", precision: nil, null: false
     t.text "deregistration_message"
     t.date "deregistered_at"
+    t.string "reason_for_change", limit: 500
+    t.bigint "address_id"
+    t.index ["address_id"], name: "index_registration_exemptions_on_address_id"
     t.index ["exemption_id"], name: "index_registration_exemptions_on_exemption_id"
     t.index ["registration_id"], name: "index_active_registration_ids_on_registration_exemptions", where: "((state)::text = 'active'::text)"
     t.index ["registration_id"], name: "index_registration_exemptions_on_registration_id"
@@ -336,7 +339,12 @@ ActiveRecord::Schema[7.2].define(version: 2025_05_20_123419) do
     t.integer "exemption_id"
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
+    t.bigint "transient_address_id"
+    t.date "deregistered_at"
+    t.text "deregistration_message"
+    t.string "reason_for_change", limit: 500
     t.index ["exemption_id"], name: "index_transient_registration_exemptions_on_exemption_id"
+    t.index ["transient_address_id"], name: "index_transient_registration_exemptions_on_transient_address_id"
     t.index ["transient_registration_id"], name: "index_trans_reg_exemptions_on_transient_registration_id"
   end
 
