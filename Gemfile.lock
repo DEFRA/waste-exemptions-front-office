@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 3dd547dc68fc5d5a697a4f8d0918b9aabd8cf895
+  revision: a52f6d626477ddd552c80ffc28ae30860409f4fa
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -137,8 +137,8 @@ GEM
     async-pool (0.11.0)
       async (>= 2.0)
     aws-eventstream (1.4.0)
-    aws-partitions (1.1158.0)
-    aws-sdk-core (3.232.0)
+    aws-partitions (1.1198.0)
+    aws-sdk-core (3.240.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
@@ -146,11 +146,11 @@ GEM
       bigdecimal
       jmespath (~> 1, >= 1.6.1)
       logger
-    aws-sdk-kms (1.112.0)
-      aws-sdk-core (~> 3, >= 3.231.0)
+    aws-sdk-kms (1.118.0)
+      aws-sdk-core (~> 3, >= 3.239.1)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.199.0)
-      aws-sdk-core (~> 3, >= 3.231.0)
+    aws-sdk-s3 (1.208.0)
+      aws-sdk-core (~> 3, >= 3.234.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
     aws-sigv4 (1.12.1)
@@ -236,17 +236,17 @@ GEM
     factory_bot_rails (6.5.1)
       factory_bot (~> 6.5)
       railties (>= 6.1.0)
-    faraday (2.13.4)
+    faraday (2.14.0)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
     faraday-http-cache (2.5.1)
       faraday (>= 0.8)
-    faraday-net_http (3.4.1)
-      net-http (>= 0.5.0)
-    faraday-retry (2.3.2)
+    faraday-net_http (3.4.2)
+      net-http (~> 0.5)
+    faraday-retry (2.4.0)
       faraday (~> 2.0)
-    ffi (1.17.2)
+    ffi (1.17.3)
     ffi-geos (1.2.2)
       ffi (>= 1.0.0)
     fiber-annotation (0.2.0)
@@ -275,7 +275,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.1.0)
       domain_name (~> 0.5)
-    i18n (1.14.7)
+    i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     io-console (0.8.2)
     io-endpoint (0.15.2)
@@ -327,11 +327,11 @@ GEM
     mime-types-data (3.2025.0924)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
-    minitest (6.0.0)
+    minitest (6.0.1)
       prism (~> 1.5)
     multi_json (1.17.0)
-    net-http (0.6.0)
-      uri
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     net-imap (0.6.2)
       date
       net-protocol
@@ -343,7 +343,7 @@ GEM
       net-protocol
     netrc (0.11.0)
     nio4r (2.7.5)
-    nokogiri (1.18.10)
+    nokogiri (1.19.0)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     notifications-ruby-client (6.3.0)
@@ -360,17 +360,17 @@ GEM
     parser (3.3.10.0)
       ast (~> 2.4.1)
       racc
-    passenger (6.1.0)
+    passenger (6.1.1)
       rack (>= 1.6.13)
       rackup (>= 1.0.1)
       rake (>= 12.3.3)
-    pg (1.6.2)
+    pg (1.6.3)
     pgreset (0.4)
-    phonelib (0.10.14)
+    phonelib (0.10.15)
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
-    prism (1.6.0)
+    prism (1.7.0)
     protocol-hpack (1.5.1)
     protocol-http (0.51.0)
     protocol-http1 (0.34.1)
@@ -429,7 +429,7 @@ GEM
     rainbow (3.1.1)
     rake (13.3.1)
     rbtree3 (0.7.1)
-    rdoc (6.17.0)
+    rdoc (7.0.3)
       erb
       psych (>= 4.0.0)
       tsort
@@ -546,8 +546,8 @@ GEM
     uk_postcode (2.1.8)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
-    unicode-emoji (4.2.0)
-    uri (1.0.3)
+    unicode-emoji (4.1.0)
+    uri (1.1.1)
     useragent (0.16.11)
     validates_email_format_of (1.8.2)
       i18n (>= 0.8.0)
