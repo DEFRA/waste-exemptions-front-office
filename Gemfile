@@ -18,8 +18,6 @@ gem "github_changelog_generator", require: false
 gem "defra_ruby_template", "~> 5.11"
 # GOV.UK design system forms
 gem "govuk_design_system_formbuilder"
-# Use jquery as the JavaScript library
-gem "jquery-rails"
 
 gem "faraday-retry"
 
