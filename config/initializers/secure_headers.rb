@@ -19,14 +19,10 @@ require "secure_headers"
 
 SecureHeaders::Configuration.default do |config|
   # Specifically here we are saying
-  # - scripts can only come from the service or Google, however we permit
-  #   unsafe-inlinescripts (Google to support analytics)
-  # - images can only come from the service and Google (GA because it sends
-  #   the data to the Analytics server via a list of parameters attached to
-  #   a single-pixel image request)
+  # - scripts can only come from the service
   # - fonts can only come from the service, or via the data: scheme
   # - send any violation reports to a service we have setup for CSP
-  # - for all other items their soiurce must be the service (default-src)
+  # - for all other items their source must be the service (default-src)
   #
   # The following were used for reference
   # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
@@ -35,12 +31,12 @@ SecureHeaders::Configuration.default do |config|
   # We have to use single quotes here, even though it's against style - double doesn't work
   # rubocop:disable Lint/PercentStringArray
   config.csp = {
-    connect_src: %w['self' www.google-analytics.com],
+    connect_src: %w['self'],
     default_src: %w['self'],
     font_src: %w['self' data:],
-    img_src: %w['self' www.google-analytics.com],
+    img_src: %w['self'],
     object_src: %w['self'],
-    script_src: %w['self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com www.google-analytics.com],
+    script_src: %w['self'],
     style_src: %w['self'],
     report_uri: %w[https://environmentagency.report-uri.io/r/default/csp/enforce]
   }
