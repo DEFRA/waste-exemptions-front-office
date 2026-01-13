@@ -12,7 +12,7 @@ RSpec.describe "Cookies" do
     expect(page).to have_link("View cookies", href: "/pages/cookies")
 
     click_on "Accept analytics cookies"
-    expect(page).to have_text("You've accepted analytics cookies")
+    expect(page).to have_text("You’ve accepted analytics cookies")
 
     within cookie_banner_div do
       expect(page).to have_link("change your cookie settings", href: "/cookies/edit")
@@ -25,14 +25,14 @@ RSpec.describe "Cookies" do
   it "User rejects analytics cookies and toggles their selection" do
     visit root_path
     click_on "Reject analytics cookies"
-    expect(page).to have_text("You've rejected analytics cookies")
+    expect(page).to have_text("You’ve rejected analytics cookies")
 
     click_on "change your cookie settings"
     expect(page).to have_css("h1", text: "Cookies on Register your waste exemptions")
 
     choose "Use cookies that measure my website use"
     click_on "Save and continue"
-    expect(page).to have_text("You've set your cookie preferences.")
+    expect(page).to have_text("You’ve set your cookie preferences.")
 
     choose "Do not use cookies that measure my website use"
     click_on "Save and continue"
