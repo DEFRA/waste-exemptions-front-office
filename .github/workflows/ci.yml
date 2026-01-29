@@ -81,6 +81,7 @@ jobs:
           echo "=== Coverage paths before sed ===" && grep -o '"[^"]*app/[^"]*"' coverage/coverage.json | head -3 || true
           sed -i 's|/home/runner/work/waste-exemptions-front-office/waste-exemptions-front-office/||g' coverage/coverage.json
           echo "=== Coverage paths after sed ===" && grep -o '"[^"]*app/[^"]*"' coverage/coverage.json | head -3 || true
+          echo "=== cookies_controller coverage data ===" && python3 -c "import json; d=json.load(open('coverage/coverage.json')); print([k for k in d.get('coverage',{}) if 'cookies' in k]); c=[v for k,v in d.get('coverage',{}).items() if 'cookies' in k]; print(c[0]['lines'] if c else 'NOT FOUND')" || true
 
       - name: Analyze with SonarCloud
         uses: sonarsource/sonarqube-scan-action@v6.0.0
