@@ -79,7 +79,7 @@ jobs:
           bundle exec rails test
           bundle exec rspec
           echo "=== Coverage paths before sed ===" && grep -o '"[^"]*app/[^"]*"' coverage/coverage.json | head -3 || true
-          sed -i 's|.*/waste-exemptions-front-office/|./|g' coverage/coverage.json
+          sed -i 's|/home/runner/work/waste-exemptions-front-office/waste-exemptions-front-office/|./|g' coverage/coverage.json
           echo "=== Coverage paths after sed ===" && grep -o '"[^"]*app/[^"]*"' coverage/coverage.json | head -3 || true
 
       - name: Analyze with SonarCloud
