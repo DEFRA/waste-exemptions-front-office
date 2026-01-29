@@ -78,7 +78,9 @@ jobs:
         run: |
           bundle exec rails test
           bundle exec rspec
-          sed -i 's|.*/waste-exemptions-front-office/|/github/workspace/|g' coverage/coverage.json
+          echo "=== Coverage paths before sed ===" && grep -o '"[^"]*app/[^"]*"' coverage/coverage.json | head -3 || true
+          sed -i 's|.*/waste-exemptions-front-office/|./|g' coverage/coverage.json
+          echo "=== Coverage paths after sed ===" && grep -o '"[^"]*app/[^"]*"' coverage/coverage.json | head -3 || true
 
       - name: Analyze with SonarCloud
         uses: sonarsource/sonarqube-scan-action@v6.0.0
