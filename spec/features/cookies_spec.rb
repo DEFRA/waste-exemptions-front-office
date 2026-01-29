@@ -5,10 +5,7 @@ require "rails_helper"
 # rubocop:disable RSpec/ExampleLength
 # rubocop:disable RSpec/MultipleExpectations
 RSpec.describe "Cookies" do
-  before { ENV["GOOGLE_TAGMANAGER_ID"] = "GA_ID" }
-
   let(:cookie_banner_div) { ".govuk-cookie-banner" }
-  let(:google_analytics_render_tag) { "function(w,d,s,l,i)" }
 
   it "User accepts analytics cookies" do
     visit root_path
@@ -23,26 +20,22 @@ RSpec.describe "Cookies" do
     end
 
     expect(page).to have_no_css(cookie_banner_div)
-    expect(page.source).to have_text(google_analytics_render_tag)
   end
 
   it "User rejects analytics cookies and toggles their selection" do
     visit root_path
     click_on "Reject analytics cookies"
     expect(page).to have_text("You’ve rejected analytics cookies")
-    expect(page.source).to have_no_text(google_analytics_render_tag)
 
     click_on "change your cookie settings"
     expect(page).to have_css("h1", text: "Cookies on Register your waste exemptions")
 
     choose "Use cookies that measure my website use"
     click_on "Save and continue"
-    expect(page.source).to have_text(google_analytics_render_tag)
     expect(page).to have_text("You’ve set your cookie preferences.")
 
     choose "Do not use cookies that measure my website use"
     click_on "Save and continue"
-    expect(page.source).to have_no_text(google_analytics_render_tag)
   end
 end
 # rubocop:enable RSpec/MultipleExpectations
