@@ -10,3 +10,8 @@ plugins:
   - rubocop-rails
   - rubocop-rspec
   - rubocop-rspec_rails
+
+RSpec/Output:
+  # TODO: to be refactored later
+  Exclude:
+    - spec/rails_helper.rb
