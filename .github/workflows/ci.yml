@@ -69,19 +69,12 @@ jobs:
         run: |
           bundle exec rubocop --format progress --format json --out rubocop-result.json
 
-      # This includes an extra run step. The sonarcloud analysis will be run in a docker container with the current
-      # folder mounted as `/github/workspace`. The problem is when the coverage.json file is generated it will
-      # reference the code in the current folder. So to enable sonarcloud to matchup code coverage with the files we use
-      # sed to update the references in coverage.json
-      # https://community.sonarsource.com/t/code-coverage-doesnt-work-with-github-action/16747/6
+      # Run unit tests
       - name: Run unit tests
         run: |
           bundle exec rails test
           bundle exec rspec
-          echo "=== Coverage paths before sed ===" && grep -o '"[^"]*app/[^"]*"' coverage/coverage.json | head -3 || true
-          sed -i 's|/home/runner/work/waste-exemptions-front-office/waste-exemptions-front-office/||g' coverage/coverage.json
-          echo "=== Coverage paths after sed ===" && grep -o '"[^"]*app/[^"]*"' coverage/coverage.json | head -3 || true
-          echo "=== cookies_controller coverage data ===" && python3 -c "import json; d=json.load(open('coverage/coverage.json')); print([k for k in d.get('coverage',{}) if 'cookies' in k]); c=[v for k,v in d.get('coverage',{}).items() if 'cookies' in k]; print(c[0]['lines'] if c else 'NOT FOUND')" || true
+          echo "=== Coverage paths (no transformation) ===" && grep -o '"[^"]*app/[^"]*"' coverage/coverage.json | head -3 || true
 
       - name: Analyze with SonarCloud
         uses: sonarsource/sonarqube-scan-action@v6.0.0
