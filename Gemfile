@@ -54,7 +54,7 @@ group :development, :test do
   # Then simply run `bundle exec rake changelog` to update CHANGELOG.md
   # future versions of github_changelog_generator rely on async gem and
   # do cause errors. So pinning to a version that does not have this dependency.
-  gem "github_changelog_generator", "~> 1.15.2"
+  gem "github_changelog_generator", "~> 1.15.2", require: false
   # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console
   gem "pry-byebug"
   # Manages our rubocop style rules for all defra ruby projects
