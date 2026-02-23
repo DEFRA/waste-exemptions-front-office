@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 7d2313f1e3b66e1c1925a80f702f2deb7e2cc364
+  revision: aa30f275ca4a5d09312e40edbd53ff5fe0a80399
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -205,7 +205,7 @@ GEM
       dotenv (= 3.2.0)
       railties (>= 6.1)
     drb (2.2.3)
-    erb (6.0.1)
+    erb (6.0.2)
     erubi (1.13.1)
     factory_bot (6.5.6)
       activesupport (>= 6.1.0)
