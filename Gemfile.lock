@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 98c93d18cf7640dfef336733b778dbbaed213637
+  revision: ec478728afbbc0c64026a09cb8b4b4d93628b750
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -496,7 +496,7 @@ GEM
     stringio (3.2.0)
     thor (1.5.0)
     tilt (2.7.0)
-    timeout (0.6.0)
+    timeout (0.6.1)
     tsort (0.2.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
