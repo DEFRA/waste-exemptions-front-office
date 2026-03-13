@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: ec65f9e1297d8cc6367771f6d81af4d4c632161f
+  revision: 698a51bbcf256008d41abbd17ef90b8cd8faabfd
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -87,7 +87,7 @@ GEM
       activemodel (= 7.2.2.2)
       activesupport (= 7.2.2.2)
       timeout (>= 0.4.0)
-    activerecord-postgis-adapter (10.0.1)
+    activerecord-postgis-adapter (10.0.2)
       activerecord (~> 7.2.0)
       rgeo-activerecord (~> 8.0.0)
     activestorage (7.2.2.2)
