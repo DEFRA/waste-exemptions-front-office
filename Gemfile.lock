@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 7b37d60fccd78c9ebc2e33fcbcbdc9b6ed85c8e6
-  branch: main
+  revision: 58ab5fa95788d7d066ea83fd7887ac35352f8008
+  branch: feature/RUBY-4125-wex-npj-exemption-summary-page
   specs:
     waste_exemptions_engine (0.1.0)
       aasm (~> 5.5)
