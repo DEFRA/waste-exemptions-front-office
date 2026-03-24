@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: e54b99e816a0d2406c12c8fa0e474d34f1ca971d
+  revision: 842f7c3b1c7762b50c8815ad8273878b3a782ecf
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -108,7 +108,7 @@ GEM
       minitest (>= 5.1)
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
-    addressable (2.8.8)
+    addressable (2.8.9)
       public_suffix (>= 2.0.2, < 8.0)
     airbrake (13.0.5)
       airbrake-ruby (~> 6.0)
@@ -116,8 +116,8 @@ GEM
       rbtree3 (~> 0.6)
     ast (2.4.3)
     aws-eventstream (1.4.0)
-    aws-partitions (1.1217.0)
-    aws-sdk-core (3.242.0)
+    aws-partitions (1.1229.0)
+    aws-sdk-core (3.244.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
@@ -125,11 +125,11 @@ GEM
       bigdecimal
       jmespath (~> 1, >= 1.6.1)
       logger
-    aws-sdk-kms (1.122.0)
-      aws-sdk-core (~> 3, >= 3.241.4)
+    aws-sdk-kms (1.123.0)
+      aws-sdk-core (~> 3, >= 3.244.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.213.0)
-      aws-sdk-core (~> 3, >= 3.241.4)
+    aws-sdk-s3 (1.217.0)
+      aws-sdk-core (~> 3, >= 3.244.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
     aws-sigv4 (1.12.1)
@@ -168,7 +168,7 @@ GEM
     defra_ruby_area (2.2.0)
       nokogiri (>= 1.13.2)
       rest-client (~> 2.0)
-    defra_ruby_aws (0.5.0)
+    defra_ruby_aws (0.6.0)
       aws-sdk-s3
     defra_ruby_companies_house (1.0.3)
       i18n
@@ -179,8 +179,8 @@ GEM
       sprockets-rails
     defra_ruby_govpay (1.1.0)
       rest-client (~> 2.1)
-    defra_ruby_mocks (5.3.0)
-      defra_ruby_aws (~> 0.5)
+    defra_ruby_mocks (5.4.0)
+      defra_ruby_aws (~> 0.6)
       rails (~> 7.0)
       rest-client (~> 2.0)
       sprockets (~> 4.0)
@@ -235,7 +235,7 @@ GEM
       retriable (~> 3.0)
     globalid (1.3.0)
       activesupport (>= 6.1)
-    govuk_design_system_formbuilder (5.13.0)
+    govuk_design_system_formbuilder (6.0.0)
       actionview (>= 6.1)
       activemodel (>= 6.1)
       activesupport (>= 6.1)
@@ -347,7 +347,7 @@ GEM
     psych (5.3.1)
       date
       stringio
-    public_suffix (7.0.2)
+    public_suffix (7.0.5)
     racc (1.8.1)
     rack (3.1.20)
     rack-session (2.1.1)
@@ -403,7 +403,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    retriable (3.2.1)
+    retriable (3.4.1)
     rgeo (3.1.0)
     rgeo-activerecord (8.0.0)
       activerecord (>= 7.0)
@@ -425,7 +425,7 @@ GEM
       rspec-mocks (>= 3.13.0, < 5.0.0)
       rspec-support (>= 3.13.0, < 5.0.0)
     rspec-support (3.13.7)
-    rubocop (1.84.2)
+    rubocop (1.86.0)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -436,7 +436,7 @@ GEM
       rubocop-ast (>= 1.49.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.49.0)
+    rubocop-ast (1.49.1)
       parser (>= 3.3.7.2)
       prism (~> 1.7)
     rubocop-capybara (2.22.1)
