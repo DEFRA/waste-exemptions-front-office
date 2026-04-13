@@ -1,7 +1,15 @@
 GIT
+  remote: https://github.com/DEFRA/defra-ruby-map.git
+  revision: 7584c77d329fb89eb3e4c84805f1bb56b25cf479
+  branch: nominatim_dataset
+  specs:
+    defra_ruby_map (0.1.0)
+      rails (>= 7.0)
+
+GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: f4efde06605506bc5b8b958c4ef9c75ef7deb69b
-  branch: main
+  revision: f4438a76608bf69ea0ecada9467e66a585c8f3cc
+  branch: feature/RUBY-4241-wex-mockup-defra-map-in-service
   specs:
     waste_exemptions_engine (0.1.0)
       aasm (~> 5.5)
@@ -12,6 +20,7 @@ GIT
       defra_ruby_companies_house
       defra_ruby_email
       defra_ruby_govpay
+      defra_ruby_map
       defra_ruby_validators (~> 3.0)
       ffi-geos (~> 1.2.0)
       high_voltage (~> 3.1)
@@ -538,6 +547,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   database_cleaner
+  defra_ruby_map!
   defra_ruby_mocks
   defra_ruby_style
   defra_ruby_template (~> 5.11)
