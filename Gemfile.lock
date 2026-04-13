@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-map.git
-  revision: 7584c77d329fb89eb3e4c84805f1bb56b25cf479
+  revision: 688cd3835675eac3974c3b0949f97b67b2a8d800
   branch: nominatim_dataset
   specs:
     defra_ruby_map (0.1.0)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: f4438a76608bf69ea0ecada9467e66a585c8f3cc
+  revision: de022e862023b28e448320d09fd16c7a7c7e8716
   branch: feature/RUBY-4241-wex-mockup-defra-map-in-service
   specs:
     waste_exemptions_engine (0.1.0)
