@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 512604d9a4e0419df3d090669e84555b8852aafa
+  revision: dba23dd0eadbf4d8728ddc5c386a98a8dc501e88
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -12,7 +12,7 @@ GIT
       defra_ruby_companies_house
       defra_ruby_email
       defra_ruby_govpay
-      defra_ruby_validators (~> 3.0)
+      defra_ruby_validators
       ffi-geos (~> 1.2.0)
       high_voltage (~> 3.1)
       kaminari
@@ -190,7 +190,7 @@ GEM
       sprockets-rails (~> 3.0)
     defra_ruby_style (0.4.1)
     defra_ruby_template (5.11.1)
-    defra_ruby_validators (3.0.0)
+    defra_ruby_validators (3.0.1)
       activemodel
       defra_ruby_companies_house
       i18n
