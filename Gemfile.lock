@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 2103d05d5dc051681e71092d1e8a5cbefb3ba13b
+  revision: 2d9cd1f51136574db4f79029c2291329fb6666f4
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -333,7 +333,7 @@ GEM
       rake (>= 12.3.3)
     pg (1.6.3)
     pgreset (0.4)
-    phonelib (0.10.20)
+    phonelib (0.10.21)
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
@@ -345,7 +345,7 @@ GEM
     pry-byebug (3.12.0)
       byebug (~> 13.0)
       pry (>= 0.13, < 0.17)
-    psych (5.3.1)
+    psych (5.4.0)
       date
       stringio
     public_suffix (7.0.5)
