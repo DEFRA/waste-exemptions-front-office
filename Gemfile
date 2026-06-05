@@ -97,3 +97,4 @@ end
 
 # Need to add this temporarily till gem is published to rubygems
 gem "defra_ruby_map", github: "DEFRA/defra-ruby-map", branch: "osplaces_dataset"
+# gem "defra_ruby_map", path: "../defra-ruby-map"
