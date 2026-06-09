@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-map.git
-  revision: a56d90243a417622f4ba46af27eb53dbe0687994
+  revision: 7aed7d76cb716b2aee1c44ee1c6aaa1dcf160d26
   branch: osplaces_dataset
   specs:
     defra_ruby_map (0.2.0)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 771cae389e26670a9239a0b202999b4dd5cb21e7
+  revision: 69e43c7d72ece1386345278a39e5de635d7bb6f3
   branch: feature/RUBY-4241-wex-mockup-defra-map-in-service
   specs:
     waste_exemptions_engine (0.1.0)
