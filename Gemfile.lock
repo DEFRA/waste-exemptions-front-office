@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 2d9cd1f51136574db4f79029c2291329fb6666f4
+  revision: 6fe4b931c703c75a2e28128f1cfe62cdb1e61de2
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -521,7 +521,7 @@ GEM
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
     webrick (1.9.2)
-    websocket-driver (0.8.0)
+    websocket-driver (0.8.1)
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
