@@ -10,6 +10,7 @@ RSpec.describe "Cookies" do
   it "does not show the cookie banner when no cookie preferences are stored" do
     visit root_path
 
+    expect(page).to have_css("body")
     expect(page).to have_no_css(cookie_banner_div)
   end
 
@@ -18,6 +19,7 @@ RSpec.describe "Cookies" do
 
     visit root_path
 
+    expect(page).to have_css("body")
     expect(page).to have_no_css(cookie_banner_div)
   end
 
@@ -26,6 +28,7 @@ RSpec.describe "Cookies" do
 
     visit root_path
 
+    expect(page).to have_css("body")
     expect(page).to have_no_css(cookie_banner_div)
   end
 
@@ -34,6 +37,7 @@ RSpec.describe "Cookies" do
 
     visit root_path
 
+    expect(page).to have_css("body")
     expect(page).to have_no_css(cookie_banner_div)
   end
 
