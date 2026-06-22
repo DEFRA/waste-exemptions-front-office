@@ -44,6 +44,7 @@ RSpec.describe "Cookies" do
   it "only shows the session cookie on the cookies page" do
     visit "/pages/cookies"
 
+    expect(page).to have_text("We use 1 type of cookie.")
     expect(page).to have_text("_waste-exemptions-front-office_session")
     expect(page).to have_no_text("cookies_policy")
     expect(page).to have_no_text("_ga")
