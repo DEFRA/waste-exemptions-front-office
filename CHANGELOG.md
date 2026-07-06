@@ -2,7 +2,25 @@
 
 ## [Unreleased](https://github.com/defra/waste-exemptions-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v4.2.1...HEAD)
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v4.2.2...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_exemptions\_engine from `e25ef43` to `63fb2cf` [\#1441](https://github.com/DEFRA/waste-exemptions-front-office/pull/1441) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump concurrent-ruby to 1.3.7, nokogiri to 1.19.4, and rubocop to 1.88.0 [\#1439](https://github.com/DEFRA/waste-exemptions-front-office/pull/1439) ([brujeo](https://github.com/brujeo))
+- Feature/ruby 4332 wex security enable bundler cooldown give new gems a few days to be vetted [\#1436](https://github.com/DEFRA/waste-exemptions-front-office/pull/1436) ([brujeo](https://github.com/brujeo))
+- Bump waste\_exemptions\_engine from `6fe4b93` to `301e77d` [\#1434](https://github.com/DEFRA/waste-exemptions-front-office/pull/1434) ([dependabot[bot]](https://github.com/apps/dependabot))
+- \[RUBY-3849\] Remove cookies functionality and related views from the application [\#1432](https://github.com/DEFRA/waste-exemptions-front-office/pull/1432) ([jjromeo](https://github.com/jjromeo))
+- \[RUBY-3850\] Remove cookies functionality and related views from the application [\#1430](https://github.com/DEFRA/waste-exemptions-front-office/pull/1430) ([jjromeo](https://github.com/jjromeo))
+- Bump waste\_exemptions\_engine from `2d9cd1f` to `6fe4b93` [\#1428](https://github.com/DEFRA/waste-exemptions-front-office/pull/1428) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v4.2.2](https://github.com/defra/waste-exemptions-front-office/tree/v4.2.2) (2026-06-04)
+
+[Full Changelog](https://github.com/defra/waste-exemptions-front-office/compare/v4.2.1...v4.2.2)
+
+**Implemented enhancements:**
+
+- Update CHANGELOG.md for v4.2.2 [\#1421](https://github.com/DEFRA/waste-exemptions-front-office/pull/1421) ([jjromeo](https://github.com/jjromeo))
 
 **Merged pull requests:**
 
@@ -303,7 +321,6 @@
 - Bump simplecov from 0.17.0 to 0.17.1 [\#231](https://github.com/DEFRA/waste-exemptions-front-office/pull/231) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `95782a6` to `2927abd` [\#229](https://github.com/DEFRA/waste-exemptions-front-office/pull/229) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `4952466` to `95782a6` [\#227](https://github.com/DEFRA/waste-exemptions-front-office/pull/227) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump waste\_exemptions\_engine from `4931c96` to `0b5d7dc` [\#220](https://github.com/DEFRA/waste-exemptions-front-office/pull/220) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [v1.1.3](https://github.com/defra/waste-exemptions-front-office/tree/v1.1.3) (2019-09-11)
 
@@ -326,6 +343,7 @@
 
 **Merged pull requests:**
 
+- Bump waste\_exemptions\_engine from `4931c96` to `0b5d7dc` [\#220](https://github.com/DEFRA/waste-exemptions-front-office/pull/220) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `797fa72` to `4931c96` [\#219](https://github.com/DEFRA/waste-exemptions-front-office/pull/219) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `76d5061` to `797fa72` [\#218](https://github.com/DEFRA/waste-exemptions-front-office/pull/218) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `0016569` to `76d5061` [\#217](https://github.com/DEFRA/waste-exemptions-front-office/pull/217) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
@@ -397,6 +415,7 @@
 - Bump dotenv-rails from 2.7.4 to 2.7.5 [\#166](https://github.com/DEFRA/waste-exemptions-front-office/pull/166) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `754e010` to `703f84c` [\#164](https://github.com/DEFRA/waste-exemptions-front-office/pull/164) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_exemptions\_engine from `4ed93c0` to `754e010` [\#161](https://github.com/DEFRA/waste-exemptions-front-office/pull/161) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump waste\_exemptions\_engine from `d1b939d` to `4ed93c0` [\#160](https://github.com/DEFRA/waste-exemptions-front-office/pull/160) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [v1.0.1](https://github.com/defra/waste-exemptions-front-office/tree/v1.0.1) (2019-07-26)
 
@@ -404,7 +423,6 @@
 
 **Merged pull requests:**
 
-- Bump waste\_exemptions\_engine from `d1b939d` to `4ed93c0` [\#160](https://github.com/DEFRA/waste-exemptions-front-office/pull/160) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Specify database in Travis config [\#159](https://github.com/DEFRA/waste-exemptions-front-office/pull/159) ([irisfaraway](https://github.com/irisfaraway))
 - Bump waste\_exemptions\_engine from `b2b3d37` to `d1b939d` [\#158](https://github.com/DEFRA/waste-exemptions-front-office/pull/158) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Fix link to waste exemptions engine in readme [\#157](https://github.com/DEFRA/waste-exemptions-front-office/pull/157) ([andrewhick](https://github.com/andrewhick))
