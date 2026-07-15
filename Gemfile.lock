@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-map.git
-  revision: 1bde47714456f9b5d6f2343ba4422218d04243b4
+  revision: 872da8847e3acf23a0c31cd08473ba5452138fa8
   branch: main
   specs:
     defra_ruby_map (0.2.0)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 10b1018a0273eb5ecf9d9ccdbe91552751c6202a
+  revision: 1aab1ffc5d3fbf0289a953eb9a6584c0bd800116
   branch: feature/RUBY-4241-wex-mockup-defra-map-in-service
   specs:
     waste_exemptions_engine (0.1.0)
@@ -300,7 +300,7 @@ GEM
     mime-types (3.7.0)
       logger
       mime-types-data (~> 3.2025, >= 3.2025.0507)
-    mime-types-data (3.2026.0414)
+    mime-types-data (3.2026.0701)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
     minitest (5.27.0)
@@ -342,7 +342,7 @@ GEM
       rake (>= 12.3.3)
     pg (1.6.3)
     pgreset (0.4)
-    phonelib (0.10.21)
+    phonelib (0.10.22)
     pp (0.6.4)
       prettyprint
     prettyprint (0.2.0)
