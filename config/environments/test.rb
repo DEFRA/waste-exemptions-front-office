@@ -7,7 +7,7 @@ Rails.application.configure do
   # test suite. You never need to work with it otherwise. Remember that
   # your test database is "scratch space" for the test suite and is wiped
   # and recreated between test runs. Don't rely on the data there!
-  config.cache_classes = false
+  config.enable_reloading = true
 
   # Do not eager load code on boot. This avoids loading your whole application
   # just for the purpose of running a single test. If you are using a tool that
@@ -23,7 +23,9 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Raise exceptions instead of rendering exception templates.
-  config.action_dispatch.show_exceptions = false
+  # NOTE: must be the symbol form — under Rails 8.1 any non-symbol value
+  # (including the old `false`) is treated as "show exceptions"
+  config.action_dispatch.show_exceptions = :none
 
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
