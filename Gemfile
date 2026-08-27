@@ -44,15 +44,11 @@ gem "secure_headers", "~> 6.5"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
 
-# Rails is upgraded ahead of the engine's main branch; pin explicitly so a
-# blanket `bundle update` cannot move it unintentionally
-gem "rails", "~> 8.1.0"
-
 # Use the waste exemptions engine for the user journey
 # TODO: switch back to branch "main" once the engine's Rails 8.1 upgrade is merged
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "chore/rails-8-1-prep"
+    branch: "main"
 
 # Enable Defra ruby mocks for govpay
 gem "defra_ruby_mocks", ">= 5.4.1"
