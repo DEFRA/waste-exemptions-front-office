@@ -45,7 +45,6 @@ gem "secure_headers", "~> 6.5"
 gem "turbolinks"
 
 # Use the waste exemptions engine for the user journey
-# TODO: switch back to branch "main" once the engine's Rails 8.1 upgrade is merged
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
     branch: "main"
