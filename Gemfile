@@ -15,6 +15,9 @@ ruby "3.4.6"
 # future versions of github_changelog_generator rely on async gem and
 # do cause errors. So pinning to a version that does not have this dependency.
 gem "github_changelog_generator", "~> 1.15.2", require: false
+# Explicit dependency of github_changelog_generator: benchmark leaves Ruby's
+# default gems in 3.5, so relying on the stdlib copy warns under Ruby 3.4
+gem "benchmark"
 
 # GOV.UK design system styling
 gem "defra_ruby_template", "~> 5.11"
@@ -47,7 +50,7 @@ gem "waste_exemptions_engine",
     branch: "main"
 
 # Enable Defra ruby mocks for govpay
-gem "defra_ruby_mocks"
+gem "defra_ruby_mocks", ">= 5.4.1"
 
 # Web application server that replaces webrick. It handles HTTP requests,
 # manages processes and resources, and enables administration, monitoring
