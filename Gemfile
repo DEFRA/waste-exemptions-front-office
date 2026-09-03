@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source "https://rubygems.org", cooldown: 7
 ruby "3.4.6"
 
 # Allows us to automatically generate the change log from the tags, issues,
@@ -15,6 +15,9 @@ ruby "3.4.6"
 # future versions of github_changelog_generator rely on async gem and
 # do cause errors. So pinning to a version that does not have this dependency.
 gem "github_changelog_generator", "~> 1.15.2", require: false
+# Explicit dependency of github_changelog_generator: benchmark leaves Ruby's
+# default gems in 3.5, so relying on the stdlib copy warns under Ruby 3.4
+gem "benchmark"
 
 # GOV.UK design system styling
 gem "defra_ruby_template", "~> 5.11"
@@ -37,7 +40,7 @@ gem "pgreset"
 gem "sassc-rails"
 
 # Automatically apply http headers that are related to security
-gem "secure_headers", "~> 6.5"
+gem "secure_headers", "~> 7.3"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
 
@@ -47,7 +50,7 @@ gem "waste_exemptions_engine",
     branch: "feature/RUBY-4241-wex-mockup-defra-map-in-service"
 
 # Enable Defra ruby mocks for govpay
-gem "defra_ruby_mocks"
+gem "defra_ruby_mocks", ">= 5.4.1"
 
 # Web application server that replaces webrick. It handles HTTP requests,
 # manages processes and resources, and enables administration, monitoring

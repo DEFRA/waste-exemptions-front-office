@@ -7,35 +7,49 @@ require "rails_helper"
 RSpec.describe "Cookies" do
   let(:cookie_banner_div) { ".govuk-cookie-banner" }
 
-  it "User accepts analytics cookies" do
+  it "does not show the cookie banner when no cookie preferences are stored" do
     visit root_path
-    expect(page).to have_link("View cookies", href: "/pages/cookies")
 
-    click_on "Accept analytics cookies"
-    expect(page).to have_text("You’ve accepted analytics cookies")
-
-    within cookie_banner_div do
-      expect(page).to have_link("change your cookie settings", href: "/cookies/edit")
-      click_on "Hide this message"
-    end
-
+    expect(page).to have_css("body")
     expect(page).to have_no_css(cookie_banner_div)
   end
 
-  it "User rejects analytics cookies and toggles their selection" do
+  it "does not show the cookie banner when the legacy policy cookie is accepted" do
+    page.driver.browser.set_cookie("cookies_policy=analytics_accepted")
+
     visit root_path
-    click_on "Reject analytics cookies"
-    expect(page).to have_text("You’ve rejected analytics cookies")
 
-    click_on "change your cookie settings"
-    expect(page).to have_css("h1", text: "Cookies on Register your waste exemptions")
+    expect(page).to have_css("body")
+    expect(page).to have_no_css(cookie_banner_div)
+  end
 
-    choose "Use cookies that measure my website use"
-    click_on "Save and continue"
-    expect(page).to have_text("You’ve set your cookie preferences.")
+  it "does not show the cookie banner when the legacy policy cookie is rejected" do
+    page.driver.browser.set_cookie("cookies_policy=analytics_rejected")
 
-    choose "Do not use cookies that measure my website use"
-    click_on "Save and continue"
+    visit root_path
+
+    expect(page).to have_css("body")
+    expect(page).to have_no_css(cookie_banner_div)
+  end
+
+  it "does not show the cookie banner when the legacy banner cookie is stored" do
+    page.driver.browser.set_cookie("cookies_preferences_set=true")
+
+    visit root_path
+
+    expect(page).to have_css("body")
+    expect(page).to have_no_css(cookie_banner_div)
+  end
+
+  it "only shows the session cookie on the cookies page" do
+    visit "/pages/cookies"
+
+    expect(page).to have_text("We use 1 type of cookie.")
+    expect(page).to have_text("_waste-exemptions-front-office_session")
+    expect(page).to have_no_text("cookies_policy")
+    expect(page).to have_no_text("_ga")
+    expect(page).to have_no_text("_gid")
+    expect(page).to have_no_link("change your cookie settings")
   end
 end
 # rubocop:enable RSpec/MultipleExpectations
