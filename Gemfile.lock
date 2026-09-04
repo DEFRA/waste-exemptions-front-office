@@ -1,15 +1,7 @@
 GIT
-  remote: https://github.com/DEFRA/defra-ruby-map.git
-  revision: 06106664ebc7fca0813d83fabef6fefea49adaf1
-  branch: main
-  specs:
-    defra_ruby_map (0.2.1)
-      rails (>= 7.0)
-
-GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 1aab1ffc5d3fbf0289a953eb9a6584c0bd800116
-  branch: feature/RUBY-4241-wex-mockup-defra-map-in-service
+  revision: 529b6ef9a71c6da131b48ca212dc29672f5cfb0b
+  branch: main
   specs:
     waste_exemptions_engine (0.1.0)
       aasm (~> 5.5)
@@ -192,6 +184,8 @@ GEM
       sprockets-rails
     defra_ruby_govpay (1.1.0)
       rest-client (~> 2.1)
+    defra_ruby_map (0.2.2)
+      rails (>= 7.0)
     defra_ruby_mocks (5.4.1)
       defra_ruby_aws (~> 0.6)
       rails (>= 7.0)
@@ -212,7 +206,7 @@ GEM
       validates_email_format_of
     diff-lcs (1.6.2)
     docile (1.4.1)
-    domain_name (0.6.20240107)
+    domain_name (0.6.20260902)
     dotenv (3.2.0)
     dotenv-rails (3.2.0)
       dotenv (= 3.2.0)
@@ -499,7 +493,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.13.2)
     simplecov_json_formatter (0.1.4)
-    simpleidn (0.2.3)
+    simpleidn (0.3.0)
     spring (4.7.0)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -553,7 +547,6 @@ DEPENDENCIES
   benchmark
   capybara
   database_cleaner
-  defra_ruby_map!
   defra_ruby_mocks (>= 5.4.1)
   defra_ruby_style
   defra_ruby_template (~> 5.11)

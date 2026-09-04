@@ -47,7 +47,7 @@ gem "turbolinks"
 # Use the waste exemptions engine for the user journey
 gem "waste_exemptions_engine",
     git: "https://github.com/DEFRA/waste-exemptions-engine",
-    branch: "feature/RUBY-4241-wex-mockup-defra-map-in-service"
+    branch: "main"
 
 # Enable Defra ruby mocks for govpay
 gem "defra_ruby_mocks", ">= 5.4.1"
@@ -97,6 +97,3 @@ group :test do
   # the output to feed SonarCloud's stats and analysis
   gem "simplecov", "~> 0.22.0", require: false
 end
-
-# Need to add this temporarily till gem is published to rubygems
-gem "defra_ruby_map", github: "DEFRA/defra-ruby-map", branch: "main"
