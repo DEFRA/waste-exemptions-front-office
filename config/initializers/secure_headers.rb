@@ -31,10 +31,10 @@ SecureHeaders::Configuration.default do |config|
   # We have to use single quotes here, even though it's against style - double doesn't work
   # rubocop:disable Lint/PercentStringArray
   config.csp = {
-    connect_src: %w['self' https://tiles.openfreemap.org],
+    connect_src: %w['self'],
     default_src: %w['self'],
     font_src: %w['self' data:],
-    img_src: %w['self' data: blob: https://tiles.openfreemap.org],
+    img_src: %w['self'],
     object_src: %w['self'],
     script_src: %w['self' blob:],
     style_src: %w['self'],
