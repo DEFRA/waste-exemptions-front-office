@@ -34,7 +34,7 @@ SecureHeaders::Configuration.default do |config|
     connect_src: %w['self'],
     default_src: %w['self'],
     font_src: %w['self' data:],
-    img_src: %w['self'],
+    img_src: %w['self' data: blob:],
     object_src: %w['self'],
     script_src: %w['self' blob:],
     style_src: %w['self'],
