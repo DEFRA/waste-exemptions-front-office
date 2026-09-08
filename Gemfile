@@ -20,7 +20,7 @@ gem "github_changelog_generator", "~> 1.15.2", require: false
 gem "benchmark"
 
 # GOV.UK design system styling
-gem "defra_ruby_template", "~> 5.11"
+gem "defra_ruby_template", "~> 6.4"
 # GOV.UK design system forms
 gem "govuk_design_system_formbuilder"
 
