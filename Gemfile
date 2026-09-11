@@ -20,7 +20,7 @@ gem "github_changelog_generator", "~> 1.15.2", require: false
 gem "benchmark"
 
 # GOV.UK design system styling
-gem "defra_ruby_template", "~> 5.11"
+gem "defra_ruby_template", "~> 6.4"
 # GOV.UK design system forms
 gem "govuk_design_system_formbuilder"
 
@@ -36,8 +36,8 @@ gem "net-pop"
 # PG::ObjectInUse: ERROR:  database "wex_db" is being accessed by other users
 gem "pgreset"
 
-# See: https://github.com/sass/sassc-rails/issues/114
-gem "sassc-rails"
+# Use Dart Sass with the Sprockets asset pipeline
+gem "dartsass-sprockets"
 
 # Automatically apply http headers that are related to security
 gem "secure_headers", "~> 7.3"
