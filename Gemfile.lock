@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: d96979fb94c79dcb58b42d2a347e2787aa30dd6b
+  revision: 161f6d9904bfb7b058228092633d26a46304e8fd
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -318,7 +318,7 @@ GEM
       net-protocol
     net-pop (0.1.2)
       net-protocol
-    net-protocol (0.3.0)
+    net-protocol (0.4.0)
       timeout
     net-smtp (0.5.1)
       net-protocol
