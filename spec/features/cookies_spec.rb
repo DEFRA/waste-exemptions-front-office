@@ -3,7 +3,7 @@
 require "rails_helper"
 
 # rubocop:disable RSpec/ExampleLength
-# rubocop:disable RSpec/MultipleExpectations
+# rubocop:disable-next RSpec/MultipleExpectations
 RSpec.describe "Cookies" do
   let(:cookie_banner_div) { ".govuk-cookie-banner" }
 
@@ -52,5 +52,4 @@ RSpec.describe "Cookies" do
     expect(page).to have_no_link("change your cookie settings")
   end
 end
-# rubocop:enable RSpec/MultipleExpectations
 # rubocop:enable RSpec/ExampleLength
