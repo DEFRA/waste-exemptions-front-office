@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 3316af3fe05c9e105166db07e8daf51fb31c52e4
+  revision: 1c1a5bae2d4915764ad4c81ea013eed7eca6d714
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -213,7 +213,7 @@ GEM
       validates_email_format_of
     diff-lcs (1.6.2)
     docile (1.4.1)
-    domain_name (0.6.20260921)
+    domain_name (0.7.20261007)
     dotenv (3.2.0)
     dotenv-rails (3.2.0)
       dotenv (= 3.2.0)
