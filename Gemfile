@@ -4,7 +4,7 @@ source "https://rubygems.org", cooldown: 7
 ruby "3.4.6"
 
 # GOV.UK design system styling
-gem "defra_ruby_template", "~> 6.4"
+gem "defra_ruby_template", "6.4.0"
 # GOV.UK design system forms
 gem "govuk_design_system_formbuilder"
 
