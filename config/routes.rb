@@ -6,6 +6,4 @@ Rails.application.routes.draw do
   mount DefraRubyMocks::Engine => "/fo/mocks"
 
   root "waste_exemptions_engine/start_forms#new"
-
-  get "/Getting_ready_for_change", to: "pages#getting_ready_for_change"
 end

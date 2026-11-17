@@ -29,7 +29,7 @@ SecureHeaders::Configuration.default do |config|
   # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src
   #
   # We have to use single quotes here, even though it's against style - double doesn't work
-  # rubocop:disable Lint/PercentStringArray
+  # rubocop:disable-next Lint/PercentStringArray
   config.csp = {
     connect_src: %w['self'],
     default_src: %w['self'],
@@ -40,7 +40,6 @@ SecureHeaders::Configuration.default do |config|
     style_src: %w['self'],
     report_uri: %w[https://environmentagency.report-uri.io/r/default/csp/enforce]
   }
-  # rubocop:enable Lint/PercentStringArray
 
   config.x_content_type_options = "nosniff"
   config.x_frame_options = "SAMEORIGIN"
