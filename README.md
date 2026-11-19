@@ -15,7 +15,7 @@ This project is the front office application which members of the public use to 
 
 ## Prerequisites
 
-You'll need [Ruby 3.4.6](https://www.ruby-lang.org/en/) installed plus the [Bundler](http://bundler.io/) gem.
+You'll need [Ruby 3.4.13](https://www.ruby-lang.org/en/) installed plus the [Bundler](http://bundler.io/) gem.
 
 ## Installation
 
