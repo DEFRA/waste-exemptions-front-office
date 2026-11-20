@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-exemptions-engine
-  revision: 4b80f6481df56b3f2dc2d685ca36dfd7b984e029
+  revision: 6f1061940b0e59348263fdf9d86f9658cba2997c
   branch: main
   specs:
     waste_exemptions_engine (0.1.0)
@@ -139,8 +139,8 @@ GEM
     async-pool (0.12.0)
       async (>= 2.0)
     aws-eventstream (1.4.1)
-    aws-partitions (1.1304.0)
-    aws-sdk-core (3.266.0)
+    aws-partitions (1.1305.0)
+    aws-sdk-core (3.268.0)
       aws-eventstream (~> 1, >= 1.4.1)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
@@ -149,11 +149,11 @@ GEM
       jmespath (~> 1, >= 1.6.1)
       logger
       rexml (~> 3.4, >= 3.4.2)
-    aws-sdk-kms (1.141.0)
-      aws-sdk-core (~> 3, >= 3.266.0)
+    aws-sdk-kms (1.143.0)
+      aws-sdk-core (~> 3, >= 3.268.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.240.0)
-      aws-sdk-core (~> 3, >= 3.266.0)
+    aws-sdk-s3 (1.242.0)
+      aws-sdk-core (~> 3, >= 3.268.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
     aws-sigv4 (1.12.1)
@@ -177,7 +177,7 @@ GEM
     cgi (0.5.2)
     coderay (1.1.3)
     concurrent-ruby (1.3.8)
-    connection_pool (3.0.3)
+    connection_pool (3.0.2)
     console (1.38.0)
       fiber-annotation
       fiber-local (~> 1.1)
@@ -208,7 +208,7 @@ GEM
     defra_ruby_companies_house (1.0.4)
       i18n
       rest-client (~> 2.0)
-    defra_ruby_email (1.3.1)
+    defra_ruby_email (1.3.0)
       notifications-ruby-client
       rails
       sprockets-rails
@@ -280,7 +280,7 @@ GEM
     google-protobuf (4.36.2)
       bigdecimal
       rake (~> 13.3)
-    govuk_design_system_formbuilder (6.5.0)
+    govuk_design_system_formbuilder (6.6.0)
       actionview (>= 7.2)
       activemodel (>= 7.2)
       activesupport (>= 7.2)
@@ -373,7 +373,7 @@ GEM
       activerecord (>= 7.1)
       request_store (~> 1.4)
     parallel (2.3.0)
-    parser (3.3.12.0)
+    parser (3.3.13.0)
       ast (~> 2.4.1)
       racc
     passenger (6.2.2)
@@ -387,7 +387,7 @@ GEM
     pp (0.6.4)
       prettyprint
     prettyprint (0.2.1)
-    prism (1.9.0)
+    prism (2.1.0)
     protocol-hpack (1.5.1)
     protocol-http (0.72.1)
     protocol-http1 (0.41.1)
@@ -396,7 +396,7 @@ GEM
       protocol-hpack (~> 1.4)
       protocol-http (~> 0.62)
     protocol-url (0.19.0)
-    pry (0.16.0)
+    pry (0.16.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
       reline (>= 0.6.0)
@@ -487,7 +487,7 @@ GEM
       rspec-mocks (>= 3.13.0, < 5.0.0)
       rspec-support (>= 3.13.0, < 5.0.0)
     rspec-support (3.13.8)
-    rubocop (1.92.0)
+    rubocop (1.92.2)
       json (>= 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -498,9 +498,9 @@ GEM
       rubocop-ast (>= 1.49.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.50.0)
+    rubocop-ast (1.51.0)
       parser (>= 3.3.7.2)
-      prism (~> 1.7)
+      prism (>= 1.7)
     rubocop-capybara (3.1.0)
       lint_roller (~> 1.1)
       rubocop (~> 1.89)
@@ -525,7 +525,7 @@ GEM
       rubocop (~> 1.89)
       rubocop-rspec (~> 3.5)
     ruby-progressbar (1.13.0)
-    sass-embedded (1.105.1)
+    sass-embedded (1.108.2)
       google-protobuf (~> 4.31)
       rake (~> 13.3)
     sassc-embedded (1.80.10)
@@ -577,10 +577,10 @@ GEM
       bindex (>= 0.4.0)
       railties (>= 8.0.0)
     webrick (1.9.2)
-    websocket-driver (0.9.0)
+    websocket-driver (0.8.2)
       base64
-      websocket-extensions (>= 0.2.0)
-    websocket-extensions (0.2.0)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
     wicked_pdf (2.8.2)
       activesupport
       ostruct
